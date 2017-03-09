@@ -18,4 +18,4 @@ To be added.
 
 ## Contributing
 
-I highly urge each and every one of you to contribute. This isn't my full-time job or anything, so I can't support every Emacs theme out there (although this theme supports more than average themes do). Write issues and make pull requests without hesitation.
+I highly urge each and every one of you to contribute. This isn't my full-time job or anything, so I can't support every Emacs package out there (although this theme supports more than average themes do). Write issues and make pull requests without hesitation.
