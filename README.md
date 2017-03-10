@@ -10,12 +10,30 @@ I should mention that I have only ever evaluated dark themes. Light themes are a
 
 ## Demos
 
-To be added.
+[Python](http://imgur.com/2Ij1ROs)
+
+[Elisp](http://imgur.com/iSXPuqB)
 
 ## Usage
 
-To be added.
+### Manual
+
+Download nimbus-theme.el to the directory ~/.emacs.d/themes/. Add this to your .emacs:
+
+```elisp         
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+```             
+
+Now you can load the theme with the interactive function load-theme like this:
+
+```
+M-x load-theme RET nimbus
+```
+
+### Package.el
+
+Coming soon
 
 ## Contributing
 
-I highly urge each and every one of you to contribute. This isn't my full-time job or anything, so I can't support every Emacs package out there (although this theme supports more than average themes do). Write issues and make pull requests without hesitation.
+I highly urge each and every one of you to contribute. This isn't my full-time job so I can't support every Emacs package out there (although this theme supports more than the average theme). Write issues and make pull requests liberally.
