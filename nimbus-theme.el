@@ -19,6 +19,12 @@
 ;; here and there until it ended up looking quite a bit different, and
 ;; this is the result.
 ;;
+;; Notes:
+;; When trying to follow the 80-column line rule, I didn't split up
+;; the face definitions - having, for example, the foreground and
+;; background definitions on the same line makes it easier to search
+;; for lines which contain a particular foreground/background
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; This program is free software; you can redistribute it and/or
@@ -95,18 +101,27 @@
    `(font-lock-preprocessor-face      ((t (:foreground ,nimbus/orange))))
    `(font-lock-type-face              ((t (:foreground ,nimbus/red))))
    `(font-lock-constant-face          ((t (:foreground ,nimbus/purple))))
-   `(font-lock-warning-face           ((t (:foreground ,nimbus/dark-red :bold t))))
+   `(font-lock-warning-face
+     ((t (:foreground ,nimbus/dark-red :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,nimbus/yellow))))
    `(font-lock-doc-face               ((t (:foreground ,nimbus/light-green))))
-   `(highlight-numbers-number         ((t (:foreground ,nimbus/purple)))) ;; Numbers
+   ;; Numbers
+   `(highlight-numbers-number
+     ((t (:foreground ,nimbus/purple))))
 
    ;; mode line & powerline
-   `(powerline-active1   ((t (:background ,nimbus/darkest-gray :foreground ,nimbus/fg))))
-   `(powerline-active2   ((t (:background ,nimbus/dark-green :foreground ,nimbus/black ))))
-   `(powerline-inactive1 ((t (:background ,nimbus/bg :foreground ,nimbus/dark-gray))))
-   `(powerline-inactive2 ((t (:background ,nimbus/gray :foreground ,nimbus/black ))))
-   `(mode-line-inactive  ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
-   `(mode-line           ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
+   `(powerline-active1
+     ((t (:background ,nimbus/darkest-gray :foreground ,nimbus/fg))))
+   `(powerline-active2
+     ((t (:background ,nimbus/dark-green :foreground ,nimbus/black ))))
+   `(powerline-inactive1
+     ((t (:background ,nimbus/bg :foreground ,nimbus/dark-gray))))
+   `(powerline-inactive2
+     ((t (:background ,nimbus/gray :foreground ,nimbus/black ))))
+   `(mode-line-inactive
+     ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
+   `(mode-line
+     ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
 
    ;; Anzu mode
    `(anzu-mode-line      ((t (:background nil :foreground ,nimbus/white))))
@@ -128,22 +143,30 @@
    `(lazy-highlight ((t (:background ,nimbus/dark-red :foreground ,nimbus/white))))
 
    ;; evil-search-highlight-persist
-   `(evil-search-highlight-persist-highlight-face ((t (:background ,nimbus/blue :foreground ,nimbus/bg))))
+   `(evil-search-highlight-persist-highlight-face
+     ((t (:background ,nimbus/blue :foreground ,nimbus/bg))))
 
    ;; ace-jump mode
    `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
    `(ace-jump-face-foreground ((t (:foreground ,nimbus/orange))))
 
    ;; avy, colors chosen for contrast over aesthetic quality
-   `(avy-background-face      ((t (:foreground ,nimbus/dark-gray :background nil))))
-   `(avy-goto-char-timer-face ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green))))
-   `(avy-lead-face   ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
-   `(avy-lead-face-0 ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
-   `(avy-lead-face-1 ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
-   `(avy-lead-face-2 ((t (:foreground ,nimbus/black :background ,nimbus/white))))
+   `(avy-background-face
+     ((t (:foreground ,nimbus/dark-gray :background nil))))
+   `(avy-goto-char-timer-face
+     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green))))
+   `(avy-lead-face
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+   `(avy-lead-face-0
+     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
+   `(avy-lead-face-1
+     ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
+   `(avy-lead-face-2
+     ((t (:foreground ,nimbus/black :background ,nimbus/white))))
 
    ;; Vertical border between windows
-   `(vertical-border ((t (:background ,nimbus/darker-gray :foreground ,nimbus/darkest-gray))))
+   `(vertical-border
+     ((t (:background ,nimbus/darker-gray :foreground ,nimbus/darkest-gray))))
 
    ;; line highlighting for hl-line-mode
    `(hl-line ((t (:background ,nimbus/blue-bg))))
@@ -623,10 +646,12 @@
    `(twittering-username-face       ((t (:foreground nil :background nil :inherit font-lock-keyword-face :underline t))))
 
    ;; whitespace mode
-   `(whitespace-empty            ((t (:foreground ,nimbus/gray :background "gray10"))))
+   `(whitespace-empty
+     ((t (:foreground ,nimbus/gray :background "gray10"))))
    `(whitespace-hspace           ((t (:foreground ,nimbus/gray :background "grey11"))))
    `(whitespace-indentation      ((t (:foreground ,nimbus/gray :background "gray12"))))
-   `(whitespace-line             ((t (:foreground ,nimbus/purple :background nil))))
+   `(whitespace-line
+     ((t (:foreground ,nimbus/black :background ,nimbus/red))))
    `(whitespace-newline          ((t (:foreground ,nimbus/gray :background nil))))
    `(whitespace-space            ((t (:foreground ,nimbus/gray :background nil))))
    `(whitespace-space-after-tab  ((t (:foreground ,nimbus/gray :background "gray13"))))
@@ -773,6 +798,9 @@
    `(guide-key/prefix-command-face    ((t (:foreground ,nimbus/green))))
    `(guide-key/highlight-command-face ((t (:foreground ,nimbus/blue))))
    `(guide-key/key-face               ((t (:foreground ,nimbus/gray))))
+
+   ;; indent-guide
+   `(indent-guide-face ((t (:inherit font-lock-comment-face))))
 
    ;; custom
    `(custom-button                  ((t (:foreground nil :background nil))))
