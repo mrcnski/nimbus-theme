@@ -128,7 +128,7 @@
    `(anzu-match-2            ((t (:background ,nimbus/yellow :foreground ,nimbus/black))))
    `(anzu-match-3            ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
    `(anzu-mode-line          ((t (:background nil :foreground ,nimbus/white))))
-   `(anzu-mode-line-no-match ((t (:background ,nimbus/dark-red :foreground ,nimbus/white))))
+   `(anzu-mode-line-no-match ((t (:background ,nimbus/dark-red :foreground ,nimbus/black))))
    `(anzu-replace-to         ((t (:foreground ,nimbus/yellow))))
 
    ;; Line numbers
