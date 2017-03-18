@@ -172,6 +172,11 @@
    `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
    `(ace-jump-face-foreground ((t (:foreground ,nimbus/orange))))
 
+   ;; ace-window
+   `(aw-background-face ((t (:foreground ,nimbus/dark-gray))))
+   `(aw-leading-char-face
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+
    ;; avy, colors chosen for contrast over aesthetic quality
    `(avy-background-face
      ((t (:foreground ,nimbus/dark-gray :background nil))))
