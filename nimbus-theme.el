@@ -4,26 +4,33 @@
 ;; Description: An awesome dark theme derived from ample.
 ;; Author: Marcin Swieczkowski <scatman@bu.edu>
 ;; Created: Thu Mar  2 22:19:19 CET 2017
-;; Version: 0.1.0
-;; Last-Updated: Thu Mar  9 20:18:10 CET 2017
+;; Version: 1.0.0
+;; Last-Updated: Sat Mar 18 16:17:29 CET 2017
 ;;           By: Marcin Swieczkowski
-;;     Update #: 1
+;;     Update #: 2
 ;; URL: https://github.com/m-cat/nimbus-theme
 ;; Keywords: faces
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Commentary:
 ;;
+;; About
+;;
 ;; I made this theme because I liked the colors in ample theme but
 ;; didn't like how much gray there was. So I started with a few tweaks
 ;; here and there until it ended up looking quite a bit different, and
 ;; this is the result.
 ;;
+;; Installing:
+;;
+;; See README.md for the most current installation instructions.
+;;
 ;; Notes:
+;;
 ;; When trying to follow the 80-column line rule, I didn't split up
 ;; the face definitions - having, for example, the foreground and
 ;; background definitions on the same line makes it easier to search
-;; for lines which contain a particular foreground/background
+;; for lines which contain a particular foreground/background combo
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -124,12 +131,18 @@
      ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
 
    ;; Anzu mode
-   `(anzu-match-1            ((t (:background ,nimbus/tan :foreground ,nimbus/black))))
-   `(anzu-match-2            ((t (:background ,nimbus/yellow :foreground ,nimbus/black))))
-   `(anzu-match-3            ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
-   `(anzu-mode-line          ((t (:background nil :foreground ,nimbus/white))))
-   `(anzu-mode-line-no-match ((t (:background ,nimbus/dark-red :foreground ,nimbus/black))))
-   `(anzu-replace-to         ((t (:foreground ,nimbus/yellow))))
+   `(anzu-match-1
+     ((t (:background ,nimbus/green :foreground ,nimbus/black))))
+   `(anzu-match-2
+     ((t (:background ,nimbus/yellow :foreground ,nimbus/black))))
+   `(anzu-match-3
+     ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
+   `(anzu-mode-line
+     ((t (:background nil :foreground ,nimbus/white))))
+   `(anzu-mode-line-no-match
+     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black))))
+   `(anzu-replace-to
+     ((t (:foreground ,nimbus/yellow))))
 
    ;; Line numbers
    `(linum          ((t (:background nil :foreground ,nimbus/dark-green))))
@@ -1273,7 +1286,7 @@
 
 ;;;###autoload
 (defun nimbus-theme()
-  "Apply the nimbus-theme."
+  "Apply 'nimbus-theme'."
   (interactive)
   (load-theme 'nimbus t))
 
