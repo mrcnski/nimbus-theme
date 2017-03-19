@@ -161,7 +161,7 @@
 
    ;; search
    `(isearch
-     ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
+     ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
    `(lazy-highlight
      ((t (:background ,nimbus/dark-red :foreground ,nimbus/white))))
 
@@ -673,10 +673,6 @@
    `(ediff-odd-diff-C           ((t (:background "#171723"))))
    ;;`(ediff-odd-diff-Ancestor      ((t ())))
 
-<<<<<<< HEAD
-   `(info-title-4
-     ((t (:weight bold :height 1.0))))
-=======
    ;; info
    `(Info-quoted
      ((t (:inherit font-lock-constant-face))))
@@ -692,7 +688,8 @@
      ((t (:weight bold :height 1.4))))
    `(info-title-3
      ((t (:weight bold :height 1.2))))
->>>>>>> aca7f1721fc69156ee1429d1dfe5bef73f975526
+   `(info-title-4
+     ((t (:weight bold :height 1.0))))
 
    ;; man pages
    `(Man-overstrike ((t (:foreground ,nimbus/blue))))
@@ -1017,6 +1014,8 @@
 
    `(magit-popup-argument
      ((t (:foreground ,nimbus/red :inherit font-lock-warning-face))))
+   `(magit-popup-key
+     ((t (:inherit font-lock-constant-face))))
    `(magit-process-ng                  ((t (:foreground ,nimbus/red :bold t))))
    `(magit-process-ok                  ((t (:foreground ,nimbus/green))))
 
