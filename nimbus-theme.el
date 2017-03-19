@@ -469,6 +469,24 @@
    `(helm-visible-mark
      ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
 
+   ;; ivy
+   `(ivy-confirm-face ((t (:foreground ,nimbus/green))))
+   `(ivy-current-match
+     ((t (:foreground ,nimbus/white :background ,nimbus/blue))))
+   `(ivy-match-required-face ((t (:foreground ,nimbus/red))))
+   `(ivy-minibuffer-match-face-1
+     ((t (:foreground ,nimbus/white :background ,nimbus/darker-gray))))
+   `(ivy-minibuffer-match-face-2
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green :weight bold))))
+   `(ivy-minibuffer-match-face-3
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-red :weight bold))))
+   `(ivy-minibuffer-match-face-4
+     ((t (:foreground ,nimbus/white :background ,nimbus/yellow :weight bold))))
+   `(ivy-modified-buffer ((t (:foreground ,nimbus/orange))))
+   `(ivy-remote ((t (:foreground ,nimbus/lighter-blue))))
+   `(ivy-subdir ((t (:foreground ,nimbus/dark-green))))
+   `(ivy-virtual ((t (:foreground ,nimbus/blue))))
+
    ;; jabber
    `(jabber-activity-face
      ((t (:inherit font-lock-variable-name-face :bold t))))
