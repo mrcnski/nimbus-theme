@@ -96,6 +96,7 @@
    `(fringe  ((t (:background ,nimbus/fringe))))
    `(link    ((t (:foreground ,nimbus/lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
+   `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/dark-green))))
    `(region  ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
    `(shadow  ((t (:foreground ,nimbus/light-gray))))
 
@@ -415,7 +416,8 @@
    ;; helm
    `(helm-M-x-key
      ((t (:foreground ,nimbus/orange :underline nil))))
-   `(helm-action                 ((t (:underline nil))))
+   `(helm-action
+     ((t (:foreground ,nimbus/yellow :underline nil))))
    `(helm-bookmark-addressbook   ((t (:foreground ,nimbus/red))))
    ;;`(helm-bookmark-directory   ((t ())))
    `(helm-bookmark-file          ((t (:foreground ,nimbus/lighter-blue))))
@@ -424,15 +426,16 @@
    `(helm-bookmark-man           ((t (:foreground ,nimbus/orange))))
    `(helm-bookmark-w3m           ((t (:foreground ,nimbus/yellow))))
    `(helm-buffer-directory       ((t (:foreground ,nimbus/green))))
-   ;;`(helm-buffer-not-saved     ((t ())))
-   ;;`(helm-buffer-process       ((t ())))
+   ;; `(helm-buffer-not-saved       ((t (:inherit italics))))
+   `(helm-buffer-process         ((t (:foreground ,nimbus/green))))
    ;;`(helm-buffer-saved-out     ((t ())))
-   ;;`(helm-buffer-size          ((t ())))
+   `(helm-buffer-size            ((t (:foreground ,nimbus/red))))
    `(helm-candidate-number
      ((t (:foreground ,nimbus/green :background ,nimbus/blue-bg))))
    `(helm-ff-directory           ((t (:foreground ,nimbus/blue))))
    `(helm-ff-executable          ((t (:foreground ,nimbus/green))))
-   `(helm-ff-file                ((t (:inherit default))))
+   `(helm-ff-file
+     ((t (:foreground ,nimbus/purple :inherit default))))
    ;;`(helm-ff-invalid-symlink   ((t ())))
    `(helm-ff-prefix              ((t (:foreground ,nimbus/red))))
    ;;`(helm-ff-symlink           ((t ())))
@@ -457,7 +460,7 @@
    `(helm-moccur-buffer
      ((t (:inherit compilation-info))))
    `(helm-selection
-     ((t (:foreground ,nimbus/green :background ,nimbus/blue-bg :bold t))))
+     ((t (:background ,nimbus/blue-bg))))
    `(helm-prefarg
      ((t (:foreground ,nimbus/green :bold t))))
    ;;`(helm-selection-line
