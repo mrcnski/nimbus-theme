@@ -203,6 +203,19 @@
 
    `(secondary-selection ((t (:background ,nimbus/dark-red))))
 
+   ;; ruler
+   `(ruler-mode-default
+     ((t (:background ,nimbus/darker-gray :foreground ,nimbus/fg))))
+   `(ruler-mode-column-number  ((t (:foreground ,nimbus/light-gray))))
+   `(ruler-mode-comment-column ((t (:foreground ,nimbus/red))))
+   `(ruler-mode-current-column ((t (:foreground ,nimbus/yellow :weight bold))))
+   `(ruler-mode-fill-column    ((t (:foreground ,nimbus/red))))
+   `(ruler-mode-fringes        ((t (:foreground ,nimbus/green))))
+   `(ruler-mode-goal-column    ((t (:foreground ,nimbus/red))))
+   `(ruler-mode-margins        ((t (:foreground ,nimbus/white))))
+   `(ruler-mode-pad            ((t (:foreground ,nimbus/lightest-green))))
+   `(ruler-mode-tab-stop       ((t (:foreground ,nimbus/blue))))
+
    ;; volatile-highlights
    `(vh1/default-face ((t (:background ,nimbus/green))))
 
