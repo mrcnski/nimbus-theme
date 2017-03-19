@@ -95,6 +95,7 @@
    `(cursor  ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
    `(fringe  ((t (:background ,nimbus/fringe))))
    `(link    ((t (:foreground ,nimbus/lighter-blue :underline t))))
+   `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(region  ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
    `(shadow  ((t (:foreground ,nimbus/light-gray))))
 
@@ -671,6 +672,9 @@
    `(ediff-odd-diff-B           ((t (:background "#171723"))))
    `(ediff-odd-diff-C           ((t (:background "#171723"))))
    ;;`(ediff-odd-diff-Ancestor      ((t ())))
+
+   `(info-title-4
+     ((t (:weight bold :height 1.0))))
 
    ;; man pages
    `(Man-overstrike ((t (:foreground ,nimbus/blue))))
