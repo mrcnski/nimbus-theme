@@ -2,7 +2,7 @@
 The best dark theme for Emacs
 
 ## About
-Why another Emacs theme? The short answer is that practically all existing themes suck. Take a look at Zenburn, the most popular Emacs theme. It's almost all gray, so using it is like staring at cement. And functionally, there is virtually no contrast between anything, making it straining on the eyes and difficult to use, even if the user is not aware of this fact. Nimbus is both visually pleasing (I would even say beautiful) and each element is distinctive and stands out to the eye.
+Why another Emacs theme? The short answer is that practically all existing themes suck. Take a look at Zenburn, the most popular Emacs theme. It's almost all gray, so using it is like staring at cement. And functionally, there is virtually no contrast between anything, making it straining on the eyes and difficult to use. Nimbus is both visually pleasing (I would even say beautiful) and each element is distinctive and stands out to the eye.
 
 Some other themes I had tried were better, but nothing came close to meeting my standards. This is the last theme I will ever need to use. And if you're like how I was, constantly dissatisfied with your latest theme, then rest assured your search is over.
 
@@ -20,6 +20,20 @@ I should mention that I have only ever evaluated dark themes. Light themes are a
 
 ## Usage
 
+### MELPA
+
+The easiest way to install Nimbus. Make sure you have set up [MELPA](http://melpa.milkbox.net/#/getting-started) and run:
+
+```
+M-x package-install RET nimbus-theme RET
+```
+
+Use `M-x customize-themes` to activate it, or put the following in your Emacs configuration file:
+
+```
+(load-theme 'nimbus t)
+```
+
 ### Manual
 
 Download nimbus-theme.el to the directory ~/.emacs.d/themes/. Add this to your .emacs:
@@ -28,15 +42,7 @@ Download nimbus-theme.el to the directory ~/.emacs.d/themes/. Add this to your .
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ```             
 
-Now you can load the theme with the interactive function load-theme like this:
-
-```
-M-x load-theme RET nimbus
-```
-
-### Package.el
-
-Coming soon
+Now you can use `customize-themes` or `load-theme` to activate Nimbus, as described in the MELPA section above.
 
 ## Contributing
 
