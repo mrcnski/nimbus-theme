@@ -207,7 +207,7 @@
    ;; ruler
    `(ruler-mode-default
      ((t (:background ,nimbus/darker-gray :foreground ,nimbus/fg))))
-   `(ruler-mode-column-number  ((t (:foreground ,nimbus/light-gray))))
+   `(ruler-mode-column-number  ((t (:inherit font-lock-constant-face))))
    `(ruler-mode-comment-column ((t (:foreground ,nimbus/red))))
    `(ruler-mode-current-column ((t (:foreground ,nimbus/yellow :weight bold))))
    `(ruler-mode-fill-column    ((t (:foreground ,nimbus/red))))
