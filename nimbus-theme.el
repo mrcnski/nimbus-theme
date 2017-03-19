@@ -150,7 +150,7 @@
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
-   `(header-line    ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
+   `(header-line ((t (:background ,nimbus/darker-gray :foreground ,nimbus/fg))))
 
    ;; which-func mode
    `(which-func
@@ -673,8 +673,26 @@
    `(ediff-odd-diff-C           ((t (:background "#171723"))))
    ;;`(ediff-odd-diff-Ancestor      ((t ())))
 
+<<<<<<< HEAD
    `(info-title-4
      ((t (:weight bold :height 1.0))))
+=======
+   ;; info
+   `(Info-quoted
+     ((t (:inherit font-lock-constant-face))))
+   `(info-menu-header
+     ((t (:foreground ,nimbus/light-gray :weight bold :height 1.4))))
+   `(info-menu-star
+     ((t (:foreground ,nimbus/red))))
+   `(info-node
+     ((t (:foreground ,nimbus/light-gray :inherit italic :weight bold))))
+   `(info-title-1
+     ((t (:weight bold :height 1.6))))
+   `(info-title-2
+     ((t (:weight bold :height 1.4))))
+   `(info-title-3
+     ((t (:weight bold :height 1.2))))
+>>>>>>> aca7f1721fc69156ee1429d1dfe5bef73f975526
 
    ;; man pages
    `(Man-overstrike ((t (:foreground ,nimbus/blue))))
