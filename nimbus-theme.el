@@ -819,6 +819,14 @@
    ;;`(org-verse                     ((t (:foreground nil :background nil))))
    ;;`(org-warning                   ((t (:foreground nil :background nil))))
 
+   ;; debbugs
+   `(debbugs-gnu-done    ((t (:foreground ,nimbus/gray))))
+   `(debbugs-gnu-handled ((t (:foreground ,nimbus/dark-green))))
+   `(debbugs-gnu-new     ((t (:foreground ,nimbus/red))))
+   `(debbugs-gnu-pending ((t (:foreground ,nimbus/blue))))
+   `(debbugs-gnu-stale   ((t (:foreground ,nimbus/orange))))
+   `(debbugs-gnu-tagged  ((t (:foreground ,nimbus/red))))
+
    ;; message-mode
    `(message-cited-text  ((t (:inherit font-lock-comment-face))))
    `(message-header-cc
