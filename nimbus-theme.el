@@ -280,7 +280,7 @@
 
    ;;show paren
    `(show-paren-match
-     ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
+     ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
@@ -423,8 +423,11 @@
    `(web-mode-whitespace-face
      ((t (:background "DarkOrchid4"))))
 
-   ;; packages
-   `(package-name ((t (:foreground ,nimbus/lighter-blue))))
+   ;; package.el
+   `(package-name
+     ((t (:foreground ,nimbus/lighter-blue :underline t))))
+   `(package-status-available ((t (:foreground ,nimbus/green))))
+   `(package-description      ((t (:foreground ,nimbus/yellow))))
 
    ;; helm
    `(helm-M-x-key
