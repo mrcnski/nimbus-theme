@@ -350,6 +350,16 @@
    `(erc-prompt-face
      ((t (:foreground "#191919" :background ,nimbus/purple))))
 
+   ;; rcirc
+   `(rcirc-bright-nick     ((t (:foreground ,nimbus/white))))
+   `(rcirc-my-nick         ((t (:foreground ,nimbus/yellow))))
+   `(rcirc-nick-in-message ((t (:inherit rcirc-my-nick))))
+   `(rcirc-other-nick      ((t (:foreground ,nimbus/blue))))
+   `(rcirc-server          ((t (:foreground ,nimbus/green))))
+   `(rcirc-timestamp       ((t (:foreground ,nimbus/darker-gray))))
+   `(rcirc-prompt
+     ((t (:foreground "#191919" :background ,nimbus/purple))))
+
    ;;undo-tree
    `(undo-tree-visualizer-active-branch-face ((t (:inherit default))))
    `(undo-tree-visualizer-default-face
