@@ -97,7 +97,7 @@
    `(link    ((t (:foreground ,nimbus/lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/dark-green))))
-   `(region  ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
+   `(region  ((t (:background ,nimbus/green :foreground ,nimbus/black))))
    `(shadow  ((t (:foreground ,nimbus/light-gray))))
 
    ;; standard font lock
@@ -202,7 +202,8 @@
 
    `(highlight-indentation-face ((t (:background ,nimbus/darkest-gray))))
 
-   `(secondary-selection ((t (:background ,nimbus/dark-red))))
+   `(secondary-selection
+     ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
 
    ;; ruler
    `(ruler-mode-default
@@ -280,7 +281,7 @@
 
    ;;show paren
    `(show-paren-match
-     ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
+     ((t (:foreground ,nimbus/bg :background ,nimbus/dark-green))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
