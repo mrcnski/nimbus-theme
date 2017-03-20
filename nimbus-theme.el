@@ -96,7 +96,7 @@
    `(fringe  ((t (:background ,nimbus/fringe))))
    `(link    ((t (:foreground ,nimbus/lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
-   `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/dark-green))))
+   `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
    `(region  ((t (:background ,nimbus/green :foreground ,nimbus/black))))
    `(shadow  ((t (:foreground ,nimbus/light-gray))))
 
@@ -502,7 +502,7 @@
    ;; `(helm-buffer-not-saved       ((t (:inherit italics))))
    `(helm-buffer-process         ((t (:foreground ,nimbus/green))))
    ;;`(helm-buffer-saved-out     ((t ())))
-   `(helm-buffer-size            ((t (:foreground ,nimbus/red))))
+   `(helm-buffer-size            ((t (:foreground ,nimbus/yellow))))
    `(helm-candidate-number
      ((t (:foreground ,nimbus/green :background ,nimbus/blue-bg))))
    `(helm-ff-directory           ((t (:foreground ,nimbus/blue))))
