@@ -1172,12 +1172,17 @@
    `(magit-whitespace-warning-face
      ((t (:foreground ,nimbus/bg :background "white" :bold t))))
 
+   ;; diff-hl
+   `(diff-hl-change ((t (:foreground ,nimbus/purple))))
+   `(diff-hl-insert ((t (:foreground ,nimbus/orange))))
+   `(diff-hl-delete ((t (:foreground ,nimbus/red))))
+
    `(git-gutter:deleted
-     ((t (:foreground ,nimbus/red  :bold t))))
+     ((t (:foreground ,nimbus/red :bold t))))
    `(git-gutter:modified
-     ((t (:foreground ,nimbus/purple  :bold t))))
+     ((t (:foreground ,nimbus/purple :bold t))))
    `(git-gutter:separator
-     ((t (:foreground ,nimbus/orange  :bold t))))
+     ((t (:foreground ,nimbus/orange :bold t))))
    `(git-gutter:unchanged
      ((t (:foreground ,nimbus/yellow))))
 
