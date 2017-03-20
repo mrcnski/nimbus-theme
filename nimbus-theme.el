@@ -229,33 +229,60 @@
    `(compilation-info       ((t (:foreground ,nimbus/green :bold t))))
 
    ;; dired+
-   `(diredp-autofile-name          ((t (:background ,nimbus/blue-bg))))
-   `(diredp-compressed-file-name   ((t (:foreground ,nimbus/blue))))
-   `(diredp-compressed-file-suffix ((t (:foreground ,nimbus/blue))))
-   `(diredp-date-time              ((t (:foreground ,nimbus/lighter-blue))))
-   `(diredp-deletion               ((t (:foreground ,nimbus/bright-yellow :background ,nimbus/red))))
-   `(diredp-deletion-file-name     ((t (:foreground ,nimbus/red))))
-   `(diredp-dir-heading            ((t (:foreground ,nimbus/yellow :background ,nimbus/darker-gray))))
-   `(diredp-dir-name               ((t (:foreground ,nimbus/dark-green))))
-   `(diredp-dir-priv               ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
-   `(diredp-exec-priv              ((t (:foreground ,nimbus/white :background ,nimbus/dark-red))))
-   `(diredp-executable-tag         ((t (:foreground ,nimbus/red))))
-   `(diredp-file-name              ((t (:foreground ,nimbus/yellow))))
-   `(diredp-file-suffix            ((t (:foreground ,nimbus/tan))))
-   `(diredp-flag-mark              ((t (:foreground ,nimbus/blue-bg :background ,nimbus/orange))))
-   `(diredp-flag-mark-line         ((t (:inherit highlight))))
-   `(diredp-ignored-file-name      ((t (:foreground ,nimbus/light-gray))))
-   `(diredp-link-priv              ((t (:foreground ,nimbus/lighter-blue))))
-   `(diredp-mode-line-flagged      ((t (:foreground ,nimbus/red))))
-   `(diredp-mode-line-marked       ((t (:foreground ,nimbus/purple))))
-   `(diredp-no-priv                ((t (:background ,nimbus/blue-bg))))
-   `(diredp-number                 ((t (:foreground ,nimbus/yellow))))
-   `(diredp-other-priv             ((t (:background ,nimbus/purple))))
-   `(diredp-rare-priv              ((t (:foreground ,nimbus/green :background ,nimbus/darker-gray))))
-   `(diredp-read-priv              ((t (:foreground ,nimbus/white :background ,nimbus/darker-gray))))
-   `(diredp-symlink                ((t (:foreground ,nimbus/purple))))
-   `(diredp-tagged-autofile-name   ((t (:background ,nimbus/blue-bg))))
-   `(diredp-write-priv             ((t (:foreground ,nimbus/white :background ,nimbus/dark-tan))))
+   `(diredp-autofile-name
+     ((t (:background ,nimbus/blue-bg))))
+   `(diredp-compressed-file-name
+     ((t (:foreground ,nimbus/blue))))
+   `(diredp-compressed-file-suffix
+     ((t (:foreground ,nimbus/blue))))
+   `(diredp-date-time
+     ((t (:foreground ,nimbus/lighter-blue))))
+   `(diredp-deletion
+     ((t (:foreground ,nimbus/bright-yellow :background ,nimbus/red))))
+   `(diredp-deletion-file-name
+     ((t (:foreground ,nimbus/red))))
+   `(diredp-dir-heading
+     ((t (:foreground ,nimbus/yellow :background ,nimbus/darker-gray))))
+   `(diredp-dir-name
+     ((t (:foreground ,nimbus/dark-green))))
+   `(diredp-dir-priv
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
+   `(diredp-exec-priv
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-red))))
+   `(diredp-executable-tag
+     ((t (:foreground ,nimbus/red))))
+   `(diredp-file-name
+     ((t (:foreground ,nimbus/yellow))))
+   `(diredp-file-suffix
+     ((t (:foreground ,nimbus/tan))))
+   `(diredp-flag-mark
+     ((t (:foreground ,nimbus/blue-bg :background ,nimbus/orange))))
+   `(diredp-flag-mark-line
+     ((t (:inherit highlight))))
+   `(diredp-ignored-file-name
+     ((t (:foreground ,nimbus/light-gray))))
+   `(diredp-link-priv
+     ((t (:foreground ,nimbus/lighter-blue))))
+   `(diredp-mode-line-flagged
+     ((t (:foreground ,nimbus/red))))
+   `(diredp-mode-line-marked
+     ((t (:foreground ,nimbus/purple))))
+   `(diredp-no-priv
+     ((t (:background ,nimbus/blue-bg))))
+   `(diredp-number
+     ((t (:foreground ,nimbus/yellow))))
+   `(diredp-other-priv
+     ((t (:background ,nimbus/purple))))
+   `(diredp-rare-priv
+     ((t (:foreground ,nimbus/green :background ,nimbus/darker-gray))))
+   `(diredp-read-priv
+     ((t (:foreground ,nimbus/white :background ,nimbus/darker-gray))))
+   `(diredp-symlink
+     ((t (:foreground ,nimbus/purple))))
+   `(diredp-tagged-autofile-name
+     ((t (:background ,nimbus/blue-bg))))
+   `(diredp-write-priv
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-tan))))
 
    ;; eshell
    `(eshell-prompt        ((t (:foreground ,nimbus/purple))))
