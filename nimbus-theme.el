@@ -314,6 +314,32 @@
    `(term-default-fg-color ((t (:inherit nimbus/fg))))
    `(term-default-bg-color ((t (:inherit nimbus/bg))))
 
+   ;; geiser
+   `(geiser-font-lock-autodoc-current-arg
+     ((t (:foreground ,nimbus/tan))))
+   `(geiser-font-lock-autodoc-identifier
+     ((t (:foreground ,nimbus/blue))))
+   `(geiser-font-lock-doc-link
+     ((t (:foreground ,nimbus/lightest-green :underline t))))
+   `(geiser-font-lock-error-link
+     ((t (:foreground ,nimbus/lightest-green :underline t))))
+   `(geiser-font-lock-xref-link
+     ((t (:foreground ,nimbus/lightest-green :underline t))))
+
+   ;; slime
+   `(slime-error-face
+     ((t (:underline (:style wave :color ,nimbus/red)))))
+   `(slime-note-face
+     ((t (:underline (:style wave :color ,nimbus/blue)))))
+   `(slime-style-warning-face
+     ((t (:underline (:style wave :color ,nimbus/bright-yellow)))))
+   `(slime-warning-face
+     ((t (:underline (:style wave :color ,nimbus/orange)))))
+   `(sldb-restartable-frame-line-face
+     ((t (:foreground ,nimbus/green))))
+   `(slime-repl-inputed-output-face
+     ((t (:foreground ,nimbus/red))))
+
    ;; erc
    `(erc-nick-default-face ((t (:foreground ,nimbus/blue))))
    `(erc-my-nick-face      ((t (:foreground ,nimbus/yellow))))
