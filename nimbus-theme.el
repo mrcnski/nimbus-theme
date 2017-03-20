@@ -883,6 +883,17 @@
    `(debbugs-gnu-stale   ((t (:foreground ,nimbus/orange))))
    `(debbugs-gnu-tagged  ((t (:foreground ,nimbus/red))))
 
+   ;; elfeed
+   `(elfeed-log-debug-level-face     ((t (:foreground ,nimbus/light-blue))))
+   `(elfeed-log-error-level-face     ((t (:inherit error))))
+   `(elfeed-log-info-level-face      ((t (:foreground ,nimbus/light-green))))
+   `(elfeed-log-warn-level-face      ((t (:foreground ,nimbus/orange))))
+   `(elfeed-search-date-face         ((t (:foreground ,nimbus/blue))))
+   `(elfeed-search-feed-face         ((t (:foreground ,nimbus/yellow))))
+   `(elfeed-search-tag-face          ((t (:foreground ,nimbus/dark-green))))
+   `(elfeed-search-title-face        ((t (:foreground ,nimbus/fg))))
+   `(elfeed-search-unread-count-face ((t (:foreground ,nimbus/fg))))
+
    ;; message-mode
    `(message-cited-text  ((t (:inherit font-lock-comment-face))))
    `(message-header-cc
