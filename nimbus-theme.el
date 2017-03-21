@@ -155,7 +155,7 @@
 
    ;; which-func mode
    `(which-func
-     ((t (:foreground ,nimbus/black :underline t))))
+     ((t (:foreground ,nimbus/white))))
 
    `(button
      ((t (:foreground ,nimbus/lighter-blue  :underline t))))
