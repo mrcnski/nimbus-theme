@@ -3,9 +3,9 @@ The best dark theme for Emacs
 
 ## Demos
 
-[Python](http://imgur.com/2Ij1ROs)
+[Python](http://i.imgur.com/2Ij1ROs.png)
 
-[Elisp](http://imgur.com/iSXPuqB)
+[Elisp](http://i.imgur.com/iSXPuqB.png)
 
 [Nim](https://i.imgur.com/nPLOtwL.png)
 
