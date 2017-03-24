@@ -86,7 +86,7 @@
 
       (nimbus/bg             "gray13")
       (nimbus/fg             "#bdbdb3")
-       )
+      )
 
   ;; Set faces
   (custom-theme-set-faces
@@ -205,7 +205,7 @@
 
    ;; Vertical border between windows
    `(vertical-border
-     ((t (:background ,nimbus/darker-gray :foreground ,nimbus/darkest-gray))))
+     ((t (:foreground ,nimbus/darker-gray))))
 
    ;; line highlighting for hl-line-mode
    `(hl-line ((t (:background ,nimbus/blue-bg))))
@@ -1318,7 +1318,7 @@
 
    ;; highlight-indent-guide
    `(highlight-indent-guides-character-face
-     ((t (:foreground ,nimbus/gray))))
+     ((t (:foreground ,nimbus/darker-gray))))
 
    `(highlight-indentation-current-column-face
      ((t (:background ,nimbus/gray))))
