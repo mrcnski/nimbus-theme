@@ -155,10 +155,20 @@
 
    ;; which-func mode
    `(which-func
-     ((t (:foreground ,nimbus/black :underline t))))
+     ((t (:foreground ,nimbus/white))))
 
    `(button
      ((t (:foreground ,nimbus/lighter-blue  :underline t))))
+
+   ;; re-builder
+   `(reb-match-0
+     ((t (:foreground ,nimbus/black :background ,nimbus/red))))
+   `(reb-match-1
+     ((t (:foreground ,nimbus/black :background ,nimbus/green))))
+   `(reb-match-2
+     ((t (:foreground ,nimbus/black :background ,nimbus/yellow))))
+   `(reb-match-3
+     ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
 
    ;; search
    `(isearch
