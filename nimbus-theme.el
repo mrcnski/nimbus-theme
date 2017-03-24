@@ -324,6 +324,38 @@
    `(term-default-fg-color ((t (:inherit nimbus/fg))))
    `(term-default-bg-color ((t (:inherit nimbus/bg))))
 
+   ;; Flycheck
+   `(flycheck-info
+     ((t (:underline (:style wave :color ,nimbus/green)))))
+   ;; `(flycheck-error
+   ;;   ((t ())))
+   ;; `(flycheck-warning
+   ;;   ((t ())))
+   `(flycheck-fringe-info
+     ((t (:foreground ,nimbus/green))))
+   ;; `(flycheck-fringe-warning
+   ;;   ((t ())))
+   ;; `(flycheck-fringe-error
+   ;;   ((t (:inherit error))))
+   ;; `(flycheck-error-list-id
+   ;;   ((t ())))
+   `(flycheck-error-list-info
+     ((t (:foreground ,nimbus/green))))
+   ;; `(flycheck-error-list-error
+   ;;   ((t ())))
+   ;; `(flycheck-error-list-warning
+   ;;   ((t ())))
+   ;; `(flycheck-error-list-highlight
+   ;;   ((t ())))
+   ;; `(flycheck-error-list-line-number
+   ;;   ((t ())))
+   `(flycheck-error-list-checker-name
+     ((t (:foreground ,nimbus/yellow))))
+   ;; `(flycheck-error-list-column-number
+   ;;   ((t ())))
+   ;; `(flycheck-error-list-id-with-explainer
+   ;;   ((t ())))
+
    ;; geiser
    `(geiser-font-lock-autodoc-current-arg
      ((t (:foreground ,nimbus/tan))))
