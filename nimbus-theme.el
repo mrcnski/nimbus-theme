@@ -623,6 +623,16 @@
    `(helm-visible-mark
      ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
 
+   ;; helm-swoop
+   `(helm-swoop-line-number-face
+     ((t (:inherit linum))))
+   `(helm-swoop-target-word-face
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
+   `(helm-swoop-target-line-face
+     ((t (:foreground ,nimbus/bg :background ,nimbus/bright-yellow))))
+   `(helm-swoop-target-line-block-face
+     ((t (:foreground ,nimbus/bg :background ,nimbus/yellow))))
+
    ;; ivy
    `(ivy-confirm-face ((t (:foreground ,nimbus/green))))
    `(ivy-current-match
