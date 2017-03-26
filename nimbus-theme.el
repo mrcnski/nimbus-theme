@@ -91,14 +91,14 @@
   ;; Set faces
   (custom-theme-set-faces
    `nimbus ;; you must use the same theme name here...
-   `(default ((t (:foreground ,nimbus/fg :background ,nimbus/bg))))
-   `(cursor  ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
-   `(fringe  ((t (:background ,nimbus/fringe))))
-   `(link    ((t (:foreground ,nimbus/lighter-blue :underline t))))
+   `(default      ((t (:foreground ,nimbus/fg :background ,nimbus/bg))))
+   `(cursor       ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
+   `(fringe       ((t (:background ,nimbus/fringe))))
+   `(link         ((t (:foreground ,nimbus/lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
-   `(region  ((t (:background ,nimbus/green :foreground ,nimbus/black))))
-   `(shadow  ((t (:foreground ,nimbus/light-gray))))
+   `(region       ((t (:background ,nimbus/green :foreground ,nimbus/black))))
+   `(shadow       ((t (:foreground ,nimbus/light-gray))))
 
    ;; standard font lock
    `(font-lock-builtin-face           ((t (:foreground ,nimbus/light-blue))))
@@ -132,7 +132,16 @@
    `(mode-line
      ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
 
-   ;; Anzu mode
+   ;; ace-jump mode
+   `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
+   `(ace-jump-face-foreground ((t (:foreground ,nimbus/orange))))
+
+   ;; ace-window
+   `(aw-background-face ((t (:foreground ,nimbus/dark-gray))))
+   `(aw-leading-char-face
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+
+   ;; anzu mode
    `(anzu-match-1
      ((t (:background ,nimbus/green :foreground ,nimbus/black))))
    `(anzu-match-2
@@ -146,16 +155,31 @@
    `(anzu-replace-to
      ((t (:foreground ,nimbus/yellow))))
 
+   ;; avy, colors chosen for contrast over aesthetic quality
+   `(avy-background-face
+     ((t (:foreground ,nimbus/dark-gray))))
+   `(avy-goto-char-timer-face
+     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green))))
+   `(avy-lead-face
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+   `(avy-lead-face-0
+     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
+   `(avy-lead-face-1
+     ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
+   `(avy-lead-face-2
+     ((t (:foreground ,nimbus/black :background ,nimbus/white))))
+
    ;; Line numbers
    `(linum          ((t (:foreground ,nimbus/dark-green))))
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
-   `(header-line ((t (:background ,nimbus/darker-gray :foreground ,nimbus/fg))))
+   `(header-line
+     ((t (:background ,nimbus/darker-gray :foreground ,nimbus/fg))))
 
    ;; which-func mode
    `(which-func
-     ((t (:foreground ,nimbus/white))))
+     ((t (:foreground ,nimbus/blue-bg :bold t))))
 
    `(button
      ((t (:foreground ,nimbus/lighter-blue  :underline t))))
@@ -180,34 +204,11 @@
    `(evil-search-highlight-persist-highlight-face
      ((t (:background ,nimbus/blue :foreground ,nimbus/bg))))
 
-   ;; ace-jump mode
-   `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
-   `(ace-jump-face-foreground ((t (:foreground ,nimbus/orange))))
-
-   ;; ace-window
-   `(aw-background-face ((t (:foreground ,nimbus/dark-gray))))
-   `(aw-leading-char-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
-
-   ;; avy, colors chosen for contrast over aesthetic quality
-   `(avy-background-face
-     ((t (:foreground ,nimbus/dark-gray))))
-   `(avy-goto-char-timer-face
-     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green))))
-   `(avy-lead-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
-   `(avy-lead-face-0
-     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
-   `(avy-lead-face-1
-     ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
-   `(avy-lead-face-2
-     ((t (:foreground ,nimbus/black :background ,nimbus/white))))
-
-   ;; Vertical border between windows
+   ;; vertical border between windows
    `(vertical-border
      ((t (:foreground ,nimbus/darker-gray))))
 
-   ;; line highlighting for hl-line-mode
+   ;; hl-line-mode
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
    `(highlight-indentation-face ((t (:background ,nimbus/darkest-gray))))
