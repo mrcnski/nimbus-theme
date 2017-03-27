@@ -99,6 +99,7 @@
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
    `(region       ((t (:background ,nimbus/green :foreground ,nimbus/black))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
+   `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
    ;; standard font lock
    `(font-lock-builtin-face           ((t (:foreground ,nimbus/light-blue))))
