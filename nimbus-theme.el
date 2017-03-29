@@ -984,6 +984,10 @@
    `(elfeed-search-title-face        ((t (:foreground ,nimbus/fg))))
    `(elfeed-search-unread-count-face ((t (:foreground ,nimbus/fg))))
 
+   ;; paradox
+   `(paradox-mode-line-face
+     ((t (:foreground ,nimbus/blue-bg :bold t))))
+
    ;; message-mode
    `(message-cited-text  ((t (:inherit font-lock-comment-face))))
    `(message-header-cc
