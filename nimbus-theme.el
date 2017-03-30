@@ -150,9 +150,9 @@
    `(anzu-match-3
      ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
    `(anzu-mode-line
-     ((t (:foreground ,nimbus/white))))
+     ((t (:foreground ,nimbus/white :bold t))))
    `(anzu-mode-line-no-match
-     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black))))
+     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black :bold t))))
    `(anzu-replace-to
      ((t (:foreground ,nimbus/yellow))))
 
