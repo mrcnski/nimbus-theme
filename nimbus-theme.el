@@ -171,7 +171,7 @@
      ((t (:foreground ,nimbus/black :background ,nimbus/white))))
 
    ;; Line numbers
-   `(linum          ((t (:foreground ,nimbus/dark-green))))
+   `(linum          ((t (:inherit fringe :foreground ,nimbus/dark-green))))
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
@@ -1343,16 +1343,16 @@
      ((t (:foreground ,nimbus/bg :background "white" :bold t))))
 
    ;; diff-hl
-   `(diff-hl-change ((t (:foreground ,nimbus/purple))))
-   `(diff-hl-insert ((t (:foreground ,nimbus/orange))))
+   `(diff-hl-change ((t (:foreground ,nimbus/orange))))
+   `(diff-hl-insert ((t (:foreground ,nimbus/green))))
    `(diff-hl-delete ((t (:foreground ,nimbus/red))))
 
    `(git-gutter:deleted
      ((t (:foreground ,nimbus/red :bold t))))
    `(git-gutter:modified
-     ((t (:foreground ,nimbus/purple :bold t))))
-   `(git-gutter:separator
      ((t (:foreground ,nimbus/orange :bold t))))
+   `(git-gutter:separator
+     ((t (:foreground ,nimbus/green :bold t))))
    `(git-gutter:unchanged
      ((t (:foreground ,nimbus/yellow))))
 
