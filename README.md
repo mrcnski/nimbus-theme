@@ -1,15 +1,19 @@
-# nimbus-theme
-The best dark theme for Emacs
+# Nimbus theme for Emacs
 
-## Demos
+The best dark theme for Emacs.
 
-[Python](http://i.imgur.com/2Ij1ROs.png)
+## Screenshots
 
-[Elisp](http://i.imgur.com/iSXPuqB.png)
+Python:
 
-[Nim](https://i.imgur.com/nPLOtwL.png)
+![Python](http://i.imgur.com/2Ij1ROs.png)
 
-[Rust 1](https://i.imgur.com/aC2ITgM.png), [Rust 2](https://i.imgur.com/2oYvqKk.png)
+More screenshots:
+
+- [Elisp](http://i.imgur.com/iSXPuqB.png)
+- [Nim](https://i.imgur.com/nPLOtwL.png)
+- [Rust 1](https://i.imgur.com/aC2ITgM.png)
+- [Rust 2](https://i.imgur.com/2oYvqKk.png)
 
 ## Usage
 
@@ -23,17 +27,17 @@ M-x package-install RET nimbus-theme RET
 
 Use `M-x customize-themes` to activate it, or put the following in your Emacs configuration file:
 
-```
+```elisp
 (load-theme 'nimbus t)
 ```
 
 ### Manual
 
-Download nimbus-theme.el to the directory ~/.emacs.d/themes/. Add this to your .emacs:
+Download `nimbus-theme.el` to the directory `~/.emacs.d/themes/`. Add this to your `.emacs`:
 
-```elisp         
+```elisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-```             
+```
 
 Now you can use `customize-themes` or `load-theme` to activate Nimbus, as described in the MELPA section above.
 
