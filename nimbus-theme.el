@@ -840,9 +840,12 @@
    `(diff-indicator-changed ((t (:inherit diff-changed))))
    `(diff-indicator-removed ((t (:inherit diff-removed))))
    `(diff-nonexistent       ((t (:background "grey70"))))
-   `(diff-refine-added      ((t (:background "#649694"))))
-   `(diff-refine-changed    ((t (:background "#8f8f40"))))
-   `(diff-refine-removed    ((t (:background "#694949"))))
+   `(diff-refine-added
+     ((t (:foreground ,nimbus/green :background ,nimbus/blue-bg))))
+   `(diff-refine-changed
+     ((t (:foreground ,nimbus/orange :background ,nimbus/blue-bg))))
+   `(diff-refine-removed
+     ((t (:foreground ,nimbus/red :background ,nimbus/blue-bg))))
 
    `(ediff-fine-diff-A
      ((t (:foreground ,nimbus/fg :background "#694949"))))
