@@ -79,6 +79,7 @@
       (nimbus/dark-red       "#9d2512")
       (nimbus/white          "white")
       (nimbus/black          "black")
+      (nimbus/light-black    "#0e0e0e")
 
       (nimbus/cursor         "#f57e00")
       (nimbus/fringe         "#1f1f1f")
@@ -97,7 +98,7 @@
    `(link         ((t (:foreground ,nimbus/lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
-   `(region       ((t (:background ,nimbus/green :foreground ,nimbus/black))))
+   `(region       ((t (:background ,nimbus/light-black))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
    `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
