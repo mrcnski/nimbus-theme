@@ -116,9 +116,16 @@
      ((t (:foreground ,nimbus/orange :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,nimbus/yellow))))
    `(font-lock-doc-face               ((t (:foreground ,nimbus/light-green))))
-   ;; Numbers
+
+   ;; highlight-numbers
    `(highlight-numbers-number
      ((t (:foreground ,nimbus/purple))))
+   ;; highlight-quoted
+   `(highlight-quoted-symbol
+     ((t (:foreground ,nimbus/green))))
+   ;; highlight-operators
+   `(highlight-operators-face
+     ((t (:foreground ,nimbus/orange))))
 
    ;; mode line & powerline
    `(powerline-active1
