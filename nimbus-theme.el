@@ -69,6 +69,7 @@
       (nimbus/yellow         "#baba36")
       (nimbus/bright-yellow  "#fffe0a")
       (nimbus/purple         "#ab75c3")
+      (nimbus/deep-pink      "#ff1493")
       (nimbus/light-gray     "#858585")
       (nimbus/gray           "#757575")
       (nimbus/dark-gray      "#656565")
@@ -417,7 +418,7 @@
 
    ;;show paren
    `(show-paren-match
-     ((t (:foreground ,nimbus/bg :background ,nimbus/dark-green))))
+     ((t (:foreground ,nimbus/deep-pink))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
