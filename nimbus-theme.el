@@ -1355,9 +1355,9 @@
      ((t (:foreground ,nimbus/bg :background "white" :bold t))))
 
    ;; diff-hl
-   `(diff-hl-change ((t (:foreground ,nimbus/orange))))
-   `(diff-hl-insert ((t (:foreground ,nimbus/green))))
-   `(diff-hl-delete ((t (:foreground ,nimbus/red))))
+   `(diff-hl-change ((t (:inherit fringe :foreground ,nimbus/orange))))
+   `(diff-hl-insert ((t (:inherit fringe :foreground ,nimbus/green))))
+   `(diff-hl-delete ((t (:inherit fringe :foreground ,nimbus/red))))
 
    `(git-gutter:deleted
      ((t (:foreground ,nimbus/red :bold t))))
