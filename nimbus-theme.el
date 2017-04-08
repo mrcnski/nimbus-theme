@@ -69,7 +69,7 @@
       (nimbus/yellow         "#baba36")
       (nimbus/bright-yellow  "#fffe0a")
       (nimbus/purple         "#ab75c3")
-      (nimbus/deep-pink      "#ff1493")
+      (nimbus/pink           "#ff1493")
       (nimbus/light-gray     "#858585")
       (nimbus/gray           "#757575")
       (nimbus/dark-gray      "#656565")
@@ -80,7 +80,6 @@
       (nimbus/dark-red       "#9d2512")
       (nimbus/white          "white")
       (nimbus/black          "black")
-      (nimbus/light-black    "#0e0e0e")
 
       (nimbus/cursor         "#f57e00")
       (nimbus/fringe         "#1f1f1f")
@@ -426,7 +425,7 @@
 
    ;;show paren
    `(show-paren-match
-     ((t (:foreground ,nimbus/deep-pink))))
+     ((t (:foreground ,nimbus/pink))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
@@ -938,22 +937,22 @@
    `(org-hide
      ((t (:foreground ,nimbus/bg))))
    ;;`(org-latex-and-export-specials ((t (:foreground nil :background nil))))
-   ;; `(org-level-1
-   ;; ((t (:foreground ,nimbus/orange))))
-   ;; `(org-level-2
-   ;; ((t (:foreground ,nimbus/purple))))
-   ;;`(org-level-3
-   ;;((t (:foreground ,nimbus/green))))
-   ;;`(org-level-4
-   ;;((t (:foreground ,nimbus/yellow))))
-   ;;`(org-level-5
-   ;;((t (:foreground ,nimbus/lighter-blue))))
-   ;;`(org-level-6
-   ;;((t (:foreground ,nimbus/orange))))
-   ;;`(org-level-7
-   ;;((t (:foreground ,nimbus/purple))))
-   ;;`(org-level-8
-   ;;((t (:foreground ,nimbus/green))))
+   `(org-level-1
+   ((t (:foreground ,nimbus/dark-green))))
+   `(org-level-2
+   ((t (:foreground ,nimbus/yellow))))
+   `(org-level-3
+   ((t (:foreground ,nimbus/blue))))
+   `(org-level-4
+   ((t (:foreground ,nimbus/orange))))
+   `(org-level-5
+   ((t (:foreground ,nimbus/red))))
+   `(org-level-6
+   ((t (:foreground ,nimbus/purple))))
+   `(org-level-7
+   ((t (:foreground ,nimbus/brown))))
+   `(org-level-8
+   ((t (:foreground ,nimbus/green))))
    ;; `(org-level-9
    ;; ((t (:foreground ,nimbus/yellow))))
    ;;`(org-link                      ((t (:foreground nil :background nil))))
