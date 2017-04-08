@@ -57,13 +57,15 @@
 ;; Define the palette
 (let ((nimbus/green          "#6aaf50")
       (nimbus/dark-green     "#057f40")
+      (nimbus/darker-green   "#213521")
       (nimbus/light-green    "#9ccc65")
       (nimbus/lightest-green "#8fbc8f")
       (nimbus/blue           "#5180b3")
       (nimbus/blue-bg        "#102843")
       (nimbus/light-blue     "#528fd1")
       (nimbus/lighter-blue   "#68a5e9")
-      (nimbus/orange         "#dF9522")
+      (nimbus/orange         "#d2912b")
+      (nimbus/darker-orange  "#4b2f03")
       (nimbus/tan            "#bdbc61")
       (nimbus/dark-tan       "#7d7c61")
       (nimbus/yellow         "#baba36")
@@ -78,6 +80,7 @@
       (nimbus/brown          "#987654")
       (nimbus/red            "#cd5542")
       (nimbus/dark-red       "#9d2512")
+      (nimbus/darker-red     "#492222")
       (nimbus/white          "white")
       (nimbus/black          "black")
 
@@ -1354,9 +1357,12 @@
      ((t (:foreground ,nimbus/bg :background "white" :bold t))))
 
    ;; diff-hl
-   `(diff-hl-change ((t (:inherit fringe :foreground ,nimbus/orange))))
-   `(diff-hl-insert ((t (:inherit fringe :foreground ,nimbus/green))))
-   `(diff-hl-delete ((t (:inherit fringe :foreground ,nimbus/red))))
+   `(diff-hl-insert
+     ((t (:inherit fringe :foreground ,nimbus/green :background ,nimbus/darker-green))))
+   `(diff-hl-change
+     ((t (:inherit fringe :foreground ,nimbus/orange :background ,nimbus/darker-orange))))
+   `(diff-hl-delete
+     ((t (:inherit fringe :foreground ,nimbus/red :background ,nimbus/darker-red))))
 
    `(git-gutter:deleted
      ((t (:foreground ,nimbus/red :bold t))))
