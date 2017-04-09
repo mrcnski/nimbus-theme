@@ -104,7 +104,7 @@
 
    ;; standard font lock
    `(font-lock-builtin-face           ((t (:foreground ,nimbus/light-blue))))
-   `(font-lock-comment-face           ((t (:foreground ,nimbus/light-gray))))
+   `(font-lock-comment-face           ((t (:foreground ,nimbus/light-gray :slant italic))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,nimbus/light-gray))))
    `(font-lock-function-name-face     ((t (:foreground ,nimbus/dark-green))))
    `(font-lock-keyword-face           ((t (:foreground ,nimbus/blue))))
