@@ -203,7 +203,7 @@
 
    ;; which-func mode
    `(which-func
-     ((t (:foreground ,nimbus/blue-bg :bold t))))
+     ((t (:foreground ,nimbus/black))))
 
    `(button
      ((t (:foreground ,nimbus/lighter-blue  :underline t))))
