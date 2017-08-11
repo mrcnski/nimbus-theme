@@ -194,7 +194,7 @@
      ((t (:foreground ,nimbus/yellow))))
 
    ;; line numbers
-   `(linum          ((t (:inherit fringe :foreground ,nimbus/dark-green))))
+   `(linum          ((t (:inherit fringe :foreground ,nimbus/dark-gray))))
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
