@@ -159,9 +159,9 @@
    `(anzu-match-3
      ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
    `(anzu-mode-line
-     ((t (:foreground ,nimbus/white :bold t))))
+     ((t (:foreground ,nimbus/white :bold nil))))
    `(anzu-mode-line-no-match
-     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black :bold t))))
+     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black :bold nil))))
    `(anzu-replace-to
      ((t (:foreground ,nimbus/yellow))))
 
@@ -169,15 +169,15 @@
    `(avy-background-face
      ((t (:foreground ,nimbus/dark-gray))))
    `(avy-goto-char-timer-face
-     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green))))
+     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue :bold nil))))
    `(avy-lead-face-1
-     ((t (:foreground ,nimbus/black :background ,nimbus/fg))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/fg :bold nil))))
    `(avy-lead-face-2
-     ((t (:foreground ,nimbus/black :background ,nimbus/white))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/white :bold nil))))
 
    ;; cargo
    `(cargo-process--ok-face
