@@ -126,7 +126,7 @@
      ((t (:foreground ,nimbus/green))))
    ;; highlight-operators
    `(highlight-operators-face
-     ((t (:foreground ,nimbus/orange))))
+     ((t (:foreground ,nimbus/dark-green))))
 
    ;; mode line & powerline
    `(powerline-active1
@@ -1398,7 +1398,7 @@
    `(guide-key/key-face               ((t (:foreground ,nimbus/gray))))
 
    ;; indent-guide
-   `(indent-guide-face ((t (:foreground ,nimbus/gray))))
+   `(indent-guide-face ((t (:foreground ,nimbus/darker-gray))))
 
    ;; highlight-indent-guide
    `(highlight-indent-guides-character-face
