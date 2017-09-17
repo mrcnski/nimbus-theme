@@ -424,8 +424,8 @@
    `(erc-notice-face       ((t (:foreground ,nimbus/green))))
    `(erc-input-face        ((t (:foreground ,nimbus/white))))
    `(erc-timestamp-face    ((t (:foreground ,nimbus/darker-gray))))
-   `(erc-prompt-face
-     ((t (:foreground "#191919" :background ,nimbus/purple))))
+   `(erc-prompt-face       ((t (:foreground ,nimbus/purple))))
+   `(erc-keyword-face      ((t (:foreground, nimbus/light-green :bold t))))
 
    ;; rcirc
    `(rcirc-bright-nick     ((t (:foreground ,nimbus/white))))
