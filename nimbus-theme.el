@@ -61,9 +61,8 @@
       (nimbus/light-green    "#9ccc65")
       (nimbus/lightest-green "#8fbc8f")
       (nimbus/blue           "#5180b3")
+      (nimbus/light-blue     "#68a5e9")
       (nimbus/blue-bg        "#102843")
-      (nimbus/light-blue     "#528fd1")
-      (nimbus/lighter-blue   "#68a5e9")
       (nimbus/orange         "#dF9522")
       (nimbus/tan            "#bdbc61")
       (nimbus/dark-tan       "#7d7c61")
@@ -76,6 +75,7 @@
       (nimbus/dark-gray      "#656565")
       (nimbus/darker-gray    "#454545")
       (nimbus/darkest-gray   "#252525")
+      (nimbus/blue-gray      "#608079")
       (nimbus/brown          "#987654")
       (nimbus/red            "#cd5542")
       (nimbus/dark-red       "#9d2512")
@@ -83,10 +83,10 @@
       (nimbus/black          "black")
 
       (nimbus/cursor         "#f57e00")
-      (nimbus/fringe         "gray14")
+      (nimbus/fringe         "gray11")
       (nimbus/region         "#303030")
 
-      (nimbus/bg             "gray13")
+      (nimbus/bg             "gray10")
       (nimbus/fg             "#bdbdb3")
       )
 
@@ -96,7 +96,7 @@
    `(default      ((t (:foreground ,nimbus/fg :background ,nimbus/bg))))
    `(cursor       ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
    `(fringe       ((t (:background ,nimbus/fringe))))
-   `(link         ((t (:foreground ,nimbus/lighter-blue :underline t))))
+   `(link         ((t (:foreground ,nimbus/light-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
    `(region       ((t (:background ,nimbus/black))))
@@ -104,7 +104,7 @@
    `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
    ;; standard font lock
-   `(font-lock-builtin-face           ((t (:foreground ,nimbus/light-blue))))
+   `(font-lock-builtin-face           ((t (:foreground ,nimbus/blue))))
    `(font-lock-comment-face           ((t (:foreground ,nimbus/light-gray))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,nimbus/light-gray))))
    `(font-lock-function-name-face     ((t (:foreground ,nimbus/dark-green))))
@@ -167,13 +167,13 @@
 
    ;; avy, colors chosen for good contrast
    `(avy-background-face
-     ((t (:foreground ,nimbus/dark-gray))))
+     ((t (:foreground ,nimbus/gray))))
    `(avy-goto-char-timer-face
      ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face
      ((t (:foreground ,nimbus/black :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue :bold nil))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/blue :bold nil))))
    `(avy-lead-face-1
      ((t (:foreground ,nimbus/black :background ,nimbus/fg :bold nil))))
    `(avy-lead-face-2
@@ -195,7 +195,7 @@
 
    ;; line numbers
    `(linum
-     ((t (:inherit fringe :foreground ,nimbus/dark-gray :bold nil))))
+     ((t (:inherit fringe :foreground ,nimbus/blue-gray :bold nil))))
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
@@ -207,7 +207,7 @@
      ((t (:foreground ,nimbus/black))))
 
    `(button
-     ((t (:foreground ,nimbus/lighter-blue  :underline t))))
+     ((t (:foreground ,nimbus/light-blue  :underline t))))
 
    ;; re-builder
    `(reb-match-0
@@ -236,7 +236,7 @@
    ;; hl-line-mode
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
-   `(highlight-indentation-face ((t (:background ,nimbus/darkest-gray))))
+   `(highlight-indentation-face ((t (:background ,nimbus/gray))))
 
    `(secondary-selection
      ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
@@ -282,7 +282,7 @@
    `(diredp-compressed-file-suffix
      ((t (:foreground ,nimbus/blue))))
    `(diredp-date-time
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(diredp-deletion
      ((t (:foreground ,nimbus/bright-yellow :background ,nimbus/red))))
    `(diredp-deletion-file-name
@@ -308,7 +308,7 @@
    `(diredp-ignored-file-name
      ((t (:foreground ,nimbus/light-gray))))
    `(diredp-link-priv
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(diredp-mode-line-flagged
      ((t (:foreground ,nimbus/red))))
    `(diredp-mode-line-marked
@@ -354,7 +354,7 @@
    `(term-color-magenta
      ((t (:foreground ,nimbus/purple :background ,nimbus/purple))))
    `(term-color-cyan
-     ((t (:foreground ,nimbus/lighter-blue :background ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue :background ,nimbus/light-blue))))
    `(term-color-white
      ((t (:foreground ,nimbus/fg :background ,nimbus/fg))))
    `(term-default-fg-color ((t (:inherit nimbus/fg))))
@@ -421,7 +421,7 @@
    ;; erc
    `(erc-nick-default-face ((t (:foreground ,nimbus/blue))))
    `(erc-my-nick-face      ((t (:foreground ,nimbus/yellow))))
-   `(erc-current-nick-face ((t (:foreground ,nimbus/light-blue))))
+   `(erc-current-nick-face ((t (:foreground ,nimbus/blue))))
    `(erc-notice-face       ((t (:foreground ,nimbus/green))))
    `(erc-input-face        ((t (:foreground ,nimbus/white))))
    `(erc-timestamp-face    ((t (:foreground ,nimbus/darker-gray))))
@@ -464,7 +464,7 @@
    `(ido-subdir             ((t (:foreground ,nimbus/yellow))))
    ;; flx-ido
    `(flx-highlight-face
-     ((t (:foreground ,nimbus/lighter-blue  :underline nil :bold t))))
+     ((t (:foreground ,nimbus/light-blue  :underline nil :bold t))))
 
    ;;js2
    `(js2-external-variable
@@ -516,17 +516,17 @@
    `(web-mode-css-at-rule-face
      ((t (:foreground ,nimbus/purple))))
    `(web-mode-css-color-face
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(web-mode-css-comment-face
      ((t (:inherit font-lock-comment-face))))
    `(web-mode-css-function-face
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(web-mode-css-priority-face
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(web-mode-css-property-name-face
      ((t (:inherit font-lock-variable-name-face))))
    `(web-mode-css-pseudo-class-face
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(web-mode-css-selector-face
      ((t (:foreground ,nimbus/blue))))
    `(web-mode-css-string-face
@@ -596,7 +596,7 @@
 
    ;; package.el
    `(package-name
-     ((t (:foreground ,nimbus/lighter-blue :underline t))))
+     ((t (:foreground ,nimbus/light-blue :underline t))))
    `(package-status-available ((t (:foreground ,nimbus/green))))
    `(package-description      ((t (:foreground ,nimbus/yellow))))
 
@@ -607,7 +607,7 @@
      ((t (:foreground ,nimbus/yellow :underline nil))))
    `(helm-bookmark-addressbook   ((t (:foreground ,nimbus/red))))
    ;;`(helm-bookmark-directory   ((t ())))
-   `(helm-bookmark-file          ((t (:foreground ,nimbus/lighter-blue))))
+   `(helm-bookmark-file          ((t (:foreground ,nimbus/light-blue))))
    `(helm-bookmark-gnus          ((t (:foreground ,nimbus/purple))))
    `(helm-bookmark-info          ((t (:foreground ,nimbus/green))))
    `(helm-bookmark-man           ((t (:foreground ,nimbus/orange))))
@@ -683,7 +683,7 @@
    `(ivy-minibuffer-match-face-4
      ((t (:foreground ,nimbus/white :background ,nimbus/yellow :weight bold))))
    `(ivy-modified-buffer ((t (:foreground ,nimbus/orange))))
-   `(ivy-remote ((t (:foreground ,nimbus/lighter-blue))))
+   `(ivy-remote ((t (:foreground ,nimbus/light-blue))))
    `(ivy-subdir ((t (:foreground ,nimbus/dark-green))))
    `(ivy-virtual ((t (:foreground ,nimbus/blue))))
 
@@ -697,7 +697,7 @@
    `(jabber-chat-prompt-foreign
      ((t (:foreground ,nimbus/green   :underline nil :bold t))))
    `(jabber-chat-prompt-local
-     ((t (:foreground ,nimbus/light-blue    :underline nil :bold t))))
+     ((t (:foreground ,nimbus/blue    :underline nil :bold t))))
    `(jabber-chat-prompt-system
      ((t (:foreground ,nimbus/yellow  :underline nil :bold t))))
    `(jabber-chat-text-foreign
@@ -737,7 +737,7 @@
    `(rainbow-delimiters-depth-4-face
      ((t (:foreground ,nimbus/yellow))))
    `(rainbow-delimiters-depth-5-face
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(rainbow-delimiters-depth-6-face
      ((t (:foreground ,nimbus/purple))))
    `(rainbow-delimiters-depth-7-face
@@ -758,7 +758,7 @@
    `(rainbow-blocks-depth-4-face
      ((t (:foreground ,nimbus/yellow))))
    `(rainbow-blocks-depth-5-face
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(rainbow-blocks-depth-6-face
      ((t (:foreground ,nimbus/purple))))
    `(rainbow-blocks-depth-7-face
@@ -809,7 +809,7 @@
    `(company-tooltip-common-selection
      ((t (:foreground ,nimbus/bg :background ,nimbus/blue))))
    `(company-tooltip-mouse
-     ((t (:background ,nimbus/light-blue))))
+     ((t (:background ,nimbus/blue))))
    `(company-tooltip-selection
      ((t (:foreground ,nimbus/fg :background ,nimbus/blue))))
 
@@ -1032,7 +1032,7 @@
    `(debbugs-gnu-tagged  ((t (:foreground ,nimbus/red))))
 
    ;; elfeed
-   `(elfeed-log-debug-level-face     ((t (:foreground ,nimbus/light-blue))))
+   `(elfeed-log-debug-level-face     ((t (:foreground ,nimbus/blue))))
    `(elfeed-log-error-level-face     ((t (:inherit error))))
    `(elfeed-log-info-level-face      ((t (:foreground ,nimbus/light-green))))
    `(elfeed-log-warn-level-face      ((t (:foreground ,nimbus/orange))))
@@ -1049,7 +1049,7 @@
    ;; message-mode
    `(message-cited-text  ((t (:inherit font-lock-comment-face))))
    `(message-header-cc
-     ((t (:foreground ,nimbus/light-blue  :bold t))))
+     ((t (:foreground ,nimbus/blue  :bold t))))
    `(message-header-name
      ((t (:foreground ,nimbus/orange))))
    `(message-header-newsgroups
@@ -1099,13 +1099,13 @@
    `(gnus-group-mail-1-empty
      ((t (:foreground ,nimbus/blue))))
    `(gnus-group-mail-2
-     ((t (:foreground ,nimbus/lighter-blue  :bold t))))
-   `(gnus-group-mail-2-empty
-     ((t (:foreground ,nimbus/lighter-blue))))
-   `(gnus-group-mail-3
      ((t (:foreground ,nimbus/light-blue  :bold t))))
-   `(gnus-group-mail-3-empty
+   `(gnus-group-mail-2-empty
      ((t (:foreground ,nimbus/light-blue))))
+   `(gnus-group-mail-3
+     ((t (:foreground ,nimbus/blue  :bold t))))
+   `(gnus-group-mail-3-empty
+     ((t (:foreground ,nimbus/blue))))
    `(gnus-group-mail-low
      ((t (:foreground ,nimbus/yellow  :bold t))))
    `(gnus-group-mail-low-empty
@@ -1193,7 +1193,7 @@
    `(gnus-summary-normal-undownloaded
      ((t (:foreground ,nimbus/dark-gray))))
    `(gnus-summary-normal-unread
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(gnus-summary-selected
      ((t (:underline t))))
 
@@ -1226,14 +1226,14 @@
    `(whitespace-tab
      ((t (:foreground ,nimbus/gray :background "grey15"))))
    `(whitespace-trailing
-     ((t (:foreground ,nimbus/light-blue :background ,nimbus/bg :bold t))))
+     ((t (:foreground ,nimbus/blue :background ,nimbus/bg :bold t))))
 
    ;; magit
    ;; new
    `(magit-section-heading
      ((t (:foreground ,nimbus/blue))))
    `(magit-section-heading-selection
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(magit-hash
      ((t (:foreground ,nimbus/purple))))
    `(magit-branch-local
@@ -1250,11 +1250,11 @@
    `(magit-diff-removed
      ((t (:foreground ,nimbus/red))))
    `(magit-diff-file-heading-selection
-     ((t (:foreground ,nimbus/lighter-blue :inherit magit-diff-file-heading-highlight))))
+     ((t (:foreground ,nimbus/light-blue :inherit magit-diff-file-heading-highlight))))
    `(magit-diff-hunk-heading-selection
-     ((t (:foreground ,nimbus/lighter-blue :inherit magit-diff-hunk-heading-highlight))))
+     ((t (:foreground ,nimbus/light-blue :inherit magit-diff-hunk-heading-highlight))))
    `(magit-diff-lines-heading
-     ((t (:background ,nimbus/light-blue :foreground ,nimbus/bg))))
+     ((t (:background ,nimbus/blue :foreground ,nimbus/bg))))
    `(magit-diffstat-added
      ((t (:foreground ,nimbus/green))))
    `(magit-diffstat-removed
@@ -1289,12 +1289,12 @@
    `(magit-reflog-cherry-pick          ((t (:foreground ,nimbus/green))))
    `(magit-reflog-commit               ((t (:foreground ,nimbus/green))))
    `(magit-reflog-merge                ((t (:foreground ,nimbus/green))))
-   `(magit-reflog-other                ((t (:foreground ,nimbus/light-blue))))
+   `(magit-reflog-other                ((t (:foreground ,nimbus/blue))))
    `(magit-reflog-rebase               ((t (:foreground ,nimbus/orange))))
-   `(magit-reflog-remote               ((t (:foreground ,nimbus/light-blue))))
+   `(magit-reflog-remote               ((t (:foreground ,nimbus/blue))))
    `(magit-reflog-reset                ((t (:foreground ,nimbus/red))))
 
-   `(magit-sequence-head               ((t (:foreground ,nimbus/light-blue))))
+   `(magit-sequence-head               ((t (:foreground ,nimbus/blue))))
    `(magit-sequence-part               ((t (:foreground ,nimbus/orange))))
    `(magit-sequence-stop               ((t (:foreground ,nimbus/green))))
 
@@ -1304,7 +1304,7 @@
    ;;`(magit-signature-expired-key     ((t (:inherit magit-signature-expired))))
    `(magit-signature-good              ((t (:foreground ,nimbus/green))))
    `(magit-signature-revoked           ((t (:foreground ,nimbus/purple))))
-   `(magit-signature-untrusted         ((t (:foreground ,nimbus/light-blue))))
+   `(magit-signature-untrusted         ((t (:foreground ,nimbus/blue))))
 
    ;; old
    `(magit-branch
@@ -1312,7 +1312,7 @@
    `(magit-cherry-equivalent
      ((t (:foreground ,nimbus/green))))
    `(magit-cherry-unmatched
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(magit-diff-add
      ((t (:background ,nimbus/dark-green))))
    `(magit-diff-del
@@ -1340,7 +1340,7 @@
    ;;`(magit-key-mode-args-face
    ;;((t (:foreground "black" :background "yellow3"))))
    `(magit-key-mode-button-face
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(magit-key-mode-header-face
      ((t (:foreground ,nimbus/blue))))
    ;;`(magit-key-mode-switch-face
@@ -1474,7 +1474,7 @@
    `(TeX-error-description-error
      ((t (:inherit error :bold t))))
    `(TeX-error-description-tex-said
-     ((t (:foreground ,nimbus/lighter-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(TeX-error-description-warning
      ((t (:foreground ,nimbus/orange :bold t))))
 
@@ -1495,11 +1495,11 @@
    `(custom-documentation
      ((t (:foreground nil :background nil))))
    `(custom-face-tag
-     ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(custom-group-subtitle
      ((t (:bold t))))
    `(custom-group-tag
-     ((t (:foreground ,nimbus/light-blue  :bold t))))
+     ((t (:foreground ,nimbus/blue  :bold t))))
    `(custom-group-tag-1
      ((t (:foreground ,nimbus/yellow  :bold t))))
    `(custom-invalid
@@ -1521,12 +1521,12 @@
    `(custom-variable-button
      ((t (:underline t :bold t))))
    `(custom-variable-tag
-     ((t (:foreground ,nimbus/light-blue  :bold t))))
+     ((t (:foreground ,nimbus/blue  :bold t))))
    `(custom-visibility
      ((t (:inherit button))))
 
    `(neo-banner-face
-     ((t (:foreground ,nimbus/light-blue :bold t))))
+     ((t (:foreground ,nimbus/blue :bold t))))
    `(neo-button-face
      ((t (:foreground nil :background nil))))
    `(neo-dir-link-face
@@ -1573,7 +1573,7 @@
    'nimbus
    `(ansi-color-names-vector
      [,nimbus/darker-gray ,nimbus/red ,nimbus/green ,nimbus/yellow ,nimbus/blue
-                          ,nimbus/purple ,nimbus/lighter-blue ,nimbus/fg])))
+                          ,nimbus/purple ,nimbus/light-blue ,nimbus/fg])))
 
 ;;;###autoload
 (when load-file-name
