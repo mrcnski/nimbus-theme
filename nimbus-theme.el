@@ -474,15 +474,15 @@
    `(js2-instance-member
      ((t (:foreground ,nimbus/purple))))
    `(js2-jsdoc-html-tag-delimiter
-     ((t (:foreground ,nimbus/dark-gray))))
+     ((t (:foreground ,nimbus/gray))))
    `(js2-jsdoc-html-tag-name
-     ((t (:foreground ,nimbus/darkest-gray))))
+     ((t (:foreground ,nimbus/gray))))
    `(js2-jsdoc-tag
-     ((t (:foreground ,nimbus/dark-red))))
+     ((t (:foreground ,nimbus/blue))))
    `(js2-jsdoc-type
      ((t (:foreground ,nimbus/red))))
    `(js2-jsdoc-value
-     ((t (:foreground ,nimbus/tan))))
+     ((t (:foreground ,nimbus/yellow))))
    `(js2-private-function-call
      ((t (:foreground ,nimbus/dark-green))))
    `(js2-private-member
