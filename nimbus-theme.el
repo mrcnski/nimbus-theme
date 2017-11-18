@@ -236,8 +236,6 @@
    ;; hl-line-mode
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
-   `(highlight-indentation-face ((t (:background ,nimbus/gray))))
-
    `(secondary-selection
      ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
 
@@ -1422,17 +1420,17 @@
    ;; indent-guide
    `(indent-guide-face ((t (:foreground ,nimbus/darker-gray))))
 
-   ;; highlight-indent-guide
-   `(highlight-indent-guides-character-face
-     ((t (:foreground ,nimbus/darker-gray))))
-
    `(highlight-indentation-current-column-face
      ((t (:background ,nimbus/gray))))
    `(highlight-indentation-face
      ((t (:background ,nimbus/darkest-gray))))
 
+   ;; highlight-indent-guides
+   `(highlight-indent-guides-character-face
+     ((t (:foreground ,nimbus/darkest-gray))))
+
    ;; trailing whitespace
-   `(trailing-whitespace ((t (:background "white" :bold t))))
+   `(trailing-whitespace ((t (:background ,nimbus/white :bold t))))
 
    ;; auctex
    `(font-latex-bold-face
