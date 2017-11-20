@@ -1,5 +1,7 @@
 # Nimbus
 
+[![MELPA](https://melpa.org/packages/nimbus-theme-badge.svg)](https://melpa.org/#/nimbus-theme)
+
 The best dark theme for Emacs.
 
 ## Screenshot
