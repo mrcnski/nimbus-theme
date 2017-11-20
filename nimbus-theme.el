@@ -1427,7 +1427,7 @@
 
    ;; highlight-indent-guides
    `(highlight-indent-guides-character-face
-     ((t (:foreground ,nimbus/darkest-gray))))
+     ((t (:foreground ,nimbus/darker-gray))))
 
    ;; trailing whitespace
    `(trailing-whitespace ((t (:background ,nimbus/white :bold t))))
