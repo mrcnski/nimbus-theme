@@ -57,19 +57,18 @@
 
 ;; Define the palette
 (let ((nimbus/green          "#6aaf50")
-      (nimbus/dark-green     "#057f40")
+      (nimbus/dark-green     "#058945")
       (nimbus/light-green    "#9ccc65")
       (nimbus/lightest-green "#8fbc8f")
       (nimbus/blue           "#5180b3")
       (nimbus/light-blue     "#68a5e9")
-      (nimbus/blue-bg        "#102843")
+      (nimbus/blue-bg        "#112d49")
       (nimbus/orange         "#df9522")
       (nimbus/tan            "#bdbc61")
       (nimbus/dark-tan       "#7d7c61")
       (nimbus/yellow         "#baba36")
       (nimbus/bright-yellow  "#fffe0a")
       (nimbus/purple         "#ab75c3")
-      (nimbus/pink           "#ff1493")
       (nimbus/light-gray     "#858585")
       (nimbus/gray           "#757575")
       (nimbus/dark-gray      "#656565")
@@ -77,7 +76,7 @@
       (nimbus/darkest-gray   "#252525")
       (nimbus/blue-gray      "#608079")
       (nimbus/brown          "#987654")
-      (nimbus/red            "#cd5542")
+      (nimbus/red            "#d65946")
       (nimbus/dark-red       "#9d2512")
       (nimbus/white          "white")
       (nimbus/black          "black")
@@ -237,7 +236,7 @@
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
    `(secondary-selection
-     ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
 
    ;; ruler
    `(ruler-mode-default
@@ -449,7 +448,7 @@
 
    ;;show paren
    `(show-paren-match
-     ((t (:foreground ,nimbus/pink))))
+     ((t (:foreground ,nimbus/white))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
