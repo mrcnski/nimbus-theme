@@ -56,18 +56,19 @@
 (deftheme nimbus "An awesome dark theme.")
 
 ;; Define the palette
-(let ((nimbus/green          "#6aaf50")
-      (nimbus/dark-green     "#058945")
-      (nimbus/light-green    "#9ccc65")
+(let (
       (nimbus/lightest-green "#8fbc8f")
-      (nimbus/blue           "#5180b3")
+      (nimbus/light-green    "#9ccc65")
+      (nimbus/green          "#6aaf50")
+      (nimbus/dark-green     "#058945")
       (nimbus/light-blue     "#68a5e9")
-      (nimbus/blue-bg        "#112d49")
+      (nimbus/blue           "#5180b3")
+      (nimbus/blue-bg        "#112b47")
       (nimbus/orange         "#df9522")
       (nimbus/tan            "#bdbc61")
       (nimbus/dark-tan       "#7d7c61")
-      (nimbus/yellow         "#baba36")
       (nimbus/bright-yellow  "#fffe0a")
+      (nimbus/yellow         "#baba36")
       (nimbus/purple         "#ab75c3")
       (nimbus/light-gray     "#858585")
       (nimbus/gray           "#757575")
@@ -115,7 +116,8 @@
    `(font-lock-warning-face
      ((t (:foreground ,nimbus/orange :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,nimbus/yellow))))
-   `(font-lock-doc-face               ((t (:foreground ,nimbus/light-green))))
+   `(font-lock-doc-face
+     ((t (:foreground ,nimbus/light-green))))
 
    ;; highlight-numbers
    `(highlight-numbers-number
@@ -970,7 +972,7 @@
    ;;`(org-document-info-keyword     ((t (:foreground nil :background nil))))
    ;;`(org-document-title            ((t (:foreground nil :background nil))))
    `(org-done
-     ((t (:foreground ,nimbus/green))))
+     ((t (:foreground ,nimbus/dark-green))))
    `(org-todo
      ((t (:foreground ,nimbus/red))))
    ;;`(org-drawer                    ((t (:foreground nil :background nil))))
@@ -982,21 +984,21 @@
      ((t (:foreground ,nimbus/bg))))
    ;;`(org-latex-and-export-specials ((t (:foreground nil :background nil))))
    `(org-level-1
-   ((t (:foreground ,nimbus/dark-green))))
+   ((t (:foreground ,nimbus/green))))
    `(org-level-2
    ((t (:foreground ,nimbus/yellow))))
    `(org-level-3
-   ((t (:foreground ,nimbus/blue))))
+   ((t (:foreground ,nimbus/light-blue))))
    `(org-level-4
    ((t (:foreground ,nimbus/orange))))
    `(org-level-5
-   ((t (:foreground ,nimbus/red))))
-   `(org-level-6
    ((t (:foreground ,nimbus/purple))))
+   `(org-level-6
+   ((t (:foreground ,nimbus/blue))))
    `(org-level-7
    ((t (:foreground ,nimbus/brown))))
    `(org-level-8
-   ((t (:foreground ,nimbus/green))))
+   ((t (:foreground ,nimbus/blue-gray))))
    ;; `(org-level-9
    ;; ((t (:foreground ,nimbus/yellow))))
    ;;`(org-link                      ((t (:foreground nil :background nil))))
