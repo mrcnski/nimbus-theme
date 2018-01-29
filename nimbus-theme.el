@@ -14,24 +14,20 @@
 ;;
 ;;; Commentary:
 ;;
-;; About
+;; About:
 ;;
-;; I made this theme because I liked the colors in Ample but didn't
-;; like how much gray there was. So I started with a few tweaks here
-;; and there until it ended up looking quite a bit different, and this
-;; is the result. The theme is being worked on actively and I add new
-;; faces all the time.
+;; The best dark theme for Emacs.
+;;
+;; This theme was originally a fork of Ample theme, but has seen
+;; enough tweaks and changes that it's essentially a new (and better)
+;; theme.
+;;
+;; Nimbus theme is constantly being worked on, and I am actively
+;; adding faces and support for more third-party packages.
 ;;
 ;; Installing:
 ;;
-;; See README.md for the most current installation instructions.
-;;
-;; Notes:
-;;
-;; When trying to follow the 80-column line rule, I didn't split up
-;; the face definitions - having, for example, the foreground and
-;; background definitions on the same line makes it easier to search
-;; for lines which contain a particular foreground/background combo
+;; See README.md for the most up-to-date installation instructions.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -117,7 +113,7 @@
      ((t (:foreground ,nimbus/orange :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,nimbus/yellow))))
    `(font-lock-doc-face
-     ((t (:foreground ,nimbus/light-green))))
+     ((t (:foreground ,nimbus/lightest-green))))
 
    ;; highlight-numbers
    `(highlight-numbers-number
@@ -984,21 +980,21 @@
      ((t (:foreground ,nimbus/bg))))
    ;;`(org-latex-and-export-specials ((t (:foreground nil :background nil))))
    `(org-level-1
-   ((t (:foreground ,nimbus/green))))
+     ((t (:foreground ,nimbus/green))))
    `(org-level-2
-   ((t (:foreground ,nimbus/yellow))))
+     ((t (:foreground ,nimbus/yellow))))
    `(org-level-3
-   ((t (:foreground ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/light-blue))))
    `(org-level-4
-   ((t (:foreground ,nimbus/orange))))
+     ((t (:foreground ,nimbus/orange))))
    `(org-level-5
-   ((t (:foreground ,nimbus/purple))))
+     ((t (:foreground ,nimbus/purple))))
    `(org-level-6
-   ((t (:foreground ,nimbus/blue))))
+     ((t (:foreground ,nimbus/blue))))
    `(org-level-7
-   ((t (:foreground ,nimbus/brown))))
+     ((t (:foreground ,nimbus/brown))))
    `(org-level-8
-   ((t (:foreground ,nimbus/blue-gray))))
+     ((t (:foreground ,nimbus/blue-gray))))
    ;; `(org-level-9
    ;; ((t (:foreground ,nimbus/yellow))))
    ;;`(org-link                      ((t (:foreground nil :background nil))))
@@ -1428,7 +1424,7 @@
 
    ;; highlight-indent-guides
    `(highlight-indent-guides-character-face
-     ((t (:foreground ,nimbus/darker-gray))))
+     ((t (:foreground ,nimbus/dark-gray))))
 
    ;; trailing whitespace
    `(trailing-whitespace ((t (:background ,nimbus/white :bold t))))
