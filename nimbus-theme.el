@@ -135,7 +135,7 @@
    `(powerline-inactive2
      ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
    `(mode-line-inactive
-     ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
+     ((t (:background ,nimbus/blue-gray :foreground ,nimbus/black))))
    `(mode-line
      ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
 
