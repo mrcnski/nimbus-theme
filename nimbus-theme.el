@@ -80,7 +80,7 @@
 
       (nimbus/cursor         "#f57e00")
       (nimbus/fringe         "gray11")
-      (nimbus/region         "#303030")
+      (nimbus/region         "gray23")
 
       (nimbus/bg             "gray10")
       (nimbus/fg             "#bdbdb3")
@@ -95,7 +95,7 @@
    `(link         ((t (:foreground ,nimbus/light-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
    `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
-   `(region       ((t (:background ,nimbus/black))))
+   `(region       ((t (:background ,nimbus/region))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
    `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
