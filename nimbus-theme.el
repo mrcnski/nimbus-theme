@@ -193,6 +193,8 @@
    ;; line numbers
    `(linum
      ((t (:inherit fringe :foreground ,nimbus/blue-gray :bold nil))))
+   `(nlinum-current-line
+     ((t (:inherit linum :foreground ,nimbus/dark-green))))
 
    `(popup-tip-face ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
@@ -1209,7 +1211,7 @@
    `(whitespace-indentation
      ((t (:foreground ,nimbus/gray :background "gray12"))))
    `(whitespace-line
-     ((t (:foreground ,nimbus/black :background ,nimbus/red))))
+     ((t (:inherit error))))
    `(whitespace-newline
      ((t (:foreground ,nimbus/gray))))
    `(whitespace-space
