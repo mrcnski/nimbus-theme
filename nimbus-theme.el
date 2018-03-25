@@ -57,6 +57,7 @@
       (nimbus/light-green    "#9ccc65")
       (nimbus/green          "#6aaf50")
       (nimbus/dark-green     "#058945")
+      (nimbus/green-bg       "#042b11")
       (nimbus/light-blue     "#68a5e9")
       (nimbus/blue           "#5180b3")
       (nimbus/blue-bg        "#112b47")
@@ -80,7 +81,7 @@
 
       (nimbus/cursor         "#f57e00")
       (nimbus/fringe         "gray11")
-      (nimbus/region         "gray23")
+      (nimbus/region         "gray35")
 
       (nimbus/bg             "gray10")
       (nimbus/fg             "#bdbdb3")
@@ -94,8 +95,10 @@
    `(fringe       ((t (:background ,nimbus/fringe))))
    `(link         ((t (:foreground ,nimbus/light-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/red :underline t))))
-   `(highlight    ((t (:foreground ,nimbus/bg :background ,nimbus/green))))
-   `(region       ((t (:background ,nimbus/region))))
+   `(highlight
+     ((t (:foreground ,nimbus/bg :background ,nimbus/light-green))))
+   `(region
+     ((t (:foreground ,nimbus/fg :background ,nimbus/region))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
    `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
@@ -168,7 +171,7 @@
    `(avy-goto-char-timer-face
      ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green :bold nil))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/green :bold nil))))
    `(avy-lead-face-0
      ((t (:foreground ,nimbus/black :background ,nimbus/blue :bold nil))))
    `(avy-lead-face-1
@@ -222,7 +225,7 @@
    `(isearch
      ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
    `(lazy-highlight
-     ((t (:background ,nimbus/dark-red :foreground ,nimbus/white))))
+     ((t (:background ,nimbus/blue :foreground ,nimbus/white))))
 
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face
@@ -236,7 +239,7 @@
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
    `(secondary-selection
-     ((t (:foreground ,nimbus/black :background ,nimbus/light-blue))))
+     ((t (:foreground ,nimbus/fg :background ,nimbus/blue-gray))))
 
    ;; ruler
    `(ruler-mode-default
