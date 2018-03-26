@@ -30,4 +30,4 @@ Or, if you have [use-package](https://github.com/jwiegley/use-package):
 
 ## Contributing
 
-All contributions are welcome. It's impossible for me alone to support every Emacs package out there (although this theme supports more than the average theme). Write issues and make pull requests liberally.
+All contributions are welcome. I want to support all third-party Emacs packages, and Nimbus supports a lot of them, but it's impossible for me to do this alone. Write issues and make pull requests liberally.
