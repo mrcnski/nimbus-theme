@@ -169,7 +169,7 @@
    `(avy-background-face
      ((t (:foreground ,nimbus/gray))))
    `(avy-goto-char-timer-face
-     ((t (:foreground ,nimbus/fg :background ,nimbus/dark-green :bold nil))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face
      ((t (:foreground ,nimbus/black :background ,nimbus/green :bold nil))))
    `(avy-lead-face-0
@@ -195,7 +195,7 @@
 
    ;; line numbers
    `(linum
-     ((t (:inherit fringe :foreground ,nimbus/blue-gray :bold nil))))
+     ((t (:inherit fringe :foreground ,nimbus/blue-gray :bold nil :underline nil))))
    `(nlinum-current-line
      ((t (:inherit linum :foreground ,nimbus/dark-green))))
 
