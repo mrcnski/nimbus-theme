@@ -950,7 +950,7 @@
      ((t (:inherit org-agenda-date :slant italic))))
    ;;`(org-agenda-diary              ((t (:foreground nil :background nil))))
    ;;`(org-agenda-dimmed-todo-face   ((t (:foreground nil :background nil))))
-   ;;`(org-agenda-done               ((t (:foreground nil :background nil))))
+   `(org-agenda-done               ((t (:foreground ,nimbus/dark-green))))
    ;;`(org-agenda-filter-category    ((t (:foreground nil :background nil))))
    ;;`(org-agenda-filter-tags        ((t (:foreground nil :background nil))))
    ;;`(org-agenda-restriction-lock   ((t (:foreground nil :background nil))))
@@ -980,7 +980,7 @@
    `(org-todo
      ((t (:foreground ,nimbus/red))))
    ;;`(org-drawer                    ((t (:foreground nil :background nil))))
-   ;;`(org-ellipsis                  ((t (:foreground nil :background nil))))
+   `(org-ellipsis                  ((t (:foreground ,nimbus/light-gray))))
    ;;`(org-footnote                  ((t (:foreground nil :background nil))))
    ;;`(org-formula                   ((t (:foreground nil :background nil))))
    ;;`(org-headline-done             ((t (:foreground nil :background nil))))
