@@ -58,8 +58,9 @@
       (nimbus/green          "#6aaf50")
       (nimbus/dark-green     "#058945")
       (nimbus/green-bg       "#042b11")
+      (nimbus/lightest-blue  "#86b5e8")
       (nimbus/light-blue     "#68a5e9")
-      (nimbus/blue           "#5180b3")
+      (nimbus/blue           "#598bc1")
       (nimbus/blue-bg        "#112b47")
       (nimbus/orange         "#df9522")
       (nimbus/tan            "#bdbc61")
@@ -93,8 +94,8 @@
    `(default      ((t (:foreground ,nimbus/fg :background ,nimbus/bg))))
    `(cursor       ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
    `(fringe       ((t (:background ,nimbus/fringe  :bold nil :underline nil))))
-   `(link         ((t (:foreground ,nimbus/light-blue :underline t))))
-   `(link-visited ((t (:foreground ,nimbus/red :underline t))))
+   `(link         ((t (:foreground ,nimbus/lightest-blue :underline t))))
+   `(link-visited ((t (:foreground ,nimbus/blue-gray :underline t))))
    `(highlight
      ((t (:foreground ,nimbus/bg :background ,nimbus/light-green))))
    `(region
@@ -597,7 +598,7 @@
 
    ;; package.el
    `(package-name
-     ((t (:foreground ,nimbus/light-blue :underline t))))
+     ((t (:foreground ,nimbus/lightest-blue :underline t))))
    `(package-status-available ((t (:foreground ,nimbus/green))))
    `(package-description      ((t (:foreground ,nimbus/yellow))))
 
@@ -945,7 +946,7 @@
    ;;`(org-agenda-column-dateline    ((t (:foreground nil :background nil))))
    ;;`(org-agenda-current-time       ((t (:foreground nil :background nil))))
    `(org-agenda-date               ((t (:foreground ,nimbus/light-blue))))
-   `(org-agenda-date-today         ((t (:foreground ,nimbus/purple))))
+   `(org-agenda-date-today         ((t (:foreground ,nimbus/lightest-blue))))
    `(org-agenda-date-weekend
      ((t (:inherit org-agenda-date :slant italic))))
    ;;`(org-agenda-diary              ((t (:foreground nil :background nil))))
@@ -954,7 +955,7 @@
    ;;`(org-agenda-filter-category    ((t (:foreground nil :background nil))))
    ;;`(org-agenda-filter-tags        ((t (:foreground nil :background nil))))
    ;;`(org-agenda-restriction-lock   ((t (:foreground nil :background nil))))
-   `(org-agenda-structure          ((t (:foreground ,nimbus/blue))))
+   `(org-agenda-structure          ((t (:foreground ,nimbus/purple))))
    ;;`(org-archived                  ((t (:foreground nil :background nil))))
    ;;`(org-beamer-tag                ((t (:foreground nil :background nil))))
    ;;`(org-block                     ((t (:foreground nil :background nil))))
@@ -988,17 +989,17 @@
      ((t (:foreground ,nimbus/bg))))
    ;;`(org-latex-and-export-specials ((t (:foreground nil :background nil))))
    `(org-level-1
-     ((t (:foreground ,nimbus/green))))
+     ((t (:foreground ,nimbus/purple))))
    `(org-level-2
-     ((t (:foreground ,nimbus/yellow))))
-   `(org-level-3
      ((t (:foreground ,nimbus/light-blue))))
+   `(org-level-3
+     ((t (:foreground ,nimbus/green))))
    `(org-level-4
      ((t (:foreground ,nimbus/orange))))
    `(org-level-5
-     ((t (:foreground ,nimbus/purple))))
+     ((t (:foreground ,nimbus/yellow))))
    `(org-level-6
-     ((t (:foreground ,nimbus/blue))))
+     ((t (:foreground ,nimbus/light-green))))
    `(org-level-7
      ((t (:foreground ,nimbus/brown))))
    `(org-level-8
@@ -1016,7 +1017,7 @@
    `(org-scheduled-previously      ((t (:foreground ,nimbus/orange))))
    `(org-scheduled-today           ((t (:foreground ,nimbus/yellow))))
    ;;`(org-sexp-date                 ((t (:foreground nil :background nil))))
-   ;;`(org-special-keyword           ((t (:foreground nil :background nil))))
+   `(org-special-keyword           ((t (:inherit font-lock-keyword-face))))
    ;;`(org-table                     ((t (:foreground nil :background nil))))
    ;;`(org-tag                       ((t (:foreground nil :background nil))))
    ;;`(org-target                    ((t (:foreground nil :background nil))))
