@@ -81,7 +81,7 @@
       (nimbus/black          "black")
 
       (nimbus/cursor         "#f57e00")
-      (nimbus/fringe         "gray11")
+      (nimbus/fringe         "gray10")
       (nimbus/region         "gray35")
 
       (nimbus/bg             "gray10")
