@@ -107,7 +107,8 @@
    `(font-lock-builtin-face           ((t (:foreground ,nimbus/blue))))
    `(font-lock-comment-face
      ((t (:foreground ,nimbus/light-gray :slant italic))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,nimbus/light-gray))))
+   `(font-lock-comment-delimiter-face
+     ((t (:inherit font-lock-comment-face))))
    `(font-lock-function-name-face     ((t (:foreground ,nimbus/dark-green))))
    `(font-lock-keyword-face           ((t (:foreground ,nimbus/blue))))
    `(font-lock-string-face            ((t (:foreground ,nimbus/green))))
@@ -118,7 +119,7 @@
      ((t (:foreground ,nimbus/orange :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,nimbus/yellow))))
    `(font-lock-doc-face
-     ((t (:foreground ,nimbus/lightest-green))))
+     ((t (:inherit font-lock-comment-face :foreground ,nimbus/lightest-green))))
 
    ;; highlight-numbers
    `(highlight-numbers-number
