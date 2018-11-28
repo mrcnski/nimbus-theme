@@ -171,16 +171,16 @@
    ;; avy, colors chosen for good contrast
    `(avy-background-face
      ((t (:foreground ,nimbus/gray))))
-   `(avy-goto-char-timer-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green :bold nil))))
    `(avy-lead-face
-     ((t (:foreground ,nimbus/black :background ,nimbus/green :bold nil))))
+     ((t (:foreground ,nimbus/black :bold nil :slant normal :background ,nimbus/green))))
    `(avy-lead-face-0
-     ((t (:foreground ,nimbus/black :background ,nimbus/blue :bold nil))))
+     ((t (:inherit avy-lead-face :background ,nimbus/blue))))
    `(avy-lead-face-1
-     ((t (:foreground ,nimbus/black :background ,nimbus/fg :bold nil))))
+     ((t (:inherit avy-lead-face :background ,nimbus/fg))))
    `(avy-lead-face-2
-     ((t (:foreground ,nimbus/black :background ,nimbus/white :bold nil))))
+     ((t (:inherit avy-lead-face :background ,nimbus/white))))
+   `(avy-goto-char-timer-face
+     ((t (:inherit avy-lead-face :background ,nimbus/dark-green))))
 
    ;; cargo
    `(cargo-process--ok-face
