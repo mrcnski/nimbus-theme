@@ -974,9 +974,9 @@
    `(org-date-selected
      ((t (:foreground ,nimbus/bg :background ,nimbus/yellow :underline t))))
    ;;`(org-default                   ((t (:foreground nil :background nil))))
-   ;;`(org-document-info             ((t (:foreground nil :background nil))))
+   `(org-document-info             ((t (:foreground ,nimbus/lightest-green))))
    ;;`(org-document-info-keyword     ((t (:foreground nil :background nil))))
-   ;;`(org-document-title            ((t (:foreground nil :background nil))))
+   `(org-document-title            ((t (:inherit org-document-info :bold t))))
    `(org-done
      ((t (:foreground ,nimbus/dark-green))))
    `(org-todo
