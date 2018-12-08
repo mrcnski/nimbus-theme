@@ -28,6 +28,13 @@ Or, if you have [use-package](https://github.com/jwiegley/use-package):
 (use-package nimbus-theme)
 ```
 
+## Troubleshooting
+
+If you encounter any issues with Nimbus (such as faces being hard to read or not appearing as expected), please try the following:
+
+1. Restart Emacs and make sure Nimbus is the first theme you enable. Switching custom themes midway through an Emacs session may cause artifacts from the previous theme to remain.
+2. Leave a bug report for the repository on GitHub (https://github.com/m-cat/nimbus-theme/issues).
+
 ## Contributing
 
 All contributions are welcome. I want to support all third-party Emacs packages, and Nimbus supports a lot of them, but it's impossible for me to do this alone. Write issues and make pull requests liberally.
