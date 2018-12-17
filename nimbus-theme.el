@@ -91,7 +91,8 @@
   ;; Set faces
   (custom-theme-set-faces
    `nimbus ;; you must use the same theme name here...
-   `(default      ((t (:foreground ,nimbus/fg :background ,nimbus/bg))))
+   `(default
+      ((t (:foreground ,nimbus/fg :background ,nimbus/bg :bold nil))))
    `(cursor       ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
    `(fringe       ((t (:background ,nimbus/fringe  :bold nil :underline nil))))
    `(link         ((t (:foreground ,nimbus/lightest-blue :underline t))))
@@ -198,7 +199,7 @@
 
    ;; line numbers
    `(linum
-     ((t (:inherit fringe :foreground ,nimbus/blue-gray))))
+     ((t (:inherit fringe :foreground ,nimbus/blue-gray :slant normal))))
    `(nlinum-current-line
      ((t (:inherit linum :foreground ,nimbus/dark-green))))
 
