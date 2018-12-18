@@ -270,7 +270,7 @@
    `(compilation-warning
      ((t (:foreground ,nimbus/orange :bold t :background ,nimbus/bg))))
    `(compilation-error
-     ((t (:foreground ,nimbus/red :bold t))))
+     ((t (:inherit error :bold t))))
    `(compilation-mode-line-exit
      ((t (:inherit compilation-info :background ,nimbus/bg))))
    `(compilation-mode-line-run
@@ -735,42 +735,42 @@
    `(rainbow-delimiters-depth-1-face
      ((t (:foreground ,nimbus/purple))))
    `(rainbow-delimiters-depth-2-face
-     ((t (:foreground ,nimbus/orange))))
-   `(rainbow-delimiters-depth-3-face
      ((t (:foreground ,nimbus/green))))
+   `(rainbow-delimiters-depth-3-face
+     ((t (:foreground ,nimbus/orange))))
    `(rainbow-delimiters-depth-4-face
      ((t (:foreground ,nimbus/yellow))))
    `(rainbow-delimiters-depth-5-face
      ((t (:foreground ,nimbus/light-blue))))
    `(rainbow-delimiters-depth-6-face
-     ((t (:foreground ,nimbus/purple))))
-   `(rainbow-delimiters-depth-7-face
-     ((t (:foreground ,nimbus/orange))))
-   `(rainbow-delimiters-depth-8-face
-     ((t (:foreground ,nimbus/green))))
-   `(rainbow-delimiters-depth-9-face
-     ((t (:foreground ,nimbus/yellow))))
+     ((t (:foreground ,nimbus/light-green))))
+   ;; `(rainbow-delimiters-depth-7-face
+   ;;   ((t (:foreground ,nimbus/))))
+   ;; `(rainbow-delimiters-depth-8-face
+   ;;   ((t (:foreground ,nimbus/))))
+   ;; `(rainbow-delimiters-depth-9-face
+   ;;   ((t (:foreground ,nimbus/))))
    `(rainbow-delimiters-unmatched-face ((t (:inherit error))))
 
    ;; rainbow blocks
    `(rainbow-blocks-depth-1-face
      ((t (:foreground ,nimbus/purple))))
    `(rainbow-blocks-depth-2-face
-     ((t (:foreground ,nimbus/orange))))
-   `(rainbow-blocks-depth-3-face
      ((t (:foreground ,nimbus/green))))
+   `(rainbow-blocks-depth-3-face
+     ((t (:foreground ,nimbus/orange))))
    `(rainbow-blocks-depth-4-face
      ((t (:foreground ,nimbus/yellow))))
    `(rainbow-blocks-depth-5-face
      ((t (:foreground ,nimbus/light-blue))))
    `(rainbow-blocks-depth-6-face
-     ((t (:foreground ,nimbus/purple))))
-   `(rainbow-blocks-depth-7-face
-     ((t (:foreground ,nimbus/orange))))
-   `(rainbow-blocks-depth-8-face
-     ((t (:foreground ,nimbus/green))))
-   `(rainbow-blocks-depth-9-face
-     ((t (:foreground ,nimbus/yellow))))
+     ((t (:foreground ,nimbus/light-green))))
+   ;; `(rainbow-blocks-depth-7-face
+   ;;   ((t (:foreground ,nimbus/))))
+   ;; `(rainbow-blocks-depth-8-face
+   ;;   ((t (:foreground ,nimbus/))))
+   ;; `(rainbow-blocks-depth-9-face
+   ;;   ((t (:foreground ,nimbus/))))
    `(rainbow-blocks-unmatched-face ((t (:inherit error))))
 
    ;; auto complete
@@ -823,7 +823,7 @@
    ;;`(w3m-arrived-anchor
    ;;((t (:foreground "LightSkyBlue"))))
    `(w3m-bold
-     ((t (:foreground ,nimbus/blue  :bold t))))
+     ((t (:foreground ,nimbus/blue :bold t))))
    `(w3m-current-anchor
      ((t ( :underline t :bold t))))
    ;;`(w3m-form
@@ -993,21 +993,19 @@
    `(org-level-1
      ((t (:foreground ,nimbus/purple))))
    `(org-level-2
-     ((t (:foreground ,nimbus/light-blue))))
-   `(org-level-3
      ((t (:foreground ,nimbus/green))))
-   `(org-level-4
+   `(org-level-3
      ((t (:foreground ,nimbus/orange))))
-   `(org-level-5
+   `(org-level-4
      ((t (:foreground ,nimbus/yellow))))
+   `(org-level-5
+     ((t (:foreground ,nimbus/light-blue))))
    `(org-level-6
      ((t (:foreground ,nimbus/light-green))))
-   `(org-level-7
-     ((t (:foreground ,nimbus/brown))))
-   `(org-level-8
-     ((t (:foreground ,nimbus/blue-gray))))
-   ;; `(org-level-9
-   ;; ((t (:foreground ,nimbus/yellow))))
+   ;; `(org-level-7
+   ;;   ((t (:foreground ,nimbus/))))
+   ;; `(org-level-8
+   ;;   ((t (:foreground ,nimbus/))))
    ;;`(org-link                      ((t (:foreground nil :background nil))))
    ;;`(org-list-dt                   ((t (:foreground nil :background nil))))
    ;;`(org-meta-line                 ((t (:foreground nil :background nil))))
@@ -1305,7 +1303,7 @@
    `(magit-sequence-stop               ((t (:foreground ,nimbus/green))))
 
    ;;`(magit-signature-bad             ((t (:foreground "red" :bold t))))
-   `(magit-signature-error             ((t (:foreground ,nimbus/red))))
+   `(magit-signature-error             ((t (:inherit error))))
    ;;`(magit-signature-expired         ((t (:foreground "orange"))))
    ;;`(magit-signature-expired-key     ((t (:inherit magit-signature-expired))))
    `(magit-signature-good              ((t (:foreground ,nimbus/green))))
