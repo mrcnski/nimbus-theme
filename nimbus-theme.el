@@ -141,10 +141,10 @@
      ((t (:background ,nimbus/bg :foreground ,nimbus/dark-gray))))
    `(powerline-inactive2
      ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
-   `(mode-line-inactive
-     ((t (:background ,nimbus/blue-gray :foreground ,nimbus/black))))
    `(mode-line
      ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
+   `(mode-line-inactive
+     ((t (:background ,nimbus/blue-gray :foreground ,nimbus/black))))
 
    ;; ace-jump mode
    `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
@@ -739,17 +739,17 @@
    `(rainbow-delimiters-depth-3-face
      ((t (:foreground ,nimbus/orange))))
    `(rainbow-delimiters-depth-4-face
-     ((t (:foreground ,nimbus/yellow))))
-   `(rainbow-delimiters-depth-5-face
      ((t (:foreground ,nimbus/light-blue))))
+   `(rainbow-delimiters-depth-5-face
+     ((t (:foreground ,nimbus/yellow))))
    `(rainbow-delimiters-depth-6-face
-     ((t (:foreground ,nimbus/light-green))))
-   ;; `(rainbow-delimiters-depth-7-face
-   ;;   ((t (:foreground ,nimbus/))))
-   ;; `(rainbow-delimiters-depth-8-face
-   ;;   ((t (:foreground ,nimbus/))))
-   ;; `(rainbow-delimiters-depth-9-face
-   ;;   ((t (:foreground ,nimbus/))))
+     ((t (:foreground ,nimbus/green))))
+   `(rainbow-delimiters-depth-7-face
+     ((t (:foreground ,nimbus/orange))))
+   `(rainbow-delimiters-depth-8-face
+     ((t (:foreground ,nimbus/light-blue))))
+   `(rainbow-delimiters-depth-9-face
+     ((t (:foreground ,nimbus/yellow))))
    `(rainbow-delimiters-unmatched-face ((t (:inherit error))))
 
    ;; rainbow blocks
@@ -760,17 +760,17 @@
    `(rainbow-blocks-depth-3-face
      ((t (:foreground ,nimbus/orange))))
    `(rainbow-blocks-depth-4-face
-     ((t (:foreground ,nimbus/yellow))))
-   `(rainbow-blocks-depth-5-face
      ((t (:foreground ,nimbus/light-blue))))
+   `(rainbow-blocks-depth-5-face
+     ((t (:foreground ,nimbus/yellow))))
    `(rainbow-blocks-depth-6-face
-     ((t (:foreground ,nimbus/light-green))))
-   ;; `(rainbow-blocks-depth-7-face
-   ;;   ((t (:foreground ,nimbus/))))
-   ;; `(rainbow-blocks-depth-8-face
-   ;;   ((t (:foreground ,nimbus/))))
-   ;; `(rainbow-blocks-depth-9-face
-   ;;   ((t (:foreground ,nimbus/))))
+     ((t (:foreground ,nimbus/green))))
+   `(rainbow-blocks-depth-7-face
+     ((t (:foreground ,nimbus/orange))))
+   `(rainbow-blocks-depth-8-face
+     ((t (:foreground ,nimbus/light-blue))))
+   `(rainbow-blocks-depth-9-face
+     ((t (:foreground ,nimbus/yellow))))
    `(rainbow-blocks-unmatched-face ((t (:inherit error))))
 
    ;; auto complete
@@ -997,15 +997,15 @@
    `(org-level-3
      ((t (:foreground ,nimbus/orange))))
    `(org-level-4
-     ((t (:foreground ,nimbus/yellow))))
-   `(org-level-5
      ((t (:foreground ,nimbus/light-blue))))
+   `(org-level-5
+     ((t (:foreground ,nimbus/yellow))))
    `(org-level-6
-     ((t (:foreground ,nimbus/light-green))))
-   ;; `(org-level-7
-   ;;   ((t (:foreground ,nimbus/))))
-   ;; `(org-level-8
-   ;;   ((t (:foreground ,nimbus/))))
+     ((t (:foreground ,nimbus/green))))
+   `(org-level-7
+     ((t (:foreground ,nimbus/orange))))
+   `(org-level-8
+     ((t (:foreground ,nimbus/light-blue))))
    ;;`(org-link                      ((t (:foreground nil :background nil))))
    ;;`(org-list-dt                   ((t (:foreground nil :background nil))))
    ;;`(org-meta-line                 ((t (:foreground nil :background nil))))
