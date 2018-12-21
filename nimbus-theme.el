@@ -134,17 +134,17 @@
 
    ;; mode line & powerline
    `(powerline-active1
-     ((t (:background ,nimbus/darkest-gray :foreground ,nimbus/fg))))
+     ((t (:foreground ,nimbus/fg :background ,nimbus/darkest-gray))))
    `(powerline-active2
-     ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
    `(powerline-inactive1
-     ((t (:background ,nimbus/bg :foreground ,nimbus/dark-gray))))
+     ((t (:foreground ,nimbus/dark-gray :background ,nimbus/bg))))
    `(powerline-inactive2
-     ((t (:background ,nimbus/gray :foreground ,nimbus/black))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/gray))))
    `(mode-line
-     ((t (:background ,nimbus/dark-green :foreground ,nimbus/black))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
    `(mode-line-inactive
-     ((t (:background ,nimbus/blue-gray :foreground ,nimbus/black))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/blue-gray))))
 
    ;; ace-jump mode
    `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
@@ -227,9 +227,9 @@
 
    ;; search
    `(isearch
-     ((t (:background ,nimbus/dark-green :foreground ,nimbus/white))))
+     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
    `(lazy-highlight
-     ((t (:background ,nimbus/blue :foreground ,nimbus/white))))
+     ((t (:foreground ,nimbus/white :background ,nimbus/blue))))
 
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face
@@ -649,8 +649,10 @@
    ;;`(helm-lisp-show-completion ((t ())))
    `(helm-locate-finish
      ((t (:foreground ,nimbus/green))))
+   `(helm-match-item
+     ((t (:inherit isearch))))
    `(helm-match
-     ((t (:foreground ,nimbus/blue :background ,nimbus/darkest-gray))))
+     ((t (:inherit lazy-highlight))))
    `(helm-moccur-buffer
      ((t (:inherit compilation-info))))
    `(helm-selection
@@ -805,10 +807,10 @@
    ;;((t (:foreground "wheat" :background "blue1"))))
    ;;`(company-template-field
    ;;((t (:foreground "black" :background "orange"))))
-   `(company-scrollbar-bg
-     ((t (:background ,nimbus/darkest-gray))))
    `(company-scrollbar-fg
      ((t (:background ,nimbus/dark-gray))))
+   `(company-scrollbar-bg
+     ((t (:background ,nimbus/darkest-gray))))
    `(company-tooltip
      ((t (:foreground ,nimbus/bg :background ,nimbus/fg))))
    `(company-tooltip-common
