@@ -98,7 +98,7 @@
    `(link         ((t (:foreground ,nimbus/lightest-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/blue-gray :underline t))))
    `(highlight
-     ((t (:foreground ,nimbus/bg :background ,nimbus/light-green))))
+     ((t (:background ,nimbus/green-bg))))
    `(region
      ((t (:foreground ,nimbus/bg :background ,nimbus/fg))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
@@ -670,11 +670,11 @@
    `(helm-swoop-line-number-face
      ((t (:inherit linum))))
    `(helm-swoop-target-word-face
-     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
+     ((t (:inherit lazy-highlight))))
    `(helm-swoop-target-line-face
-     ((t (:foreground ,nimbus/bg :background ,nimbus/bright-yellow))))
+     ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face
-     ((t (:foreground ,nimbus/bg :background ,nimbus/yellow))))
+     ((t (:inherit highlight :foreground ,nimbus/white))))
 
    ;; ivy
    `(ivy-confirm-face ((t (:foreground ,nimbus/green))))
