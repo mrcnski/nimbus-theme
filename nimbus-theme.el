@@ -341,6 +341,9 @@
    `(eshell-ls-backup     ((t (:foreground ,nimbus/darker-gray))))
    `(eshell-ls-executable ((t (:foreground ,nimbus/green))))
 
+   ;; Eyebrowse
+   `(eyebrowse-mode-line-inactive ((t (:foreground ,nimbus/darkest-gray))))
+
    ;; shell
    `(comint-highlight-prompt ((t (:foreground ,nimbus/green))))
 
