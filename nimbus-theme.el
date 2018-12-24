@@ -1398,22 +1398,24 @@
    ;;((t (:background "Grey50"))))
    ;;`(magit-log-reflog-label-reset
    ;;((t (:foreground "IndianRed4" :background "IndianRed1"))))
-   `(magit-log-sha1
-     ((t (:foreground ,nimbus/purple))))
-   `(magit-section-title
-     ((t (:foreground ,nimbus/blue))))
    `(magit-tag
      ((t (:foreground ,nimbus/blue))))
    ;;`(magit-valid-signature
    ;;((t (:foreground "PaleTurquoise"  :bold t))))
-   `(magit-whitespace-warning-face
-     ((t (:foreground ,nimbus/bg :background "white" :bold t))))
+
+   ;; forge
+   `(forge-post-author ((t (:inherit magit-log-author))))
+   `(forge-post-date ((t (:inherit magit-log-date :slant italic))))
+   `(forge-topic-merged ((t (:foreground ,nimbus/dark-green))))
+   `(forge-topic-unmerged ((t (:foreground ,nimbus/red))))
+   `(forge-topic-closed ((t (:inherit magit-dimmed))))
 
    ;; diff-hl
    `(diff-hl-change ((t (:inherit fringe :foreground ,nimbus/orange))))
    `(diff-hl-insert ((t (:inherit fringe :foreground ,nimbus/green))))
    `(diff-hl-delete ((t (:inherit fringe :foreground ,nimbus/red))))
 
+   ;; git-gutter
    `(git-gutter:deleted
      ((t (:foreground ,nimbus/red :bold t))))
    `(git-gutter:modified
