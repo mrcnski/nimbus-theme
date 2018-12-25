@@ -84,7 +84,6 @@
 
       (nimbus/cursor         "#f57e00")
       (nimbus/fringe         "gray10")
-      (nimbus/region         "gray35")
 
       (nimbus/bg             "gray10")
       (nimbus/fg             "#bdbdb3")
@@ -1243,7 +1242,6 @@
      ((t (:foreground ,nimbus/blue :background ,nimbus/bg :bold t))))
 
    ;; magit
-   ;; new
    `(magit-section-heading
      ((t (:foreground ,nimbus/blue))))
    `(magit-section-heading-selection
@@ -1254,25 +1252,40 @@
      ((t (:foreground ,nimbus/orange))))
    `(magit-branch-remote
      ((t (:foreground ,nimbus/yellow))))
+   `(magit-tag
+     ((t (:foreground ,nimbus/light-blue))))
 
-   `(magit-diff-added-highlight
-     ((t (:background ,nimbus/region :foreground ,nimbus/green))))
-   `(magit-diff-removed-highlight
-     ((t (:background ,nimbus/region :foreground ,nimbus/red))))
+   `(magit-diff-file-heading
+     ((t (:foreground ,nimbus/fg))))
    `(magit-diff-added
      ((t (:foreground ,nimbus/green))))
    `(magit-diff-removed
      ((t (:foreground ,nimbus/red))))
+   `(magit-diffstat-added
+     ((t (:foreground ,nimbus/green))))
+   `(magit-diffstat-removed
+     ((t (:foreground ,nimbus/red))))
+
+   `(magit-diff-hunk-heading
+     ((t (:background ,nimbus/dark-gray))))
+   `(magit-section-highlight
+     ((t (:background ,nimbus/darkest-gray))))
+   `(magit-diff-context-highlight
+     ((t (:background ,nimbus/darkest-gray))))
+   `(magit-diff-file-heading-highlight
+     ((t (:inherit magit-section-highlight :slant normal :underline nil))))
+   `(magit-diff-hunk-heading-highlight
+     ((t (:inherit magit-diff-file-heading-highlight :background ,nimbus/dark-gray))))
+   `(magit-diff-added-highlight
+     ((t (:foreground ,nimbus/green :background ,nimbus/darker-gray))))
+   `(magit-diff-removed-highlight
+     ((t (:foreground ,nimbus/red :background ,nimbus/darker-gray))))
    `(magit-diff-file-heading-selection
      ((t (:foreground ,nimbus/light-blue :inherit magit-diff-file-heading-highlight))))
    `(magit-diff-hunk-heading-selection
      ((t (:foreground ,nimbus/light-blue :inherit magit-diff-hunk-heading-highlight))))
    `(magit-diff-lines-heading
      ((t (:background ,nimbus/blue :foreground ,nimbus/bg))))
-   `(magit-diffstat-added
-     ((t (:foreground ,nimbus/green))))
-   `(magit-diffstat-removed
-     ((t (:foreground ,nimbus/red))))
 
    `(magit-bisect-bad
      ((t (:foreground ,nimbus/red))))
@@ -1281,20 +1294,24 @@
    `(magit-bisect-skip
      ((t (:foreground ,nimbus/orange))))
    `(magit-blame-date
-     ((t (:foreground ,nimbus/purple :background "grey25"))))
+     ((t (:foreground ,nimbus/blue :inherit magit-diff-file-heading-highlight))))
    `(magit-blame-hash
-     ((t (:foreground ,nimbus/purple :background "grey25"))))
+     ((t (:foreground ,nimbus/purple :inherit magit-diff-file-heading-highlight))))
    `(magit-blame-heading
-     ((t (:foreground ,nimbus/blue :background "grey25"))))
+     ((t (:foreground ,nimbus/blue :inherit magit-diff-file-heading-highlight))))
    `(magit-blame-name
-     ((t (:foreground ,nimbus/green :background "grey25"))))
+     ((t (:foreground ,nimbus/dark-green :inherit magit-diff-file-heading-highlight))))
    `(magit-blame-summary
-     ((t (:foreground ,nimbus/blue :background "grey25"))))
+     ((t (:foreground ,nimbus/purple :inherit magit-diff-file-heading-highlight))))
+   `(magit-blame-highlight
+     ((t (:foreground ,nimbus/fg :inherit magit-diff-file-heading-highlight))))
 
    `(magit-popup-argument
-     ((t (:foreground ,nimbus/red :inherit font-lock-warning-face))))
+     ((t (:foreground ,nimbus/red))))
+   `(magit-popup-heading
+     ((t (:inherit magit-section-heading))))
    `(magit-popup-key
-     ((t (:inherit font-lock-constant-face))))
+     ((t (:inherit magit-hash))))
    `(magit-process-ng                  ((t (:foreground ,nimbus/red :bold t))))
    `(magit-process-ok                  ((t (:foreground ,nimbus/green))))
 
@@ -1320,99 +1337,27 @@
    `(magit-signature-revoked           ((t (:foreground ,nimbus/purple))))
    `(magit-signature-untrusted         ((t (:foreground ,nimbus/blue))))
 
-   ;; old
-   `(magit-branch
-     ((t (:foreground ,nimbus/orange))))
    `(magit-cherry-equivalent
      ((t (:foreground ,nimbus/green))))
    `(magit-cherry-unmatched
      ((t (:foreground ,nimbus/blue))))
-   `(magit-diff-add
-     ((t (:background ,nimbus/dark-green))))
-   `(magit-diff-del
-     ((t (:background ,nimbus/dark-red))))
-   `(magit-diff-file-header
-     ((t (:foreground ,nimbus/bg :background ,nimbus/blue :bold t))))
-   `(magit-diff-hunk-header
-     ((t (:foreground ,nimbus/bg :background ,nimbus/blue))))
-   `(magit-diff-merge-current
-     ((t (:foreground ,nimbus/orange))))
-   `(magit-diff-merge-diff3-separator
-     ((t (:foreground ,nimbus/orange))))
-   `(magit-diff-merge-proposed
-     ((t (:foreground ,nimbus/orange))))
-   `(magit-diff-merge-separator
-     ((t (:foreground ,nimbus/orange))))
-   `(magit-diff-none
-     ((t (:foreground ,nimbus/fg :background ,nimbus/darker-gray))))
-   `(magit-header
-     ((t (:foreground ,nimbus/blue))))
-   `(magit-item-highlight
-     ((t (:background ,nimbus/darker-gray))))
-   ;;`(magit-item-mark
-   ;;((t (:background "darkolivegreen"))))
-   ;;`(magit-key-mode-args-face
-   ;;((t (:foreground "black" :background "yellow3"))))
-   `(magit-key-mode-button-face
-     ((t (:foreground ,nimbus/blue))))
-   `(magit-key-mode-header-face
-     ((t (:foreground ,nimbus/blue))))
-   ;;`(magit-key-mode-switch-face
-   ;;((t (:foreground "red"  :bold t))))
+
    `(magit-log-author
-     ((t (:foreground ,nimbus/red))))
-   `(magit-log-author-date-cutoff
-     ((t (:foreground ,nimbus/red  :bold t))))
+     ((t (:foreground ,nimbus/dark-green))))
    `(magit-log-date
      ((t (:foreground ,nimbus/blue))))
    `(magit-log-graph
-     ((t (:foreground "grey80"))))
-   ;;`(magit-log-head-label-bisect-bad
-   ;;((t (:foreground "IndianRed4" :background "IndianRed1"))))
-   ;;`(magit-log-head-label-bisect-good
-   ;;((t (:foreground "dark olive green" :background "light green"))))
-   ;;`(magit-log-head-label-default
-   ;;((t (:background "Grey50"))))
-   ;;`(magit-log-head-label-head
-   ;;((t (:foreground "White" :background "Grey20"))))
-   ;;`(magit-log-head-label-local
-   ;;((t (:foreground "LightSkyBlue1" :background "Grey13"))))
-   ;;`(magit-log-head-label-patches
-   ;;((t (:foreground "IndianRed4" :background "IndianRed1"))))
-   ;;`(magit-log-head-label-remote
-   ;;((t (:foreground "DarkSeaGreen2" :background "Grey11"))))
-   ;;`(magit-log-head-label-tags
-   ;;((t (:foreground "goldenrod4" :background "LemonChiffon1"))))
-   ;;`(magit-log-message
-   ;;((t (:foreground nil :background nil))))
-   ;;`(magit-log-reflog-label-amend
-   ;;((t (:foreground "goldenrod4" :background "LemonChiffon1"))))
-   ;;`(magit-log-reflog-label-checkout
-   ;;((t (:foreground "LightSkyBlue1" :background "Grey13"))))
-   ;;`(magit-log-reflog-label-cherry-pick
-   ;;((t (:foreground "dark olive green" :background "light green"))))
-   ;;`(magit-log-reflog-label-commit
-   ;;((t (:foreground "goldenrod4" :background "LemonChiffon1"))))
-   ;;`(magit-log-reflog-label-merge
-   ;;((t (:foreground "goldenrod4" :background "LemonChiffon1"))))
-   ;;`(magit-log-reflog-label-other
-   ;;((t (:background "Grey50"))))
-   ;;`(magit-log-reflog-label-rebase
-   ;;((t (:foreground "DarkSeaGreen2" :background "Grey11"))))
-   ;;`(magit-log-reflog-label-remote
-   ;;((t (:background "Grey50"))))
-   ;;`(magit-log-reflog-label-reset
-   ;;((t (:foreground "IndianRed4" :background "IndianRed1"))))
-   `(magit-tag
-     ((t (:foreground ,nimbus/blue))))
-   ;;`(magit-valid-signature
-   ;;((t (:foreground "PaleTurquoise"  :bold t))))
+     ((t (:foreground ,nimbus/darker-green))))
+
+   `(git-commit-summary ((t (:inherit font-lock-constant-face))))
+   `(git-commit-comment-action ((t (:foreground ,nimbus/orange))))
 
    ;; forge
    `(forge-post-author ((t (:inherit magit-log-author))))
    `(forge-post-date ((t (:inherit magit-log-date :slant italic))))
    `(forge-topic-merged ((t (:foreground ,nimbus/dark-green))))
    `(forge-topic-unmerged ((t (:foreground ,nimbus/red))))
+   `(forge-topic-open ((t ())))
    `(forge-topic-closed ((t (:inherit magit-dimmed))))
 
    ;; diff-hl
