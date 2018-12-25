@@ -3,11 +3,8 @@
 ;; Filename: nimbus-theme.el
 ;; Description: An awesome dark theme
 ;; Author: Marcin Swieczkowski <scatman@bu.edu>
-;; Created: Thu Mar  2 22:19:19 CET 2017
+;; Created: Thu Mar 2 22:19:19 CET 2017
 ;; Version: 1.0.0
-;; Last-Updated: Wed Apr 12 16:11:07 CEST 2017
-;;           By: Marcin Swieczkowski
-;;     Update #: 3
 ;; URL: https://github.com/m-cat/nimbus-theme
 ;; Keywords: faces
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
