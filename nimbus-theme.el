@@ -338,10 +338,10 @@
 
    ;; eshell
    `(eshell-prompt        ((t (:foreground ,nimbus/purple))))
-   `(eshell-ls-directory  ((t (:foreground ,nimbus/blue))))
+   `(eshell-ls-directory  ((t (:inherit font-lock-function-name-face))))
    `(eshell-ls-product    ((t (:foreground ,nimbus/orange))))
-   `(eshell-ls-backup     ((t (:foreground ,nimbus/darker-gray))))
-   `(eshell-ls-executable ((t (:foreground ,nimbus/green))))
+   `(eshell-ls-backup     ((t (:foreground ,nimbus/dark-gray))))
+   `(eshell-ls-executable ((t (:inherit font-lock-keyword-face))))
 
    ;; Eyebrowse
    `(eyebrowse-mode-line-inactive ((t (:foreground ,nimbus/darkest-gray))))
@@ -819,7 +819,7 @@
    `(company-tooltip
      ((t (:foreground ,nimbus/bg :background ,nimbus/fg))))
    `(company-tooltip-common
-     ((t (:foreground ,nimbus/blue :background ,nimbus/fg))))
+     ((t (:foreground ,nimbus/blue :background ,nimbus/fg :bold t))))
    `(company-tooltip-common-selection
      ((t (:foreground ,nimbus/bg :background ,nimbus/blue))))
    `(company-tooltip-mouse
