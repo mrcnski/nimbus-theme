@@ -56,8 +56,9 @@
       (nimbus/lightest-green "#8fbc8f")
       (nimbus/light-green    "#9ccc65")
       (nimbus/green          "#6aaf50")
-      (nimbus/dark-green     "#058945")
-      (nimbus/green-bg       "#0f422c")
+      (nimbus/dark-green     "#36a06a")
+      (nimbus/darker-green   "#058945")
+      (nimbus/green-bg       "#11472b")
       (nimbus/lightest-blue  "#86b5e8")
       (nimbus/light-blue     "#68a5e9")
       (nimbus/blue           "#598bc1")
@@ -77,6 +78,7 @@
       (nimbus/brown          "#987654")
       (nimbus/red            "#d65946")
       (nimbus/dark-red       "#9d2512")
+      (nimbus/red-bg         "#47112b")
       (nimbus/white          "white")
       (nimbus/black          "black")
 
@@ -90,7 +92,7 @@
 
   ;; Set faces
   (custom-theme-set-faces
-   `nimbus ;; you must use the same theme name here...
+   `nimbus ;; You must use the same theme name here...
    `(default
       ((t (:foreground ,nimbus/fg :background ,nimbus/bg :bold nil))))
    `(cursor       ((t (:foreground ,nimbus/black :background ,nimbus/cursor))))
@@ -98,9 +100,9 @@
    `(link         ((t (:foreground ,nimbus/lightest-blue :underline t))))
    `(link-visited ((t (:foreground ,nimbus/blue-gray :underline t))))
    `(highlight
-     ((t (:background ,nimbus/green-bg))))
+     ((t (:background ,nimbus/red-bg))))
    `(region
-     ((t (:foreground ,nimbus/bg :background ,nimbus/fg))))
+     ((t (:background ,nimbus/green-bg))))
    `(shadow       ((t (:foreground ,nimbus/light-gray))))
    `(tooltip      ((t (:background ,nimbus/fg :foreground ,nimbus/bg))))
 
@@ -142,7 +144,7 @@
    `(powerline-inactive2
      ((t (:foreground ,nimbus/black :background ,nimbus/gray))))
    `(mode-line
-     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+     ((t (:foreground ,nimbus/black :background ,nimbus/darker-green))))
    `(mode-line-inactive
      ((t (:foreground ,nimbus/black :background ,nimbus/blue-gray))))
 
@@ -243,7 +245,7 @@
    `(hl-line ((t (:background ,nimbus/blue-bg))))
 
    `(secondary-selection
-     ((t (:foreground ,nimbus/fg :background ,nimbus/blue-gray))))
+     ((t (:inherit highlight))))
 
    ;; ruler
    `(ruler-mode-default
@@ -795,6 +797,9 @@
    `(ac-yasnippet-candidate-face    ((t (:inherit ac-candidate-face))))
    `(ac-yasnippet-selection-face    ((t (:inherit ac-selection-face))))
 
+   ;; yasnippet
+   `(yas-field-highlight-face ((t (:inherit secondary-selection))))
+
    ;;`(company-echo
    ;;((t (:foreground nil :background nil))))
    ;;`(company-echo-common
@@ -805,8 +810,8 @@
      ((t (:inherit font-lock-comment-face))))
    ;;`(company-preview-search
    ;;((t (:foreground "wheat" :background "blue1"))))
-   ;;`(company-template-field
-   ;;((t (:foreground "black" :background "orange"))))
+   `(company-template-field
+   ((t (:inherit secondary-selection))))
    `(company-scrollbar-fg
      ((t (:background ,nimbus/dark-gray))))
    `(company-scrollbar-bg
