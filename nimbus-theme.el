@@ -132,7 +132,13 @@
      ((t (:foreground ,nimbus/green))))
    ;; highlight-operators
    `(highlight-operators-face
-     ((t (:foreground ,nimbus/dark-green))))
+     ((t (:foreground ,nimbus/darker-green))))
+
+   ;; search
+   `(isearch
+     ((t (:foreground ,nimbus/black :background ,nimbus/dark-green))))
+   `(lazy-highlight
+     ((t (:foreground ,nimbus/black :background ,nimbus/red))))
 
    ;; mode line & powerline
    `(powerline-active1
@@ -159,25 +165,25 @@
 
    ;; anzu mode
    `(anzu-match-1
-     ((t (:background ,nimbus/green :foreground ,nimbus/black))))
+     ((t (:inherit isearch))))
    `(anzu-match-2
-     ((t (:background ,nimbus/yellow :foreground ,nimbus/black))))
+     ((t (:foreground ,nimbus/white :background ,nimbus/yellow))))
    `(anzu-match-3
-     ((t (:background ,nimbus/blue :foreground ,nimbus/black))))
+     ((t (:inherit lazy-highlight))))
    `(anzu-mode-line
-     ((t (:foreground ,nimbus/white :bold nil))))
+     ((t (:foreground ,nimbus/white :background ,nimbus/bg :bold nil))))
    `(anzu-mode-line-no-match
-     ((t (:background ,nimbus/dark-red :foreground ,nimbus/black :bold nil))))
+     ((t (:foreground ,nimbus/red :background ,nimbus/bg :bold nil))))
    `(anzu-replace-to
      ((t (:foreground ,nimbus/yellow))))
 
    ;; avy, colors chosen for good contrast
    `(avy-background-face
-     ((t (:foreground ,nimbus/gray))))
+     ((t (:foreground ,nimbus/light-gray))))
    `(avy-lead-face
-     ((t (:foreground ,nimbus/black :bold nil :slant normal :background ,nimbus/green))))
+     ((t (:foreground ,nimbus/black :bold nil :slant normal :underline nil :background ,nimbus/green))))
    `(avy-lead-face-0
-     ((t (:inherit avy-lead-face :background ,nimbus/blue))))
+     ((t (:inherit avy-lead-face :background ,nimbus/red))))
    `(avy-lead-face-1
      ((t (:inherit avy-lead-face :background ,nimbus/fg))))
    `(avy-lead-face-2
@@ -226,12 +232,6 @@
      ((t (:foreground ,nimbus/black :background ,nimbus/yellow))))
    `(reb-match-3
      ((t (:foreground ,nimbus/black :background ,nimbus/blue))))
-
-   ;; search
-   `(isearch
-     ((t (:foreground ,nimbus/white :background ,nimbus/dark-green))))
-   `(lazy-highlight
-     ((t (:foreground ,nimbus/white :background ,nimbus/blue))))
 
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face
@@ -652,17 +652,17 @@
    `(helm-locate-finish
      ((t (:foreground ,nimbus/green))))
    `(helm-match-item
-     ((t (:inherit isearch))))
-   `(helm-match
      ((t (:inherit lazy-highlight))))
+   `(helm-match
+     ((t (:foreground ,nimbus/white))))
    `(helm-moccur-buffer
      ((t (:inherit compilation-info))))
    `(helm-selection
-     ((t (:background ,nimbus/blue-bg))))
+     ((t (:inherit hl-line))))
    `(helm-prefarg
      ((t (:foreground ,nimbus/green :bold t))))
-   ;;`(helm-selection-line
-   ;;((t ())))
+   ;; `(helm-selection-line
+   ;;   ((t ())))
    ;;`(helm-separator
    ;;((t ())))
    `(helm-source-header
@@ -674,7 +674,7 @@
    `(helm-swoop-line-number-face
      ((t (:inherit linum))))
    `(helm-swoop-target-word-face
-     ((t (:inherit lazy-highlight))))
+     ((t (:inherit isearch))))
    `(helm-swoop-target-line-face
      ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face
@@ -983,7 +983,7 @@
    ;;`(org-column-title              ((t (:foreground nil :background nil))))
    `(org-date                      ((t (:inherit link))))
    `(org-date-selected
-     ((t (:foreground ,nimbus/bg :background ,nimbus/yellow :underline t))))
+     ((t (:inherit lazy-highlight :underline t))))
    ;;`(org-default                   ((t (:foreground nil :background nil))))
    `(org-document-info             ((t (:foreground ,nimbus/lightest-green))))
    ;;`(org-document-info-keyword     ((t (:foreground nil :background nil))))
