@@ -1269,7 +1269,7 @@
    `(magit-diff-file-heading-highlight
      ((t (:inherit magit-section-highlight :slant normal :underline nil))))
    `(magit-diff-hunk-heading-highlight
-     ((t (:inherit magit-diff-file-heading-highlight :background ,dark-gray))))
+     ((t (:inherit magit-diff-file-heading-highlight :background ,darker-gray))))
    `(magit-diff-added-highlight
      ((t (:foreground ,green :background ,darker-gray))))
    `(magit-diff-removed-highlight
@@ -1347,12 +1347,12 @@
    `(git-commit-comment-action ((t (:foreground ,orange))))
 
    ;; forge
-   `(forge-post-author ((t (:inherit magit-log-author))))
-   `(forge-post-date ((t (:inherit magit-log-date :slant italic))))
+   `(forge-post-author ((t (:inherit magit-log-author :bold t))))
+   `(forge-post-date ((t (:inherit magit-log-date))))
    `(forge-topic-merged ((t (:foreground ,dark-green))))
-   `(forge-topic-unmerged ((t (:foreground ,red))))
+   `(forge-topic-unmerged ((t (:inherit magit-dimmed))))
    `(forge-topic-open ((t ())))
-   `(forge-topic-closed ((t (:inherit magit-dimmed))))
+   `(forge-topic-closed ((t (:foreground ,blue-gray))))
 
    ;; diff-hl
    `(diff-hl-change ((t (:inherit fringe :foreground ,orange))))
