@@ -950,8 +950,8 @@
    ;;`(org-agenda-clocking           ((t (:foreground nil :background nil))))
    ;;`(org-agenda-column-dateline    ((t (:foreground nil :background nil))))
    ;;`(org-agenda-current-time       ((t (:foreground nil :background nil))))
-   `(org-agenda-date               ((t (:foreground ,light-blue))))
-   `(org-agenda-date-today         ((t (:foreground ,lightest-blue))))
+   `(org-agenda-date               ((t (:foreground ,blue))))
+   `(org-agenda-date-today         ((t (:foreground ,light-blue))))
    `(org-agenda-date-weekend
      ((t (:inherit org-agenda-date :slant italic))))
    ;;`(org-agenda-diary              ((t (:foreground nil :background nil))))
