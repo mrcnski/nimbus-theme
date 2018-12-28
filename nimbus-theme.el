@@ -812,7 +812,7 @@
    `(company-tooltip
      ((t (:foreground ,bg :background ,fg))))
    `(company-tooltip-common
-     ((t (:foreground ,blue :background ,fg :bold t))))
+     ((t (:foreground ,darker-green :background ,fg))))
    `(company-tooltip-common-selection
      ((t (:foreground ,bg :background ,blue))))
    `(company-tooltip-mouse
