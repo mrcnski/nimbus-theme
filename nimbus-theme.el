@@ -1068,6 +1068,10 @@
    `(message-header-xheader  ((t (:foreground ,purple))))
    `(message-mml  ((t (:foreground ,dark-tan))))
 
+   ;; multiple-cursors
+   `(mc/cursor-face ((t (:foreground ,black :background ,dark-green))))
+   `(mc/cursor-bar-face ((t (:inherit mc/cursor-face :height 0.1))))
+
    ;; gnus
    `(gnus-button  ((t (:bold t))))
    `(gnus-cite-1  ((t (:foreground "light blue"))))
