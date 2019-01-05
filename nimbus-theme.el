@@ -975,8 +975,7 @@
    ;;`(org-column                    ((t (:foreground nil :background nil))))
    ;;`(org-column-title              ((t (:foreground nil :background nil))))
    `(org-date                      ((t (:inherit link))))
-   `(org-date-selected
-     ((t (:inherit lazy-highlight :underline t))))
+   `(org-date-selected             ((t (:inherit lazy-highlight :underline t))))
    ;;`(org-default                   ((t (:foreground nil :background nil))))
    `(org-document-info             ((t (:foreground ,lightest-green))))
    ;;`(org-document-info-keyword     ((t (:foreground nil :background nil))))
@@ -1022,9 +1021,9 @@
    ;;`(org-sexp-date                 ((t (:foreground nil :background nil))))
    `(org-special-keyword           ((t (:inherit font-lock-keyword-face))))
    ;;`(org-table                     ((t (:foreground nil :background nil))))
-   ;;`(org-tag                       ((t (:foreground nil :background nil))))
+   `(org-tag                       ((t (:foreground ,red))))
    ;;`(org-target                    ((t (:foreground nil :background nil))))
-   ;;`(org-time-grid                 ((t (:foreground nil :background nil))))
+   `(org-time-grid                 ((t (:foreground ,light-gray))))
    ;;`(org-upcoming-deadline         ((t (:foreground nil :background nil))))
    ;;`(org-verbatim                  ((t (:foreground nil :background nil))))
    ;;`(org-verse                     ((t (:foreground nil :background nil))))
@@ -1309,7 +1308,7 @@
    `(magit-popup-heading
      ((t (:inherit magit-section-heading))))
    `(magit-popup-key
-     ((t (:inherit magit-hash))))
+     ((t (:foreground ,purple))))
    `(magit-process-ng                  ((t (:foreground ,red :bold t))))
    `(magit-process-ok                  ((t (:foreground ,green))))
 
@@ -1358,9 +1357,12 @@
    `(forge-topic-open ((t ())))
    `(forge-topic-closed ((t (:foreground ,blue-gray))))
 
+   ;; makey
+   `(makey-key-mode-button-face ((t (:inherit font-lock-constant-face))))
+
    ;; diff-hl
-   `(diff-hl-change ((t (:inherit fringe :foreground ,orange))))
    `(diff-hl-insert ((t (:inherit fringe :foreground ,green))))
+   `(diff-hl-change ((t (:inherit fringe :foreground ,orange))))
    `(diff-hl-delete ((t (:inherit fringe :foreground ,red))))
 
    ;; git-gutter
