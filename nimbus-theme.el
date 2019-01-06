@@ -392,16 +392,16 @@
    ;; Flycheck
    `(flycheck-info
      ((t (:underline (:style wave :color ,green)))))
-   ;; `(flycheck-error
-   ;;   ((t ())))
-   ;; `(flycheck-warning
-   ;;   ((t ())))
+   `(flycheck-warning
+     ((t (:underline (:style wave :color "orange")))))
+   `(flycheck-error
+     ((t (:underline (:style wave :color "red")))))
    `(flycheck-fringe-info
-     ((t (:foreground ,green))))
-   ;; `(flycheck-fringe-warning
-   ;;   ((t ())))
-   ;; `(flycheck-fringe-error
-   ;;   ((t (:inherit error))))
+     ((t (:foreground ,green :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-warning
+     ((t (:inherit font-lock-warning-face :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-error
+     ((t (:inherit error :bold nil :underline nil :slant normal))))
    ;; `(flycheck-error-list-id
    ;;   ((t ())))
    `(flycheck-error-list-info
@@ -645,7 +645,7 @@
    ;; `(helm-buffer-not-saved       ((t (:inherit italics))))
    `(helm-buffer-process         ((t (:foreground ,green))))
    ;;`(helm-buffer-saved-out     ((t ())))
-   `(helm-buffer-size            ((t (:foreground ,yellow))))
+   `(helm-buffer-size            ((t (:inherit highlight-numbers-number))))
    `(helm-candidate-number
      ((t (:foreground ,green :background ,blue-bg))))
    `(helm-ff-directory           ((t (:foreground ,blue))))
@@ -698,7 +698,7 @@
    `(helm-swoop-target-line-face
      ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face
-     ((t (:inherit highlight :foreground ,white))))
+     ((t (:inherit helm-swoop-target-line-face :foreground ,white))))
 
    ;; ivy
    `(ivy-confirm-face ((t (:foreground ,green))))
@@ -757,6 +757,9 @@
    ;;((t (:bold t))))
    ;;`(jabber-title-small
    ;;((t (:bold t))))
+
+   ;; auto-dim-other-buffers
+   `(auto-dim-other-buffers-face ((t (:background "gray13"))))
 
    ;; rainbow delim
    `(rainbow-delimiters-depth-1-face
