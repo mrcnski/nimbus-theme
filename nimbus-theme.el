@@ -274,6 +274,10 @@
    `(compilation-mode-line-fail
      ((t (:inherit compilation-error :foreground ,dark-red :background ,bg))))
 
+   ;; dired
+   `(dired-header ((t (:foreground ,red))))
+   `(dired-flagged ((t (:foreground ,red))))
+
    ;; dired+
    `(diredp-autofile-name
      ((t (:background ,blue-bg))))
@@ -329,6 +333,28 @@
      ((t (:background ,blue-bg))))
    `(diredp-write-priv
      ((t (:foreground ,white :background ,dark-tan))))
+
+   ;; diredfl
+   `(diredfl-compressed-file-suffix ((t (:foreground ,light-blue))))
+   `(diredfl-date-time ((t (:inherit font-lock-keyword-face))))
+   `(diredfl-deletion-file-name ((t (:inherit dired-flagged))))
+   `(diredfl-deletion  ((t (:inherit dired-mark))))
+   `(diredfl-dir-heading ((t (:inherit dired-header))))
+   `(diredfl-dir-name  ((t (:inherit dired-directory))))
+   `(diredfl-flag-mark  ((t (:inherit dired-flagged))))
+   `(diredfl-flag-mark-line  ((t (:background ,purple-bg))))
+   `(diredfl-file-name ((t (:foreground ,fg))))
+   `(diredfl-file-suffix ((t (:foreground ,light-gray))))
+   `(diredfl-ignored-file-name ((t (:foreground ,blue-gray))))
+   `(diredfl-number    ((t (:inherit highlight-numbers-number))))
+   `(diredfl-symlink   ((t (:inherit dired-symlink))))
+
+   `(diredfl-no-priv   ((t (:foreground ,blue-gray))))
+   `(diredfl-dir-priv  ((t (:foreground ,purple))))
+   `(diredfl-rare-priv ((t (:foreground ,lightest-green))))
+   `(diredfl-exec-priv ((t (:foreground ,red))))
+   `(diredfl-read-priv ((t (:foreground ,green))))
+   `(diredfl-write-priv ((t (:foreground ,light-blue))))
 
    ;; eshell
    `(eshell-prompt        ((t (:foreground ,purple))))
