@@ -390,12 +390,9 @@
    `(term-default-bg-color ((t (:inherit bg))))
 
    ;; Flycheck
-   `(flycheck-info
-     ((t (:underline (:style wave :color ,green)))))
-   `(flycheck-warning
-     ((t (:underline (:style wave :color "orange")))))
-   `(flycheck-error
-     ((t (:underline (:style wave :color "red")))))
+   `(flycheck-info    ((t (:underline (:color ,green)))))
+   `(flycheck-warning ((t (:underline (:color "orange")))))
+   `(flycheck-error   ((t (:underline (:color "red")))))
    `(flycheck-fringe-info
      ((t (:foreground ,green :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-warning
