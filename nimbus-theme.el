@@ -50,13 +50,11 @@
       (lightest-green "#8fbc8f")
       (light-green    "#9ccc65")
       (green          "#6aaf50")
-      (dark-green     "#36a06a")
+      (dark-green     "#369664")
       (darker-green   "#058945")
-      (green-bg       "#11472b")
       (lightest-blue  "#86b5e8")
       (light-blue     "#68a5e9")
       (blue           "#598bc1")
-      (blue-bg        "#112b47")
       (orange         "#df9522")
       (tan            "#bdbc61")
       (dark-tan       "#7d7c61")
@@ -72,9 +70,15 @@
       (brown          "#987654")
       (red            "#d65946")
       (dark-red       "#9d2512")
-      (red-bg         "#47112b")
       (white          "white")
       (black          "black")
+
+      (green-bg       "#11472b")
+      (teal-bg        "#114747")
+      (gray-bg        "#2b4747")
+      (blue-bg        "#112b47")
+      (purple-bg      "#2b1147")
+      (red-bg         "#47112b")
 
       (cursor         "#f57e00")
       (fringe         "gray10")
@@ -86,16 +90,13 @@
   ;; Set faces.
   (custom-theme-set-faces
    `nimbus ;; You must use the same theme name here...
-   `(default
-      ((t (:foreground ,fg :background ,bg :bold nil))))
+   `(default      ((t (:foreground ,fg :background ,bg :bold nil))))
    `(cursor       ((t (:foreground ,black :background ,cursor))))
-   `(fringe       ((t (:background ,fringe  :bold nil :underline nil))))
+   `(fringe       ((t (:background ,fringe :bold nil :underline nil :slant normal))))
    `(link         ((t (:foreground ,lightest-blue :underline t))))
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
-   `(highlight
-     ((t (:background ,red-bg))))
-   `(region
-     ((t (:background ,green-bg))))
+   `(highlight    ((t (:background ,teal-bg))))
+   `(region       ((t (:background ,green-bg))))
    `(shadow       ((t (:foreground ,light-gray))))
    `(tooltip      ((t (:background ,fg :foreground ,bg))))
 
@@ -134,6 +135,10 @@
      ((t (:foreground ,black :background ,red))))
 
    ;; mode line & powerline
+   `(mode-line
+     ((t (:foreground ,black :background ,darker-green))))
+   `(mode-line-inactive
+     ((t (:foreground ,black :background ,blue-gray))))
    `(powerline-active1
      ((t (:foreground ,fg :background ,darkest-gray))))
    `(powerline-active2
@@ -142,10 +147,6 @@
      ((t (:foreground ,dark-gray :background ,bg))))
    `(powerline-inactive2
      ((t (:foreground ,black :background ,gray))))
-   `(mode-line
-     ((t (:foreground ,black :background ,darker-green))))
-   `(mode-line-inactive
-     ((t (:foreground ,black :background ,blue-gray))))
 
    ;; ace-jump mode
    `(ace-jump-face-background ((t (:inherit font-lock-comment-face))))
@@ -200,7 +201,7 @@
 
    ;; line numbers
    `(linum
-     ((t (:inherit fringe :foreground ,blue-gray :slant normal))))
+     ((t (:inherit fringe :foreground ,blue-gray))))
    `(nlinum-current-line
      ((t (:inherit linum :foreground ,dark-green))))
 
@@ -238,7 +239,7 @@
    `(hl-line ((t (:background ,blue-bg))))
 
    `(secondary-selection
-     ((t (:inherit highlight))))
+     ((t (:background ,red-bg))))
 
    ;; ruler
    `(ruler-mode-default
@@ -791,7 +792,7 @@
    `(ac-yasnippet-selection-face    ((t (:inherit ac-selection-face))))
 
    ;; yasnippet
-   `(yas-field-highlight-face ((t (:inherit secondary-selection))))
+   `(yas-field-highlight-face ((t (:inherit highlight))))
 
    ;;`(company-echo
    ;;((t (:foreground nil :background nil))))
@@ -804,7 +805,7 @@
    ;;`(company-preview-search
    ;;((t (:foreground "wheat" :background "blue1"))))
    `(company-template-field
-   ((t (:inherit secondary-selection))))
+     ((t (:inherit highlight))))
    `(company-scrollbar-fg
      ((t (:background ,dark-gray))))
    `(company-scrollbar-bg
@@ -888,9 +889,9 @@
    `(ediff-even-diff-C            ((t (:background "#191925"))))
    ;;`(ediff-even-diff-Ancestor   ((t ())))
 
-   `(diff-added             ((t (:background "#284828"))))
-   `(diff-changed           ((t (:background "#484828"))))
-   `(diff-removed           ((t (:background "#482828"))))
+   `(diff-added             ((t (:background ,green-bg))))
+   `(diff-changed           ((t (:background ,blue-bg))))
+   `(diff-removed           ((t (:background ,red-bg))))
    `(diff-context           ((t (:foreground ,gray))))
    `(diff-file-header
      ((t (:foreground ,bg :background "grey60" :bold t))))
