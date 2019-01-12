@@ -1,4 +1,4 @@
-;;; nimbus-theme.el --- An awesome dark theme
+;;; nimbus-theme.el --- An awesome dark theme. -*- lexical-binding: t; -*-
 ;;
 ;; Filename:    nimbus-theme.el
 ;; Description: An awesome dark theme
@@ -6,6 +6,7 @@
 ;;              See README.md for full list of contributors.
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
 ;; Version:     1.0.0
+;; Package-Requires: ((emacs "24"))
 ;; URL:         https://github.com/m-cat/nimbus-theme
 ;; Keywords:    faces
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -75,7 +76,7 @@
 
       (green-bg       "#11472b")
       (teal-bg        "#114747")
-      (gray-bg        "#2b4747")
+      ;; (gray-bg        "#2b4747")
       (blue-bg        "#112b47")
       (purple-bg      "#2b1147")
       (red-bg         "#47112b")
@@ -1577,6 +1578,9 @@
   (interactive)
   (load-theme 'nimbus t))
 
+;;; Footer
+
+(provide 'nimbus-theme)
 
 (provide-theme 'nimbus)
 ;;; nimbus-theme.el ends here
