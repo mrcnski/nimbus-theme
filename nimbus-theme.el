@@ -70,7 +70,7 @@
       (blue-gray      "#608079")
       (brown          "#987654")
       (red            "#d65946")
-      (dark-red       "#9d2512")
+      (dark-red       "#ad3632")
       (white          "white")
       (black          "black")
 
@@ -1041,21 +1041,25 @@
    ;;`(org-meta-line                 ((t (:foreground nil :background nil))))
    ;;`(org-mode-line-clock           ((t (:foreground nil :background nil))))
    ;;`(org-mode-line-clock-overrun   ((t (:foreground nil :background nil))))
+   `(org-priority                  ((t (:foreground ,dark-red))))
    ;;`(org-property-value            ((t (:foreground nil :background nil))))
    ;;`(org-quote                     ((t (:foreground nil :background nil))))
    `(org-scheduled                 ((t (:foreground ,green))))
    `(org-scheduled-previously      ((t (:foreground ,orange))))
    `(org-scheduled-today           ((t (:foreground ,yellow))))
    ;;`(org-sexp-date                 ((t (:foreground nil :background nil))))
-   `(org-special-keyword           ((t (:inherit font-lock-keyword-face))))
+   `(org-special-keyword           ((t (:foreground ,blue-gray))))
    ;;`(org-table                     ((t (:foreground nil :background nil))))
-   `(org-tag                       ((t (:foreground ,red))))
+   `(org-tag                       ((t (:foreground ,brown))))
    ;;`(org-target                    ((t (:foreground nil :background nil))))
-   `(org-time-grid                 ((t (:foreground ,light-gray))))
+   `(org-time-grid                 ((t (:foreground ,blue-gray))))
    ;;`(org-upcoming-deadline         ((t (:foreground nil :background nil))))
    ;;`(org-verbatim                  ((t (:foreground nil :background nil))))
    ;;`(org-verse                     ((t (:foreground nil :background nil))))
    ;;`(org-warning                   ((t (:foreground nil :background nil))))
+
+   ;; org-super-agenda
+   `(org-super-agenda-header ((t (:inherit org-agenda-structure))))
 
    ;; debbugs
    `(debbugs-gnu-done    ((t (:foreground ,gray))))
