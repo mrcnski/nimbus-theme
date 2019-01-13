@@ -266,7 +266,7 @@
    `(vh1/default-face ((t (:background ,green))))
 
    ;; mini buffer
-   `(minibuffer-prompt ((t (:bold t))))
+   `(minibuffer-prompt ((t (:foreground ,bright-yellow :bold nil))))
 
    ;; compile
    `(compilation-info
