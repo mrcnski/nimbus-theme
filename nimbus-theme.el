@@ -1285,8 +1285,8 @@
      ((t (:foreground ,orange))))
    `(magit-branch-remote
      ((t (:foreground ,yellow))))
-   `(magit-tag
-     ((t (:foreground ,light-blue))))
+   `(magit-tag      ((t (:foreground ,light-blue))))
+   `(magit-filename ((t (:foreground ,blue-gray))))
 
    `(magit-diff-file-heading
      ((t (:foreground ,fg))))
@@ -1376,9 +1376,9 @@
      ((t (:foreground ,blue))))
 
    `(magit-log-author
-     ((t (:foreground ,dark-green))))
+     ((t (:foreground ,dark-green :slant normal))))
    `(magit-log-date
-     ((t (:foreground ,blue))))
+     ((t (:foreground ,blue :slant normal))))
    `(magit-log-graph
      ((t (:foreground ,darker-green))))
 
