@@ -136,6 +136,9 @@
    `(highlight-operators-face
      ((t (:foreground ,darker-green))))
 
+   ;; hl-todo
+   `(hl-todo ((t (:foreground "#cc9393", :bold nil))))
+
    ;; search
    `(isearch
      ((t (:foreground ,black :background ,dark-green))))
@@ -284,7 +287,7 @@
 
    ;; dired
    `(dired-header ((t (:foreground ,red))))
-   `(dired-flagged ((t (:foreground ,red))))
+   `(dired-flagged ((t (:foreground ,dark-red))))
 
    ;; dired+
    `(diredp-autofile-name
@@ -365,7 +368,7 @@
    `(diredfl-write-priv ((t (:foreground ,light-blue))))
 
    ;; eshell
-   `(eshell-prompt        ((t (:foreground ,purple))))
+   `(eshell-prompt        ((t (:foreground ,green))))
    `(eshell-ls-directory  ((t (:inherit font-lock-function-name-face))))
    `(eshell-ls-product    ((t (:foreground ,orange))))
    `(eshell-ls-backup     ((t (:foreground ,dark-gray))))
@@ -376,6 +379,9 @@
 
    ;; shell
    `(comint-highlight-prompt ((t (:foreground ,green))))
+
+   ;; sh
+   `(sh-quoted-exec ((t (:foreground ,red))))
 
    ;; term
    `(term-color-black
@@ -391,7 +397,7 @@
    `(term-color-magenta
      ((t (:foreground ,purple :background ,purple))))
    `(term-color-cyan
-     ((t (:foreground ,light-blue :background ,light-blue))))
+     ((t (:foreground ,lightest-blue :background ,lightest-blue))))
    `(term-color-white
      ((t (:foreground ,fg :background ,fg))))
    `(term-default-fg-color ((t (:inherit fg))))
