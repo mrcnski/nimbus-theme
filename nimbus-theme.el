@@ -47,6 +47,7 @@
 (deftheme nimbus "An awesome dark theme.")
 
 ;; Define the palette.
+;; TODO: Get rid of tan. Too similar to ,yellow.
 (let (
       (lightest-green "#8fbc8f")
       (light-green    "#9ccc65")
@@ -81,6 +82,9 @@
       (purple-bg      "#2b1147")
       (red-bg         "#47112b")
 
+      (nimbus-warn    "#f57e00")
+      (nimbus-err     "red")
+
       (cursor         "#f57e00")
       (fringe         "gray10")
 
@@ -99,7 +103,9 @@
    `(highlight    ((t (:background ,teal-bg))))
    `(region       ((t (:background ,green-bg))))
    `(shadow       ((t (:foreground ,light-gray))))
-   `(tooltip      ((t (:background ,fg :foreground ,bg))))
+   `(tooltip      ((t (:foreground ,bg :background ,fg))))
+   `(warning      ((t (:foreground ,nimbus-warn :bold t))))
+   `(error        ((t (:foreground ,nimbus-err :bold t))))
 
    ;; standard font lock
    `(font-lock-builtin-face           ((t (:foreground ,blue))))
@@ -113,8 +119,7 @@
    `(font-lock-preprocessor-face      ((t (:foreground ,orange))))
    `(font-lock-type-face              ((t (:foreground ,red))))
    `(font-lock-constant-face          ((t (:foreground ,purple))))
-   `(font-lock-warning-face
-     ((t (:foreground ,orange :bold t))))
+   `(font-lock-warning-face           ((t (:inherit warning))))
    `(font-lock-variable-name-face     ((t (:foreground ,yellow))))
    `(font-lock-doc-face
      ((t (:inherit font-lock-comment-face :foreground ,lightest-green))))
@@ -122,9 +127,11 @@
    ;; highlight-numbers
    `(highlight-numbers-number
      ((t (:foreground ,orange))))
+
    ;; highlight-quoted
    `(highlight-quoted-symbol
      ((t (:foreground ,green))))
+
    ;; highlight-operators
    `(highlight-operators-face
      ((t (:foreground ,darker-green))))
@@ -265,7 +272,7 @@
    `(compilation-info
      ((t (:foreground ,dark-green :bold t))))
    `(compilation-warning
-     ((t (:foreground ,orange :bold t :background ,bg))))
+     ((t (:inherit warning :background ,bg))))
    `(compilation-error
      ((t (:inherit error :bold t))))
    `(compilation-mode-line-exit
@@ -392,8 +399,8 @@
 
    ;; Flycheck
    `(flycheck-info    ((t (:underline (:color ,green)))))
-   `(flycheck-warning ((t (:underline (:color "orange")))))
-   `(flycheck-error   ((t (:underline (:color "red")))))
+   `(flycheck-warning ((t (:underline (:color ,nimbus-warn)))))
+   `(flycheck-error   ((t (:underline (:color ,nimbus-err)))))
    `(flycheck-fringe-info
      ((t (:foreground ,green :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-warning
@@ -479,10 +486,7 @@
    ;;show paren
    `(show-paren-match
      ((t (:foreground ,white))))
-   `(show-paren-mismatch ((t (:inherit error))))
-
-   ;; error
-   `(error ((t (:foreground "red"))))
+   `(show-paren-mismatch ((t (:inherit error :bold nil))))
 
    ;; ido
    `(ido-only-match         ((t (:foreground ,green))))
@@ -672,7 +676,7 @@
    `(helm-match-item
      ((t (:inherit lazy-highlight))))
    `(helm-match
-     ((t (:foreground ,white))))
+     ((t (:foreground ,nimbus-warn))))
    `(helm-moccur-buffer
      ((t (:inherit compilation-info))))
    `(helm-selection
@@ -778,7 +782,7 @@
      ((t (:foreground ,light-blue))))
    `(rainbow-delimiters-depth-9-face
      ((t (:foreground ,yellow))))
-   `(rainbow-delimiters-unmatched-face ((t (:inherit error))))
+   `(rainbow-delimiters-unmatched-face ((t (:inherit error :bold nil))))
 
    ;; rainbow blocks
    `(rainbow-blocks-depth-1-face
@@ -799,7 +803,7 @@
      ((t (:foreground ,light-blue))))
    `(rainbow-blocks-depth-9-face
      ((t (:foreground ,yellow))))
-   `(rainbow-blocks-unmatched-face ((t (:inherit error))))
+   `(rainbow-blocks-unmatched-face ((t (:inherit error :bold nil))))
 
    ;; auto complete
    `(ac-candidate-face
@@ -1256,7 +1260,7 @@
    `(whitespace-indentation
      ((t (:foreground ,gray :background "gray12"))))
    `(whitespace-line
-     ((t (:inherit error))))
+     ((t (:inherit error :bold nil))))
    `(whitespace-newline
      ((t (:foreground ,gray))))
    `(whitespace-space
