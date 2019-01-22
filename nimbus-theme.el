@@ -125,19 +125,16 @@
      ((t (:inherit font-lock-comment-face :foreground ,lightest-green))))
 
    ;; highlight-numbers
-   `(highlight-numbers-number
-     ((t (:foreground ,orange))))
+   `(highlight-numbers-number ((t (:foreground ,orange))))
 
    ;; highlight-quoted
-   `(highlight-quoted-symbol
-     ((t (:foreground ,green))))
+   `(highlight-quoted-symbol  ((t (:inherit font-lock-constant-face))))
 
    ;; highlight-operators
-   `(highlight-operators-face
-     ((t (:foreground ,darker-green))))
+   `(highlight-operators-face ((t (:foreground ,darker-green))))
 
    ;; hl-todo
-   `(hl-todo ((t (:foreground "#cc9393", :bold nil))))
+   `(hl-todo ((t (:foreground "#cc9393", :bold nil :slant italic))))
 
    ;; search
    `(isearch
