@@ -415,11 +415,6 @@
    `(git-gutter:separator ((t (:foreground ,green :bold t))))
    `(git-gutter:unchanged ((t (:foreground ,yellow))))
 
-   ;; guide-key
-   `(guide-key/prefix-command-face ((t (:foreground ,green))))
-   `(guide-key/highlight-command-face ((t (:foreground ,blue))))
-   `(guide-key/key-face ((t (:foreground ,gray))))
-
    ;; gnus
    `(gnus-button ((t (:bold t))))
    `(gnus-cite-1 ((t (:foreground "light blue"))))
@@ -494,6 +489,11 @@
    `(gnus-summary-normal-undownloaded ((t (:foreground ,dark-gray))))
    `(gnus-summary-normal-unread ((t (:foreground ,blue))))
    `(gnus-summary-selected ((t (:underline t))))
+
+   ;; guide-key
+   `(guide-key/prefix-command-face ((t (:foreground ,green))))
+   `(guide-key/highlight-command-face ((t (:foreground ,blue))))
+   `(guide-key/key-face ((t (:foreground ,gray))))
 
    ;; helm
    `(helm-M-x-key ((t (:foreground ,orange :underline nil))))
@@ -618,10 +618,6 @@
    `(js2-private-member ((t (:foreground ,dark-tan))))
    `(js2-warning ((t ( :underline ,orange))))
 
-   ;; Man
-   `(Man-overstrike ((t (:foreground ,blue))))
-   `(Man-underline ((t (:foreground ,yellow))))
-
    ;; magit
    `(magit-section-heading ((t (:foreground ,blue))))
    `(magit-section-heading-selection ((t (:foreground ,light-blue))))
@@ -692,6 +688,10 @@
 
    ;; makey
    `(makey-key-mode-button-face ((t (:inherit font-lock-constant-face))))
+
+   ;; Man
+   `(Man-overstrike ((t (:foreground ,blue))))
+   `(Man-underline ((t (:foreground ,yellow))))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
