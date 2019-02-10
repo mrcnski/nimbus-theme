@@ -736,6 +736,11 @@
    `(neo-vc-unregistered-face ((t (:foreground nil :background nil))))
    `(neo-vc-up-to-date-face ((t (:foreground ,fg))))
 
+   ;; nswbuff
+   `(nswbuff-current-buffer-face ((t (:foreground ,nimbus-warn :underline t))))
+   `(nswbuff-separator-face ((t (:inherit font-lock-keyword-face))))
+   `(nswbuff-special-buffers-face ((t (:inherit font-lock-constant-face))))
+
    ;; org
    `(org-agenda-date ((t (:foreground ,blue))))
    `(org-agenda-date-today ((t (:foreground ,light-blue))))
