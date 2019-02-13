@@ -129,6 +129,7 @@
    `(linum ((t (:inherit fringe :foreground ,blue-gray))))
    `(nlinum-current-line ((t (:inherit linum :foreground ,dark-green))))
    `(popup-tip-face ((t (:background ,fg :foreground ,bg))))
+   `(trailing-whitespace ((t (:foreground ,white :underline t))))
    `(vertical-border ((t (:foreground ,darker-gray))))
 
    ;;; Modes
@@ -868,9 +869,6 @@
    `(term-color-yellow ((t (:foreground ,yellow :background ,yellow))))
    `(term-default-bg-color ((t (:inherit bg))))
    `(term-default-fg-color ((t (:inherit fg))))
-
-   ;; trailing whitespace
-   `(trailing-whitespace ((t (:background ,white :bold t))))
 
    ;; twittering
    `(twittering-timeline-footer-face ((t (:inherit font-lock-function-name-face))))
