@@ -876,6 +876,9 @@
    `(term-default-bg-color ((t (:inherit bg))))
    `(term-default-fg-color ((t (:inherit fg))))
 
+   ;; transient
+   `(transient-key ((t (:inherit font-lock-constant-face))))
+
    ;; twittering
    `(twittering-timeline-footer-face ((t (:inherit font-lock-function-name-face))))
    `(twittering-timeline-header-face ((t (:inherit font-lock-function-name-face))))
