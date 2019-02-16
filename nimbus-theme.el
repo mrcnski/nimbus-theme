@@ -769,8 +769,14 @@
    `(org-scheduled-previously ((t (:foreground ,orange))))
    `(org-scheduled-today ((t (:foreground ,yellow))))
    `(org-special-keyword ((t (:foreground ,blue-gray))))
+   `(org-table ((t (:foreground ,lightest-blue))))
    `(org-tag ((t (:foreground ,brown))))
    `(org-time-grid ((t (:foreground ,blue-gray))))
+   `(org-upcoming-deadline ((t (:inherit org-warning :bold nil))))
+   `(org-warning ((t (:inherit font-lock-warning-face :foreground ,red))))
+
+   ;; org-recur
+   `(org-recur ((t (:foreground ,dark-tan))))
 
    ;; org-super-agenda
    `(org-super-agenda-header ((t (:inherit org-agenda-structure))))
