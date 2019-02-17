@@ -283,12 +283,14 @@
    `(dired-flagged ((t (:foreground ,dark-red))))
 
    ;; diredfl
-   `(diredfl-compressed-file-suffix ((t (:foreground ,light-blue))))
+   `(diredfl-compressed-file-name ((t (:foreground ,light-blue))))
+   `(diredfl-compressed-file-suffix ((t (:inherit diredfl-compressed-file-name))))
    `(diredfl-date-time ((t (:inherit font-lock-keyword-face))))
    `(diredfl-deletion-file-name ((t (:inherit dired-flagged))))
    `(diredfl-deletion ((t (:inherit dired-mark))))
    `(diredfl-dir-heading ((t (:inherit dired-header))))
    `(diredfl-dir-name ((t (:inherit dired-directory))))
+   `(diredfl-executable-tag ((t (:foreground ,red))))
    `(diredfl-flag-mark ((t (:inherit dired-flagged))))
    `(diredfl-flag-mark-line ((t (:background ,purple-bg))))
    `(diredfl-file-name ((t (:foreground ,fg))))
@@ -297,10 +299,11 @@
    `(diredfl-number ((t (:inherit highlight-numbers-number))))
    `(diredfl-symlink ((t (:inherit dired-symlink))))
 
-   `(diredfl-no-priv ((t (:foreground ,blue-gray))))
    `(diredfl-dir-priv ((t (:foreground ,purple))))
-   `(diredfl-rare-priv ((t (:foreground ,lightest-green))))
    `(diredfl-exec-priv ((t (:foreground ,red))))
+   `(diredfl-link-priv ((t (:foreground ,blue))))
+   `(diredfl-no-priv ((t (:foreground ,blue-gray))))
+   `(diredfl-rare-priv ((t (:foreground ,lightest-green))))
    `(diredfl-read-priv ((t (:foreground ,green))))
    `(diredfl-write-priv ((t (:foreground ,light-blue))))
 
