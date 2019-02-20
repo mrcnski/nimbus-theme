@@ -102,7 +102,7 @@
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
    `(highlight ((t (:background ,teal-bg))))
    `(region ((t (:background ,green-bg))))
-   `(shadow ((t (:foreground ,light-gray))))
+   `(shadow ((t (:foreground ,light-gray :background ,bg))))
    `(tooltip ((t (:foreground ,bg :background ,fg))))
    `(warning ((t (:foreground ,nimbus-warn :bold t))))
    `(error ((t (:foreground ,nimbus-err :bold t))))
@@ -385,9 +385,9 @@
    `(eyebrowse-mode-line-inactive ((t (:foreground ,darkest-gray))))
 
    ;; flycheck
-   `(flycheck-info ((t (:underline (:color ,green)))))
-   `(flycheck-warning ((t (:underline (:color ,nimbus-warn)))))
-   `(flycheck-error ((t (:underline (:color ,nimbus-err)))))
+   `(flycheck-info ((t (:underline (:color ,green :style wave)))))
+   `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
+   `(flycheck-error ((t (:underline (:color ,nimbus-err :style wave)))))
    `(flycheck-fringe-info ((t (:foreground ,green :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-warning ((t (:inherit font-lock-warning-face :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-error ((t (:inherit error :bold nil :underline nil :slant normal))))
