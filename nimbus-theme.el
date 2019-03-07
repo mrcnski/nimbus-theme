@@ -47,7 +47,7 @@
 (deftheme nimbus "An awesome dark theme.")
 
 ;; Define the palette.
-;; TODO: Get rid of tan. Too similar to ,yellow.
+;; TODO: Get rid of tan. Too similar to yellow.
 (let (
       (lightest-green "#8fbc8f")
       (light-green    "#9ccc65")
@@ -362,21 +362,21 @@
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 
    ;; erc
-   `(erc-nick-default-face ((t (:foreground ,blue))))
-   `(erc-my-nick-face ((t (:foreground ,yellow))))
    `(erc-current-nick-face ((t (:foreground ,blue))))
-   `(erc-notice-face ((t (:foreground ,green))))
    `(erc-input-face ((t (:foreground ,white))))
-   `(erc-timestamp-face ((t (:foreground ,darker-gray))))
-   `(erc-prompt-face ((t (:foreground ,purple))))
    `(erc-keyword-face ((t (:foreground, light-green :bold t))))
+   `(erc-my-nick-face ((t (:foreground ,yellow))))
+   `(erc-nick-default-face ((t (:foreground ,blue))))
+   `(erc-notice-face ((t (:foreground ,green))))
+   `(erc-prompt-face ((t (:foreground ,purple))))
+   `(erc-timestamp-face ((t (:foreground ,darker-gray))))
 
    ;; eshell
-   `(eshell-prompt ((t (:foreground ,green))))
-   `(eshell-ls-directory ((t (:inherit font-lock-function-name-face))))
-   `(eshell-ls-product ((t (:foreground ,orange))))
    `(eshell-ls-backup ((t (:foreground ,dark-gray))))
+   `(eshell-ls-directory ((t (:inherit font-lock-function-name-face))))
    `(eshell-ls-executable ((t (:inherit font-lock-keyword-face))))
+   `(eshell-ls-product ((t (:foreground ,orange))))
+   `(eshell-prompt ((t (:foreground ,green))))
 
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face ((t (:background ,blue :foreground ,bg))))
@@ -397,10 +397,10 @@
    ;; forge
    `(forge-post-author ((t (:inherit magit-log-author :bold t))))
    `(forge-post-date ((t (:inherit magit-log-date))))
-   `(forge-topic-merged ((t (:foreground ,dark-green))))
-   `(forge-topic-unmerged ((t (:inherit magit-dimmed))))
-   `(forge-topic-open ((t ())))
    `(forge-topic-closed ((t (:foreground ,blue-gray))))
+   `(forge-topic-merged ((t (:foreground ,dark-green))))
+   `(forge-topic-open ((t ())))
+   `(forge-topic-unmerged ((t (:inherit magit-dimmed))))
 
    ;; geiser
    `(geiser-font-lock-autodoc-current-arg ((t (:foreground ,tan))))
