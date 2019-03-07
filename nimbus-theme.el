@@ -382,7 +382,7 @@
    `(evil-search-highlight-persist-highlight-face ((t (:background ,blue :foreground ,bg))))
 
    ;; eyebrowse
-   `(eyebrowse-mode-line-inactive ((t (:foreground ,darkest-gray))))
+   `(eyebrowse-mode-line-inactive ((t (:foreground ,bg))))
 
    ;; flycheck
    `(flycheck-info ((t (:underline (:color ,green :style wave)))))
@@ -527,7 +527,7 @@
    `(helm-selection ((t (:inherit hl-line))))
    `(helm-prefarg ((t (:foreground ,green :bold t))))
    `(helm-source-header ((t (:foreground ,black :background ,blue))))
-   `(helm-visible-mark ((t (:foreground ,bg :background ,green))))
+   `(helm-visible-mark ((t (:foreground ,bg :background ,lightest-green))))
 
    ;; helm-swoop
    `(helm-swoop-line-number-face ((t (:inherit linum))))
@@ -696,6 +696,9 @@
    ;; Man
    `(Man-overstrike ((t (:foreground ,blue))))
    `(Man-underline ((t (:foreground ,yellow))))
+
+   ;; markdown
+   `(markdown-code-face (()))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
