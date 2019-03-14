@@ -382,9 +382,6 @@
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face ((t (:background ,blue :foreground ,bg))))
 
-   ;; eyebrowse
-   `(eyebrowse-mode-line-inactive ((t (:foreground ,bg))))
-
    ;; flycheck
    `(flycheck-info ((t (:underline (:color ,green :style wave)))))
    `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
@@ -717,7 +714,7 @@
 
    ;; mode-line
    `(mode-line ((t (:foreground ,fg :background ,darkest-gray))))
-   `(mode-line-inactive ((t (:foreground ,black :background ,blue-gray))))
+   `(mode-line-inactive ((t (:foreground ,gray :background ,bg))))
 
    ;; multiple-cursors
    `(mc/cursor-face ((t (:foreground ,black :background ,dark-green))))
@@ -799,7 +796,7 @@
    ;; powerline
    `(powerline-active1 ((t (:foreground ,black :background ,darker-green))))
    `(powerline-active2 ((t (:foreground ,fg :background ,darkest-gray))))
-   `(powerline-inactive1 ((t (:foreground ,gray :background ,bg))))
+   `(powerline-inactive1 ((t (:foreground ,black :background ,blue-gray))))
    `(powerline-inactive2 ((t (:foreground ,black :background ,darkest-gray))))
 
    ;; rainbow-blocks
