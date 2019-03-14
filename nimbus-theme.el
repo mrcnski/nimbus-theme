@@ -57,6 +57,7 @@
       (lightest-blue  "#86b5e8")
       (light-blue     "#68a5e9")
       (blue           "#598bc1")
+      ;; (light-orange   "#eaaa0c")
       (orange         "#df9522")
       (tan            "#bdbc61")
       (dark-tan       "#7d7c61")
@@ -146,8 +147,8 @@
    `(anzu-match-1 ((t (:inherit isearch))))
    `(anzu-match-2 ((t (:foreground ,white :background ,yellow))))
    `(anzu-match-3 ((t (:inherit lazy-highlight))))
-   `(anzu-mode-line ((t (:foreground ,white :background ,bg :bold nil))))
-   `(anzu-mode-line-no-match ((t (:foreground ,red :background ,bg :bold nil))))
+   `(anzu-mode-line ((t (:foreground ,bright-yellow :bold nil))))
+   `(anzu-mode-line-no-match ((t (:foreground ,nimbus-err :bold nil))))
    `(anzu-replace-to ((t (:foreground ,yellow))))
 
    ;; auctex
@@ -214,12 +215,12 @@
    `(company-tooltip-selection ((t (:foreground ,fg :background ,blue))))
 
    ;; compilation
-   `(compilation-info ((t (:foreground ,dark-green :bold t))))
-   `(compilation-warning ((t (:inherit warning :background ,bg))))
-   `(compilation-error ((t (:inherit error :bold t))))
-   `(compilation-mode-line-exit ((t (:inherit compilation-info :background ,bg))))
-   `(compilation-mode-line-run ((t (:inherit compilation-warning :background ,bg))))
-   `(compilation-mode-line-fail ((t (:inherit compilation-error :foreground ,dark-red :background ,bg))))
+   `(compilation-info ((t (:foreground ,green))))
+   `(compilation-warning ((t (:foreground ,nimbus-warn))))
+   `(compilation-error ((t (:foreground ,nimbus-err))))
+   `(compilation-mode-line-exit ((t (:inherit compilation-info))))
+   `(compilation-mode-line-run ((t (:inherit compilation-warning))))
+   `(compilation-mode-line-fail ((t (:inherit compilation-error))))
 
    ;; custom
    `(custom-button ((t (:foreground nil :background nil))))
@@ -389,8 +390,8 @@
    `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
    `(flycheck-error ((t (:underline (:color ,nimbus-err :style wave)))))
    `(flycheck-fringe-info ((t (:foreground ,green :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-warning ((t (:inherit font-lock-warning-face :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-error ((t (:inherit error :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-warning ((t (:foreground ,nimbus-warn :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-error ((t (:foreground ,nimbus-err :bold nil :underline nil :slant normal))))
    `(flycheck-error-list-info ((t (:foreground ,green))))
    `(flycheck-error-list-checker-name ((t (:foreground ,yellow))))
 
@@ -511,7 +512,7 @@
    `(helm-buffer-directory ((t (:foreground ,green))))
    `(helm-buffer-process ((t (:foreground ,green))))
    `(helm-buffer-size ((t (:inherit highlight-numbers-number))))
-   `(helm-candidate-number ((t (:foreground ,green :background ,blue-bg))))
+   `(helm-candidate-number ((t (:foreground ,dark-green))))
    `(helm-ff-directory ((t (:foreground ,blue))))
    `(helm-ff-executable ((t (:foreground ,green))))
    `(helm-ff-file ((t (:foreground ,purple :inherit default))))
@@ -715,7 +716,7 @@
    `(minibuffer-prompt ((t (:foreground ,bright-yellow :bold nil))))
 
    ;; mode-line
-   `(mode-line ((t (:foreground ,black :background ,darker-green))))
+   `(mode-line ((t (:foreground ,fg :background ,darkest-gray))))
    `(mode-line-inactive ((t (:foreground ,black :background ,blue-gray))))
 
    ;; multiple-cursors
@@ -796,10 +797,10 @@
    `(paradox-mode-line-face ((t (:foreground ,blue-bg :bold t))))
 
    ;; powerline
-   `(powerline-active1 ((t (:foreground ,fg :background ,darkest-gray))))
-   `(powerline-active2 ((t (:foreground ,black :background ,dark-green))))
-   `(powerline-inactive1 ((t (:foreground ,dark-gray :background ,bg))))
-   `(powerline-inactive2 ((t (:foreground ,black :background ,gray))))
+   `(powerline-active1 ((t (:foreground ,black :background ,darker-green))))
+   `(powerline-active2 ((t (:foreground ,fg :background ,darkest-gray))))
+   `(powerline-inactive1 ((t (:foreground ,gray :background ,bg))))
+   `(powerline-inactive2 ((t (:foreground ,black :background ,darkest-gray))))
 
    ;; rainbow-blocks
    `(rainbow-blocks-depth-1-face ((t (:foreground ,purple))))
@@ -869,6 +870,11 @@
    `(slime-repl-inputed-output-face ((t (:foreground ,red))))
    `(slime-style-warning-face ((t (:underline (:style wave :color ,bright-yellow)))))
    `(slime-warning-face ((t (:underline (:style wave :color ,orange)))))
+
+   ;; spaceline
+   `(spaceline-flycheck-info ((t :inherit flycheck-fringe-info)))
+   `(spaceline-flycheck-warning ((t :inherit flycheck-fringe-warning)))
+   `(spaceline-flycheck-error ((t :inherit flycheck-fringe-error)))
 
    ;; term
    `(term-color-black ((t (:foreground ,darkest-gray :background ,darkest-gray))))
