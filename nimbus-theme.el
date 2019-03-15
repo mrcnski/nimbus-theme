@@ -221,7 +221,7 @@
    `(company-tooltip-selection ((t (:foreground ,fg :background ,blue))))
 
    ;; compilation
-   `(compilation-info ((t (:foreground ,green))))
+   `(compilation-info ((t (:foreground ,light-green))))
    `(compilation-warning ((t (:foreground ,nimbus-warn))))
    `(compilation-error ((t (:foreground ,nimbus-err))))
    `(compilation-mode-line-exit ((t (:inherit compilation-info))))
@@ -389,10 +389,10 @@
    `(evil-search-highlight-persist-highlight-face ((t (:background ,blue :foreground ,bg))))
 
    ;; flycheck
-   `(flycheck-info ((t (:underline (:color ,green :style wave)))))
+   `(flycheck-info ((t (:underline (:color ,light-green :style wave)))))
    `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
    `(flycheck-error ((t (:underline (:color ,nimbus-err :style wave)))))
-   `(flycheck-fringe-info ((t (:foreground ,green :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-info ((t (:foreground ,light-green :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-warning ((t (:foreground ,nimbus-warn :bold nil :underline nil :slant normal))))
    `(flycheck-fringe-error ((t (:foreground ,nimbus-err :bold nil :underline nil :slant normal))))
    `(flycheck-error-list-info ((t (:foreground ,green))))
@@ -879,9 +879,9 @@
    `(slime-warning-face ((t (:underline (:style wave :color ,orange)))))
 
    ;; spaceline
-   `(spaceline-flycheck-info ((t :inherit flycheck-fringe-info)))
-   `(spaceline-flycheck-warning ((t :inherit flycheck-fringe-warning)))
-   `(spaceline-flycheck-error ((t :inherit flycheck-fringe-error)))
+   `(spaceline-flycheck-info ((t (:inherit flycheck-fringe-info))))
+   `(spaceline-flycheck-warning ((t (:inherit flycheck-fringe-warning))))
+   `(spaceline-flycheck-error ((t (:inherit flycheck-fringe-error))))
 
    ;; term
    `(term-color-black ((t (:foreground ,darkest-gray :background ,darkest-gray))))
