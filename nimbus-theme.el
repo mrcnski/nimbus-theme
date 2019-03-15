@@ -78,7 +78,7 @@
 
       (green-bg       "#11472b")
       (teal-bg        "#114747")
-      ;; (gray-bg        "#2b4747")
+      (gray-bg        "#2b4747")
       (blue-bg        "#112b47")
       (purple-bg      "#2b1147")
       (red-bg         "#47112b")
@@ -186,28 +186,34 @@
 
    ;; avy
    `(avy-background-face ((t (:foreground ,light-gray))))
+   `(avy-goto-char-timer-face ((t (:inherit avy-lead-face :background ,dark-green))))
    `(avy-lead-face ((t (:foreground ,black :bold nil :slant normal :underline nil :background ,green))))
    `(avy-lead-face-0 ((t (:inherit avy-lead-face :background ,red))))
    `(avy-lead-face-1 ((t (:inherit avy-lead-face :background ,fg))))
    `(avy-lead-face-2 ((t (:inherit avy-lead-face :background ,white))))
-   `(avy-goto-char-timer-face ((t (:inherit avy-lead-face :background ,dark-green))))
+
+   ;; bm
+   `(bm-face ((t (:foreground nil :background ,gray-bg))))
+   `(bm-fringe-face ((t (:foreground nil :background ,gray-bg))))
+   `(bm-fringe-persistent-face ((t (:foreground nil :background ,purple-bg))))
+   `(bm-persistent-face ((t (:foreground nil :background ,purple-bg))))
 
    ;; cargo
    `(cargo-process--ok-face ((t (:foreground ,green))))
    `(cargo-process--errno-face ((t (:inherit link))))
    `(cargo-process--error-face ((t (:inherit error))))
    `(cargo-process--pointer-face ((t (:foreground ,purple))))
-   `(cargo-process--warning-face ((t (:foreground ,orange))))
    `(cargo-process--standard-face ((t (:foreground ,yellow))))
+   `(cargo-process--warning-face ((t (:foreground ,orange))))
 
    ;; comint
    `(comint-highlight-prompt ((t (:foreground ,green))))
 
    ;; company
    `(company-preview-common ((t (:inherit font-lock-comment-face))))
-   `(company-template-field ((t (:inherit highlight))))
-   `(company-scrollbar-fg ((t (:background ,dark-gray))))
    `(company-scrollbar-bg ((t (:background ,darkest-gray))))
+   `(company-scrollbar-fg ((t (:background ,dark-gray))))
+   `(company-template-field ((t (:inherit highlight))))
    `(company-tooltip ((t (:foreground ,bg :background ,fg))))
    `(company-tooltip-common ((t (:foreground ,darker-green :background ,fg))))
    `(company-tooltip-common-selection ((t (:foreground ,bg :background ,blue))))
