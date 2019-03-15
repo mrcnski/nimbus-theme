@@ -620,6 +620,10 @@
    `(js2-private-member ((t (:foreground ,dark-tan))))
    `(js2-warning ((t ( :underline ,orange))))
 
+   ;; display-line-numbers
+   `(line-number ((t (:foreground ,blue-gray))))
+   `(line-number-current-line ((t (:foreground ,darker-green))))
+
    ;; magit
    `(magit-section-heading ((t (:foreground ,blue))))
    `(magit-section-heading-selection ((t (:foreground ,light-blue))))
