@@ -83,8 +83,8 @@
       (purple-bg      "#2b1147")
       (red-bg         "#47112b")
 
-      (nimbus-warn    "#f57e00")
       (nimbus-err     "red")
+      (nimbus-warn    "#f57e00")
 
       (cursor         "#f57e00")
       (fringe         "gray12")
@@ -97,16 +97,19 @@
   (custom-theme-set-faces
    `nimbus ;; You must use the same theme name here...
    `(default ((t (:foreground ,fg :background ,bg :bold nil))))
+
    `(cursor ((t (:foreground ,black :background ,cursor))))
    `(fringe ((t (:background ,fringe :bold nil :underline nil :slant normal))))
+   `(highlight ((t (:background ,teal-bg))))
    `(link ((t (:foreground ,lightest-blue :underline t))))
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
-   `(highlight ((t (:background ,teal-bg))))
    `(region ((t (:background ,green-bg))))
    `(shadow ((t (:foreground ,light-gray :background ,bg))))
    `(tooltip ((t (:foreground ,bg :background ,fg))))
-   `(warning ((t (:foreground ,nimbus-warn :bold t))))
+
    `(error ((t (:foreground ,nimbus-err :bold t))))
+   `(success ((t (:foreground ,light-green :bold t))))
+   `(warning ((t (:foreground ,nimbus-warn :bold t))))
 
    ;; font-lock
    `(font-lock-builtin-face ((t (:foreground ,blue))))
@@ -199,7 +202,7 @@
    `(bm-persistent-face ((t (:foreground nil :background ,purple-bg))))
 
    ;; cargo
-   `(cargo-process--ok-face ((t (:foreground ,green))))
+   `(cargo-process--ok-face ((t (:inherit success))))
    `(cargo-process--errno-face ((t (:inherit link))))
    `(cargo-process--error-face ((t (:inherit error))))
    `(cargo-process--pointer-face ((t (:foreground ,purple))))
@@ -221,9 +224,9 @@
    `(company-tooltip-selection ((t (:foreground ,fg :background ,blue))))
 
    ;; compilation
-   `(compilation-info ((t (:foreground ,light-green))))
-   `(compilation-warning ((t (:foreground ,nimbus-warn))))
-   `(compilation-error ((t (:foreground ,nimbus-err))))
+   `(compilation-info ((t (:inherit success))))
+   `(compilation-warning ((t (:inherit warning))))
+   `(compilation-error ((t (:inherit error))))
    `(compilation-mode-line-exit ((t (:inherit compilation-info))))
    `(compilation-mode-line-run ((t (:inherit compilation-warning))))
    `(compilation-mode-line-fail ((t (:inherit compilation-error))))
@@ -360,8 +363,8 @@
    ;; elfeed
    `(elfeed-log-debug-level-face ((t (:foreground ,blue))))
    `(elfeed-log-error-level-face ((t (:inherit error))))
-   `(elfeed-log-info-level-face ((t (:foreground ,light-green))))
-   `(elfeed-log-warn-level-face ((t (:foreground ,orange))))
+   `(elfeed-log-info-level-face ((t (:inherit success))))
+   `(elfeed-log-warn-level-face ((t (:inherit warning))))
    `(elfeed-search-date-face ((t (:foreground ,blue))))
    `(elfeed-search-feed-face ((t (:foreground ,yellow))))
    `(elfeed-search-tag-face ((t (:foreground ,dark-green))))
@@ -392,9 +395,9 @@
    `(flycheck-info ((t (:underline (:color ,light-green :style wave)))))
    `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
    `(flycheck-error ((t (:underline (:color ,nimbus-err :style wave)))))
-   `(flycheck-fringe-info ((t (:foreground ,light-green :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-warning ((t (:foreground ,nimbus-warn :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-error ((t (:foreground ,nimbus-err :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-info ((t (:inherit success :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-warning ((t (:inherit warning :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-error ((t (:inherit error :bold nil :underline nil :slant normal))))
    `(flycheck-error-list-info ((t (:foreground ,green))))
    `(flycheck-error-list-checker-name ((t (:foreground ,yellow))))
 
@@ -603,7 +606,7 @@
    ;; jabber
    `(jabber-activity-face ((t (:inherit font-lock-variable-name-face :bold t))))
    `(jabber-activity-personal-face ((t (:inherit font-lock-function-name-face :bold t))))
-   `(jabber-chat-error ((t (:inherit error :bold t))))
+   `(jabber-chat-error ((t (:inherit error))))
    `(jabber-chat-prompt-foreign ((t (:foreground ,green :underline nil :bold t))))
    `(jabber-chat-prompt-local ((t (:foreground ,blue :underline nil :bold t))))
    `(jabber-chat-prompt-system ((t (:foreground ,yellow :underline nil :bold t))))
@@ -691,7 +694,7 @@
    `(magit-sequence-stop ((t (:foreground ,green))))
 
    `(magit-signature-error ((t (:inherit error))))
-   `(magit-signature-good ((t (:foreground ,green))))
+   `(magit-signature-good ((t (:inherit success))))
    `(magit-signature-revoked ((t (:foreground ,purple))))
    `(magit-signature-untrusted ((t (:foreground ,blue))))
 
