@@ -4,13 +4,20 @@
 
 The best dark theme for Emacs.
 
-## Screenshot
+## Screenshots
+
+Screenshot showing `display-line-numbers-mode`, `bm`, `diff-hl`, and `spaceline`:
 
 ![Screenshot](screenshot.png)
 
+<details>
+<summary>Old screenshot</summary>
+![Old screenshot](screenshot-old.png)
+</details>
+
 ## About
 
-Nimbus is a dark theme that I developed for my personal use. Because it is the only theme I ever use, it is continuously being worked on. I regularly add and modify faces and am always looking to support more third-party packages.
+Nimbus is a dark theme that I developed for my personal use. It's the only theme I ever use. I regularly add and modify faces and am always looking to support more third-party packages.
 
 Nimbus was originally a fork of [Ample](https://github.com/jordonbiondo/ample-theme).
 
