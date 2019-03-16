@@ -87,7 +87,7 @@
       (nimbus-err     "red")
 
       (cursor         "#f57e00")
-      (fringe         "gray10")
+      (fringe         "gray12")
 
       (bg             "gray10")
       (fg             "#bdbdb3")
