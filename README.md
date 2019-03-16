@@ -10,10 +10,7 @@ Screenshot showing `display-line-numbers-mode`, `bm`, `diff-hl`, and `spaceline`
 
 ![Screenshot](screenshot.png)
 
-<details>
-<summary>Old screenshot</summary>
-![Old screenshot](screenshot-old.png)
-</details>
+[Old screenshot](screenshot-old.png)
 
 ## About
 
