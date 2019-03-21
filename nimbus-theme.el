@@ -108,6 +108,7 @@
        (line-current   dark-green)
        (name           dark-green)
        (number         orange)
+       (selection      blue-bg)
        (separator      orange)
        (special        blue-gray)
        (summary        red)
@@ -203,7 +204,7 @@
 
    ;; auto-complete
    `(ac-candidate-face ((t (:foreground ,black :background ,fg))))
-   `(ac-selection-face ((t (:foreground ,fg :background ,blue))))
+   `(ac-selection-face ((t (:foreground ,fg :background ,selection))))
    `(ac-candidate-mouse-face ((t (:inherit ac-selection-face))))
    `(ac-clang-candidate-face ((t (:inherit ac-candidate-face))))
    `(ac-clang-selection-face ((t (:inherit ac-selection-face))))
@@ -232,6 +233,12 @@
    `(bm-fringe-persistent-face ((t (:inherit bm-persistent-face))))
    `(bm-persistent-face ((t (:foreground nil :background ,purple-bg))))
 
+   ;; calendar
+   `(calendar-today ((t (:foreground ,nimbus-warn))))
+   `(calendar-month-header ((t (:foreground ,heading))))
+   `(calendar-weekend-header ((t (:foreground ,special :slant italic))))
+   `(calendar-weekday-header ((t (:foreground ,date))))
+
    ;; cargo
    `(cargo-process--ok-face ((t (:inherit success))))
    `(cargo-process--errno-face ((t (:inherit link))))
@@ -245,14 +252,16 @@
 
    ;; company
    `(company-preview-common ((t (:inherit font-lock-comment-face))))
-   `(company-scrollbar-bg ((t (:background ,darkest-gray))))
-   `(company-scrollbar-fg ((t (:background ,dark-gray))))
+   `(company-scrollbar-bg ((t (:background ,dark-teal-bg))))
+   `(company-scrollbar-fg ((t (:background ,teal-bg))))
    `(company-template-field ((t (:inherit highlight))))
-   `(company-tooltip ((t (:foreground ,bg :background ,fg))))
-   `(company-tooltip-common ((t (:foreground ,darker-green :background ,fg))))
-   `(company-tooltip-common-selection ((t (:foreground ,bg :background ,blue))))
-   `(company-tooltip-mouse ((t (:background ,blue))))
-   `(company-tooltip-selection ((t (:foreground ,fg :background ,blue))))
+   `(company-tooltip ((t (:foreground ,fg :background ,darker-gray))))
+   `(company-tooltip-annotation ((t (:inherit font-lock-type-face))))
+   `(company-tooltip-annotation-selection ((t (:inherit font-lock-type-face))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,nimbus-warn))))
+   `(company-tooltip-common-selection ((t (:foreground ,fg :background ,blue-bg))))
+   `(company-tooltip-mouse ((t (:inherit company-tooltip-selection))))
+   `(company-tooltip-selection ((t (:foreground ,fg :background ,blue-bg))))
 
    ;; compilation
    `(compilation-info ((t (:inherit success))))
@@ -415,7 +424,7 @@
    `(erc-my-nick-face ((t (:foreground ,yellow))))
    `(erc-nick-default-face ((t (:foreground ,blue))))
    `(erc-notice-face ((t (:foreground ,green))))
-   `(erc-prompt-face ((t (:foreground ,purple))))
+   `(erc-prompt-face ((t (:foreground ,heading))))
    `(erc-timestamp-face ((t (:foreground ,line))))
 
    ;; eshell
@@ -576,7 +585,7 @@
    `(helm-match ((t (:foreground ,nimbus-warn))))
    `(helm-moccur-buffer ((t (:inherit compilation-info))))
    `(helm-prefarg ((t (:foreground ,green :bold t))))
-   `(helm-selection ((t (:background ,blue-bg))))
+   `(helm-selection ((t (:background ,selection))))
    `(helm-source-header ((t (:background ,darker-gray))))
    `(helm-visible-mark ((t (:background ,purple-bg))))
 
@@ -605,7 +614,7 @@
    `(highlight-quoted-symbol ((t (:foreground ,purple))))
 
    ;; hl-line
-   `(hl-line ((t (:background ,blue-bg))))
+   `(hl-line ((t (:background ,selection))))
 
    ;; hl-todo
    `(hl-todo ((t (:foreground ,pink :bold nil :slant italic))))
@@ -693,9 +702,9 @@
    `(magit-diffstat-removed ((t (:foreground ,diff-removed))))
 
    `(magit-diff-hunk-heading ((t (:background ,dark-teal-bg))))
-   `(magit-section-highlight ((t (:background ,blue-bg))))
+   `(magit-section-highlight ((t (:background ,selection))))
    `(magit-diff-context-highlight ((t (:background ,gray-bg))))
-   `(magit-diff-file-heading-highlight ((t (:background ,blue-bg :slant normal :underline nil))))
+   `(magit-diff-file-heading-highlight ((t (:background ,selection :slant normal :underline nil))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,teal-bg))))
    `(magit-diff-added-highlight ((t (:foreground ,diff-added :background ,darkest-gray))))
    `(magit-diff-removed-highlight ((t (:foreground ,diff-removed :background ,darkest-gray))))
@@ -813,7 +822,7 @@
    `(org-agenda-done ((t (:foreground ,dark-green))))
    `(org-agenda-structure ((t (:foreground ,heading))))
    `(org-date ((t (:inherit link))))
-   `(org-date-selected ((t (:inherit lazy-highlight :underline t))))
+   `(org-date-selected ((t (:foreground ,nimbus-warn))))
    `(org-document-info ((t (:foreground ,lightest-green))))
    `(org-document-title ((t (:inherit org-document-info :bold t))))
    `(org-done ((t (:foreground ,dark-green))))
