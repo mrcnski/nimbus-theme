@@ -97,6 +97,7 @@
        (fg             "#bdbdb3")
 
        (archive        orange)
+       (current        nimbus-warn)
        (date           light-blue)
        (executable     red)
        (file           blue)
@@ -234,7 +235,7 @@
    `(bm-persistent-face ((t (:foreground nil :background ,purple-bg))))
 
    ;; calendar
-   `(calendar-today ((t (:foreground ,nimbus-warn))))
+   `(calendar-today ((t (:foreground ,current))))
    `(calendar-month-header ((t (:foreground ,heading))))
    `(calendar-weekend-header ((t (:foreground ,special :slant italic))))
    `(calendar-weekday-header ((t (:foreground ,date))))
@@ -258,7 +259,7 @@
    `(company-tooltip ((t (:foreground ,fg :background ,darker-gray))))
    `(company-tooltip-annotation ((t (:inherit font-lock-type-face))))
    `(company-tooltip-annotation-selection ((t (:inherit font-lock-type-face))))
-   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,nimbus-warn))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,current))))
    `(company-tooltip-common-selection ((t (:foreground ,fg :background ,blue-bg))))
    `(company-tooltip-mouse ((t (:inherit company-tooltip-selection))))
    `(company-tooltip-selection ((t (:foreground ,fg :background ,blue-bg))))
@@ -418,7 +419,7 @@
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 
    ;; erc
-   `(erc-current-nick-face ((t (:foreground ,blue))))
+   `(erc-current-nick-face ((t (:foreground ,current))))
    `(erc-input-face ((t (:foreground ,white))))
    `(erc-keyword-face ((t (:foreground, light-green :bold t))))
    `(erc-my-nick-face ((t (:foreground ,yellow))))
@@ -456,7 +457,7 @@
    `(forge-topic-unmerged ((t (:foreground ,gray))))
 
    ;; geiser
-   `(geiser-font-lock-autodoc-current-arg ((t (:foreground ,yellow))))
+   `(geiser-font-lock-autodoc-current-arg ((t (:foreground ,current))))
    `(geiser-font-lock-autodoc-identifier ((t (:foreground ,blue))))
    `(geiser-font-lock-doc-link ((t (:foreground ,lightest-green :underline t))))
    `(geiser-font-lock-error-link ((t (:foreground ,lightest-green :underline t))))
@@ -582,7 +583,7 @@
    `(helm-locate-finish ((t (:foreground ,green))))
    `(helm-M-x-key ((t (:foreground ,orange :underline nil))))
    `(helm-match-item ((t (:inherit match))))
-   `(helm-match ((t (:foreground ,nimbus-warn))))
+   `(helm-match ((t (:foreground ,current))))
    `(helm-moccur-buffer ((t (:inherit compilation-info))))
    `(helm-prefarg ((t (:foreground ,green :bold t))))
    `(helm-selection ((t (:background ,selection))))
@@ -822,7 +823,7 @@
    `(org-agenda-done ((t (:foreground ,dark-green))))
    `(org-agenda-structure ((t (:foreground ,heading))))
    `(org-date ((t (:inherit link))))
-   `(org-date-selected ((t (:foreground ,nimbus-warn))))
+   `(org-date-selected ((t (:foreground ,current))))
    `(org-document-info ((t (:foreground ,lightest-green))))
    `(org-document-title ((t (:inherit org-document-info :bold t))))
    `(org-done ((t (:foreground ,dark-green))))
@@ -911,7 +912,7 @@
    `(ruler-mode-default ((t (:background ,darker-gray :foreground ,fg))))
    `(ruler-mode-column-number ((t (:inherit font-lock-constant-face))))
    `(ruler-mode-comment-column ((t (:foreground ,red))))
-   `(ruler-mode-current-column ((t (:foreground ,yellow :weight bold))))
+   `(ruler-mode-current-column ((t (:foreground ,current :weight bold))))
    `(ruler-mode-fill-column ((t (:foreground ,red))))
    `(ruler-mode-fringes ((t (:foreground ,green))))
    `(ruler-mode-goal-column ((t (:foreground ,red))))
@@ -968,7 +969,7 @@
    `(undo-tree-visualizer-active-branch-face ((t (:inherit default))))
    `(undo-tree-visualizer-default-face ((t (:inherit font-lock-comment-face))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,yellow))))
-   `(undo-tree-visualizer-current-face ((t (:foreground ,red))))
+   `(undo-tree-visualizer-current-face ((t (:foreground ,current))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
 
    ;; volatile-highlights
