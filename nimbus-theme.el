@@ -1022,7 +1022,7 @@
    `(web-mode-part-string-face ((t (:inherit font-lock-string-face))))
    `(web-mode-preprocessor-face ((t (:inherit font-lock-preprocessor-face))))
    `(web-mode-string-face ((t (:inherit font-lock-string-face))))
-   `(web-mode-symbol-face ((t (:foreground ,font-lock-constant-face))))
+   `(web-mode-symbol-face ((t (:inherit font-lock-constant-face))))
    `(web-mode-type-face ((t (:inherit font-lock-type-face))))
    `(web-mode-variable-name-face ((t (:inherit font-lock-variable-name-face))))
    `(web-mode-warning-face ((t (:inherit font-lock-warning-face))))
