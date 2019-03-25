@@ -375,7 +375,7 @@
    `(diredp-executable-tag ((t (:foreground ,executable))))
    `(diredp-file-name ((t (:foreground ,file))))
    `(diredp-flag-mark ((t (:inherit dired-flagged))))
-   `(diredp-flag-mark-line ((t (:background purple-bg))))
+   `(diredp-flag-mark-line ((t (:background ,purple-bg))))
    `(diredp-file-suffix ((t (:foreground ,light-gray))))
    `(diredp-ignored-file-name ((t (:foreground ,ignore))))
    `(diredp-mode-line-flagged ((t (:inherit dired-flagged))))
