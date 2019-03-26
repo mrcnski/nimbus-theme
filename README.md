@@ -47,11 +47,12 @@ If you encounter any issues with Nimbus (such as text faces being hard to read o
 
 ## Contributors
 
-- Marcin Swieczkowski [[Github](https://github.com/m-cat)] -- The head honcho
-- Jordon Biondo [[Github](https://github.com/jordonbiondo)] -- Creator of [Ample Theme](https://github.com/jordonbiondo/ample-theme)
-- Davor Rotim [[Github](https://github.com/drot)]
-- Pierre Le Gall [[Github](https://github.com/lepieru)]
-- Bruno [[Github](https://github.com/arzoriac)]
+- Marcin Swieczkowski [[GitHub](https://github.com/m-cat)] -- The head honcho
+- Jordon Biondo [[GitHub](https://github.com/jordonbiondo)] -- Creator of [Ample Theme](https://github.com/jordonbiondo/ample-theme)
+- Davor Rotim [[GitHub](https://github.com/drot)]
+- Pierre Le Gall [[GitHub](https://github.com/lepieru)]
+- Bruno [[GitHub](https://github.com/arzoriac)]
+- Jorge Araya Navarro [[GitHub](https://github.com/shackra)]
 
 ## Contributing
 
