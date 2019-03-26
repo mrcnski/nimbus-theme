@@ -284,30 +284,30 @@
    `(compilation-mode-line-fail ((t (:inherit compilation-error))))
 
    ;; custom
-   `(custom-button ((t (:foreground nil :background nil))))
-   `(custom-button-mouse ((t (:foreground nil :background nil))))
+   `(custom-button ((t (:inherit button :underline nil :box t))))
+   `(custom-button-mouse ((t (:inherit highlight :box t))))
    `(custom-button-pressed ((t (:foreground nil :background nil))))
    `(custom-button-pressed-unraised ((t (:foreground ,purple))))
    `(custom-button-unraised ((t (:foreground nil :background nil))))
    `(custom-changed ((t (:foreground ,red))))
    `(custom-comment ((t (:foreground ,bg :background ,yellow))))
    `(custom-comment-tag ((t (:foreground ,fg))))
-   `(custom-documentation ((t (:foreground nil :background nil))))
+   `(custom-documentation ((t (:inherit font-lock-doc-face))))
    `(custom-face-tag ((t (:foreground ,blue))))
-   `(custom-group-subtitle ((t (:bold t))))
-   `(custom-group-tag ((t (:foreground ,blue :bold t))))
+   `(custom-group-subtitle ((t (:foreground ,heading))))
+   `(custom-group-tag ((t (:foreground ,heading))))
    `(custom-group-tag-1 ((t (:foreground ,yellow :bold t))))
    `(custom-invalid ((t (:foreground ,bg :background ,red))))
-   `(custom-link ((t (:inherit button))))
+   `(custom-link ((t (:inherit link))))
    `(custom-modified ((t (:foreground ,red))))
    `(custom-rogue ((t (:foreground ,yellow :background ,bg))))
    `(custom-saved ((t (:underline t))))
-   `(custom-set ((t (:foreground ,fg :background ,dark-gray))))
-   `(custom-state ((t (:foreground ,green))))
+   `(custom-set ((t (:inherit widget-field))))
+   `(custom-state ((t (:foreground ,orange))))
    `(custom-themed ((t (:foreground ,red))))
    `(custom-variable-button ((t (:underline t :bold t))))
-   `(custom-variable-tag ((t (:foreground ,blue :bold t))))
-   `(custom-visibility ((t (:inherit button))))
+   `(custom-variable-tag ((t (:inherit font-lock-variable-name-face))))
+   `(custom-visibility ((t (:inherit custom-link))))
 
    ;; deadgrep
    `(deadgrep-meta-face ((t (:foreground ,line))))
@@ -1065,7 +1065,7 @@
    `(whitespace-trailing ((t (:foreground ,blue :background ,bg :bold t))))
 
    ;; widget
-   `(widget-field ((t (:foreground ,fg :background ,dark-gray))))
+   `(widget-field ((t (:foreground ,fg :background ,darkest-gray))))
 
    ;; w3m
    `(w3m-bold ((t (:foreground ,blue :bold t))))
