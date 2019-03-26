@@ -49,12 +49,12 @@
 (let* (
        ;; Define the palette.
 
-       (lightest-green "#8fbc8f")
+       (lighter-green  "#8fbc8f")
        (light-green    "#9ccc65")
        (green          "#6aaf50")
        (dark-green     "#369664")
        (darker-green   "#058945")
-       (lightest-blue  "#86b5e8")
+       (lighter-blue   "#86b5e8")
        (light-blue     "#68a5e9")
        (blue           "#598bc1")
        (dark-blue      "#267E99")
@@ -146,7 +146,7 @@
    `(cursor ((t (:foreground ,black :background ,cursor))))
    `(fringe ((t (:background ,fringe :bold nil :underline nil :slant normal))))
    `(highlight ((t (:background ,teal-bg))))
-   `(link ((t (:foreground ,lightest-blue :underline t))))
+   `(link ((t (:foreground ,lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
    `(region ((t (:background ,green-bg))))
    `(shadow ((t (:foreground ,light-gray :background ,bg))))
@@ -169,7 +169,7 @@
    `(font-lock-constant-face ((t (:foreground ,purple))))
    `(font-lock-warning-face ((t (:inherit warning))))
    `(font-lock-variable-name-face ((t (:foreground ,yellow))))
-   `(font-lock-doc-face ((t (:inherit font-lock-comment-face :foreground ,lightest-green))))
+   `(font-lock-doc-face ((t (:inherit font-lock-comment-face :foreground ,lighter-green))))
 
    ;;; Built-in
 
@@ -373,7 +373,7 @@
    `(diredfl-exec-priv ((t (:foreground ,red))))
    `(diredfl-link-priv ((t (:foreground ,blue))))
    `(diredfl-no-priv ((t (:foreground ,blue-gray))))
-   `(diredfl-rare-priv ((t (:foreground ,lightest-green))))
+   `(diredfl-rare-priv ((t (:foreground ,lighter-green))))
    `(diredfl-read-priv ((t (:foreground ,green))))
    `(diredfl-write-priv ((t (:foreground ,light-blue))))
 
@@ -403,7 +403,7 @@
    `(diredp-link-priv ((t (:foreground ,blue))))
    `(diredp-no-priv ((t (:foreground ,blue-gray))))
    `(diredp-other-priv ((t (:foreground ,fg))))
-   `(diredp-rare-priv ((t (:foreground ,lightest-green))))
+   `(diredp-rare-priv ((t (:foreground ,lighter-green))))
    `(diredp-read-priv ((t (:foreground ,green))))
    `(diredp-write-priv ((t (:foreground ,light-blue))))
 
@@ -473,9 +473,9 @@
    ;; geiser
    `(geiser-font-lock-autodoc-current-arg ((t (:foreground ,current))))
    `(geiser-font-lock-autodoc-identifier ((t (:foreground ,blue))))
-   `(geiser-font-lock-doc-link ((t (:foreground ,lightest-green :underline t))))
-   `(geiser-font-lock-error-link ((t (:foreground ,lightest-green :underline t))))
-   `(geiser-font-lock-xref-link ((t (:foreground ,lightest-green :underline t))))
+   `(geiser-font-lock-doc-link ((t (:foreground ,lighter-green :underline t))))
+   `(geiser-font-lock-error-link ((t (:foreground ,lighter-green :underline t))))
+   `(geiser-font-lock-xref-link ((t (:foreground ,lighter-green :underline t))))
 
    ;; git-commit
    `(git-commit-summary ((t (:foreground ,summary))))
@@ -839,7 +839,7 @@
    `(org-agenda-structure ((t (:foreground ,heading))))
    `(org-date ((t (:inherit link))))
    `(org-date-selected ((t (:foreground ,current))))
-   `(org-document-info ((t (:foreground ,lightest-green))))
+   `(org-document-info ((t (:foreground ,lighter-green))))
    `(org-document-title ((t (:inherit org-document-info :bold t))))
    `(org-done ((t (:foreground ,dark-green))))
    `(org-todo ((t (:foreground ,red))))
@@ -858,7 +858,7 @@
    `(org-scheduled-previously ((t (:foreground ,orange))))
    `(org-scheduled-today ((t (:foreground ,yellow))))
    `(org-special-keyword ((t (:foreground ,special))))
-   `(org-table ((t (:foreground ,lightest-blue))))
+   `(org-table ((t (:foreground ,lighter-blue))))
    `(org-tag ((t (:foreground ,tag))))
    `(org-time-grid ((t (:foreground ,blue-gray))))
    `(org-upcoming-deadline ((t (:inherit org-warning :bold nil))))
@@ -932,7 +932,7 @@
    `(ruler-mode-fringes ((t (:foreground ,green))))
    `(ruler-mode-goal-column ((t (:foreground ,red))))
    `(ruler-mode-margins ((t (:foreground ,white))))
-   `(ruler-mode-pad ((t (:foreground ,lightest-green))))
+   `(ruler-mode-pad ((t (:foreground ,lighter-green))))
    `(ruler-mode-tab-stop ((t (:foreground ,blue))))
 
    ;; secondary-selection
@@ -961,7 +961,7 @@
    ;; term
    `(term-color-black ((t (:foreground ,darkest-gray :background ,darkest-gray))))
    `(term-color-blue ((t (:foreground ,blue :background ,blue))))
-   `(term-color-cyan ((t (:foreground ,lightest-blue :background ,lightest-blue))))
+   `(term-color-cyan ((t (:foreground ,lighter-blue :background ,lighter-blue))))
    `(term-color-green ((t (:foreground ,green :background ,green))))
    `(term-color-magenta ((t (:foreground ,purple :background ,purple))))
    `(term-color-red ((t (:foreground ,red :background ,red))))
@@ -991,7 +991,7 @@
    `(vh1/default-face ((t (:inherit secondary-selection))))
 
    ;; web-mode
-   `(web-mode-block-attr-name-face ((t (:foreground ,lightest-green))))
+   `(web-mode-block-attr-name-face ((t (:foreground ,lighter-green))))
    `(web-mode-block-attr-value-face ((t (:inherit font-lock-string-face))))
    `(web-mode-block-comment-face ((t (:inherit font-lock-comment-face))))
    `(web-mode-block-control-face ((t (:inherit font-lock-preprocessor-face))))
