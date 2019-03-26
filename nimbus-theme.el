@@ -46,8 +46,9 @@
 
 (deftheme nimbus "An awesome dark theme.")
 
-;; Define the palette.
 (let* (
+       ;; Define the palette.
+
        (lightest-green "#8fbc8f")
        (light-green    "#9ccc65")
        (green          "#6aaf50")
@@ -90,13 +91,16 @@
        (nimbus-err     "red")
        (nimbus-warn    "#f57e00")
 
-       (cursor         nimbus-warn)
-       (fringe         "gray12")
-
        (bg             "gray10")
        (fg             "#bdbdb3")
 
+       ;; Define color variables.
+
+       (cursor         nimbus-warn)
+       (fringe         "gray12")
+
        (archive        orange)
+       (code           orange)
        (current        nimbus-warn)
        (date           light-blue)
        (executable     red)
@@ -169,7 +173,7 @@
 
    ;;; Built-in
 
-   `(button ((t (:foreground ,light-blue :underline t))))
+   `(button ((t (:foreground ,blue :underline t))))
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
    `(isearch ((t (:foreground ,black :background ,search))))
    `(lazy-highlight ((t (:foreground ,black :background ,lazy))))
@@ -436,11 +440,11 @@
    `(erc-nick-default-face ((t (:foreground ,blue))))
    `(erc-notice-face ((t (:foreground ,green))))
    `(erc-prompt-face ((t (:foreground ,heading))))
-   `(erc-timestamp-face ((t (:foreground ,line))))
+   `(erc-timestamp-face ((t (:foreground ,special))))
 
    ;; eshell
    `(eshell-ls-backup ((t (:foreground ,ignore))))
-   `(eshell-ls-directory ((t (:inherit font-lock-function-name-face))))
+   `(eshell-ls-directory ((t (:inherit dired-directory))))
    `(eshell-ls-executable ((t (:foreground ,executable))))
    `(eshell-ls-product ((t (:foreground ,orange))))
    `(eshell-prompt ((t (:foreground ,heading))))
@@ -773,7 +777,8 @@
    `(Man-underline ((t (:foreground ,yellow))))
 
    ;; markdown
-   `(markdown-code-face (()))
+   `(markdown-code-face ((t (:foreground ,code))))
+   `(markdown-header-face ((t (:foreground ,heading))))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
@@ -866,7 +871,7 @@
    `(org-super-agenda-header ((t (:inherit org-agenda-structure))))
 
    ;; package
-   `(package-name ((t (:foreground ,lightest-blue :underline t))))
+   `(package-name ((t (:inherit link))))
    `(package-status-available ((t (:foreground ,green))))
    `(package-description ((t (:foreground ,yellow))))
 
@@ -908,9 +913,9 @@
    `(rcirc-my-nick ((t (:foreground ,yellow))))
    `(rcirc-nick-in-message ((t (:inherit rcirc-my-nick))))
    `(rcirc-other-nick ((t (:foreground ,blue))))
-   `(rcirc-prompt ((t (:foreground "#191919" :background ,purple))))
+   `(rcirc-prompt ((t (:foreground ,heading))))
    `(rcirc-server ((t (:foreground ,green))))
-   `(rcirc-timestamp ((t (:foreground ,darker-gray))))
+   `(rcirc-timestamp ((t (:foreground ,special))))
 
    ;; re-builder
    `(reb-match-0 ((t (:foreground ,black :background ,red))))
