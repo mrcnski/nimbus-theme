@@ -463,7 +463,7 @@
    `(flycheck-error-list-checker-name ((t (:foreground ,yellow))))
 
    ;; forge
-   `(forge-post-author ((t (:foreground ,name :bold t))))
+   `(forge-post-author ((t (:foreground ,name))))
    `(forge-post-date ((t (:foreground ,date))))
    `(forge-topic-closed ((t (:foreground ,ignore))))
    `(forge-topic-merged ((t (:foreground ,dark-green))))
@@ -477,10 +477,13 @@
    `(geiser-font-lock-error-link ((t (:foreground ,lighter-green :underline t))))
    `(geiser-font-lock-xref-link ((t (:foreground ,lighter-green :underline t))))
 
-   ;; git-commit
+   ;; git
    `(git-commit-summary ((t (:foreground ,summary))))
    `(git-commit-comment-action ((t (:foreground ,orange))))
    `(git-commit-comment-heading ((t (:foreground ,heading))))
+
+   `(git-rebase-comment-heading ((t (:foreground ,heading))))
+   `(git-rebase-description ((t (:foreground ,summary))))
 
    ;; git-gutter
    `(git-gutter:deleted ((t (:foreground ,red :bold t))))
@@ -565,7 +568,7 @@
 
    ;; guide-key
    `(guide-key/prefix-command-face ((t (:foreground ,heading))))
-   `(guide-key/highlight-command-face ((t (:inherit font-lock-function-name-face))))
+   `(guide-key/highlight-command-face ((t (:foreground ,dark-green))))
    `(guide-key/key-face ((t (:foreground ,key))))
 
    ;; helm
@@ -595,7 +598,7 @@
    `(helm-grep-lineno ((t (:foreground ,line))))
    `(helm-header ((t (:foreground ,bg :background ,fg))))
    `(helm-locate-finish ((t (:foreground ,green))))
-   `(helm-M-x-key ((t (:foreground ,orange :underline nil))))
+   `(helm-M-x-key ((t (:foreground ,key))))
    `(helm-match-item ((t (:inherit match))))
    `(helm-match ((t (:foreground ,current))))
    `(helm-moccur-buffer ((t (:inherit compilation-info))))
@@ -753,8 +756,10 @@
    `(magit-reflog-remote ((t (:foreground ,blue))))
    `(magit-reflog-reset ((t (:foreground ,red))))
 
-   `(magit-sequence-head ((t (:foreground ,heading))))
+   `(magit-sequence-done ((t (:foreground ,purple))))
+   `(magit-sequence-head ((t (:foreground ,blue))))
    `(magit-sequence-part ((t (:foreground ,orange))))
+   `(magit-sequence-pick ((t (:foreground ,yellow))))
    `(magit-sequence-stop ((t (:foreground ,green))))
 
    `(magit-signature-error ((t (:inherit error))))
@@ -868,7 +873,7 @@
    `(org-recur ((t (:foreground ,dark-tan))))
 
    ;; org-super-agenda
-   `(org-super-agenda-header ((t (:inherit org-agenda-structure))))
+   `(org-super-agenda-header ((t (:foreground ,lighter-gray))))
 
    ;; package
    `(package-name ((t (:inherit link))))
@@ -975,8 +980,8 @@
    `(transient-key ((t (:foreground ,key))))
 
    ;; twittering
-   `(twittering-timeline-footer-face ((t (:inherit font-lock-function-name-face))))
-   `(twittering-timeline-header-face ((t (:inherit font-lock-function-name-face))))
+   `(twittering-timeline-footer-face ((t (:foreground ,heading))))
+   `(twittering-timeline-header-face ((t (:foreground ,heading))))
    `(twittering-uri-face ((t (:underline t))))
    `(twittering-username-face ((t (:inherit font-lock-keyword-face :underline t))))
 
@@ -1054,7 +1059,7 @@
    `(which-key-special-key-face ((t (:foreground ,special))))
    `(which-key-group-description-face ((t (:foreground ,heading))))
    `(which-key-highlighted-command-face ((t (:inherit which-key-command-description-face :underline t))))
-   `(which-key-command-description-face ((t (:inherit font-lock-function-name-face))))
+   `(which-key-command-description-face ((t (:foreground ,dark-green))))
    `(which-key-local-map-description-face ((t (:inherit font-lock-variable-name-face))))
 
    ;; whitespace
