@@ -101,7 +101,7 @@
 
        (archive        orange)
        (code           orange)
-       (current        nimbus-warn)
+       (current        yellow)
        (date           light-blue)
        (executable     red)
        (file           blue)
@@ -436,7 +436,7 @@
    `(erc-current-nick-face ((t (:foreground ,current))))
    `(erc-input-face ((t (:foreground ,white))))
    `(erc-keyword-face ((t (:foreground, light-green :bold t))))
-   `(erc-my-nick-face ((t (:foreground ,yellow))))
+   `(erc-my-nick-face ((t (:foreground ,orange))))
    `(erc-nick-default-face ((t (:foreground ,blue))))
    `(erc-notice-face ((t (:foreground ,green))))
    `(erc-prompt-face ((t (:foreground ,heading))))
@@ -924,8 +924,8 @@
    `(reb-match-3 ((t (:foreground ,black :background ,blue))))
 
    ;; ruler
-   `(ruler-mode-default ((t (:background ,darker-gray :foreground ,fg))))
-   `(ruler-mode-column-number ((t (:inherit font-lock-constant-face))))
+   `(ruler-mode-default (()))
+   `(ruler-mode-column-number ((t (:foreground ,number))))
    `(ruler-mode-comment-column ((t (:foreground ,red))))
    `(ruler-mode-current-column ((t (:foreground ,current :weight bold))))
    `(ruler-mode-fill-column ((t (:foreground ,red))))
@@ -983,7 +983,7 @@
    ;; undo-tree
    `(undo-tree-visualizer-active-branch-face ((t (:inherit default))))
    `(undo-tree-visualizer-default-face ((t (:inherit font-lock-comment-face))))
-   `(undo-tree-visualizer-register-face ((t (:foreground ,yellow))))
+   `(undo-tree-visualizer-register-face ((t (:foreground ,orange))))
    `(undo-tree-visualizer-current-face ((t (:foreground ,current))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
 
