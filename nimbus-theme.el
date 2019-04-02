@@ -74,6 +74,7 @@
        (gray           "#757575")
        (dark-gray      "#656565")
        (darker-gray    "#454545")
+       (darkerer-gray  "#404040")
        (darkest-gray   "#353535")
        (blue-gray      "#608079")
        (white          "white")
@@ -597,7 +598,7 @@
    `(helm-moccur-buffer ((t (:inherit compilation-info))))
    `(helm-prefarg ((t (:foreground ,green :bold t))))
    `(helm-selection ((t (:background ,selection))))
-   `(helm-source-header ((t (:background ,darker-gray))))
+   `(helm-source-header ((t (:background ,darkerer-gray))))
    `(helm-visible-mark ((t (:background ,purple-bg))))
 
    ;; helm-swoop
@@ -794,8 +795,8 @@
    `(minibuffer-prompt ((t (:foreground ,bright-yellow :bold nil))))
 
    ;; mode-line
-   `(mode-line ((t (:foreground ,fg :background ,darkest-gray))))
-   `(mode-line-inactive ((t (:foreground ,gray :background ,bg))))
+   `(mode-line ((t (:foreground ,fg :background ,darkerer-gray))))
+   `(mode-line-inactive ((t (:foreground ,light-gray :background ,gray-bg))))
 
    ;; multiple-cursors
    `(mc/cursor-face ((t (:foreground ,black :background ,dark-green))))
@@ -879,9 +880,9 @@
 
    ;; powerline
    `(powerline-active1 ((t (:foreground ,black :background ,darker-green))))
-   `(powerline-active2 ((t (:foreground ,fg :background ,bg))))
-   `(powerline-inactive1 ((t (:foreground ,black :background ,blue-gray))))
-   `(powerline-inactive2 ((t (:foreground ,black :background ,gray-bg))))
+   `(powerline-active2 ((t (:foreground ,gray :background ,bg))))
+   `(powerline-inactive1 ((t (:foreground ,bg :background ,blue-gray))))
+   `(powerline-inactive2 ((t (:foreground ,gray :background ,bg))))
 
    ;; rainbow-blocks
    `(rainbow-blocks-depth-1-face ((t (:foreground ,rainbow-1))))
