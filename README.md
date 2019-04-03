@@ -1,6 +1,8 @@
 # Nimbus
 
 [![MELPA](https://melpa.org/packages/nimbus-theme-badge.svg)](https://melpa.org/#/nimbus-theme)
+[![Issues](https://img.shields.io/github/issues-raw/m-cat/nimbus-theme.svg)](https://github.com/m-cat/nimbus-theme/issues)
+[![License: GPL3](https://img.shields.io/badge/License-GPL3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 The best dark theme for Emacs.
 
