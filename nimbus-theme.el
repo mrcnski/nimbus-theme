@@ -429,8 +429,8 @@
    `(elfeed-log-warn-level-face ((t (:inherit warning))))
    `(elfeed-search-date-face ((t (:foreground ,date))))
    `(elfeed-search-feed-face ((t (:foreground ,yellow))))
-   `(elfeed-search-tag-face ((t (:foreground ,dark-green))))
-   `(elfeed-search-title-face ((t (:foreground ,fg))))
+   `(elfeed-search-tag-face ((t (:foreground ,tag))))
+   `(elfeed-search-title-face ((t (:foreground ,heading))))
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 
    ;; erc
