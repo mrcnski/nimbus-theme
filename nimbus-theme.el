@@ -466,10 +466,10 @@
    ;; forge
    `(forge-post-author ((t (:foreground ,name))))
    `(forge-post-date ((t (:foreground ,date))))
-   `(forge-topic-closed ((t (:foreground ,ignore))))
+   `(forge-topic-closed ((t (:foreground ,gray))))
    `(forge-topic-merged ((t (:foreground ,dark-green))))
    `(forge-topic-open ((t ())))
-   `(forge-topic-unmerged ((t (:foreground ,gray))))
+   `(forge-topic-unmerged ((t (:inherit magit-dimmed))))
 
    ;; geiser
    `(geiser-font-lock-autodoc-current-arg ((t (:foreground ,current))))
