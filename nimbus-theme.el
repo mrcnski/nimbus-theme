@@ -838,7 +838,7 @@
    `(org-agenda-done ((t (:foreground ,dark-green))))
    `(org-agenda-structure ((t (:foreground ,heading))))
    `(org-date ((t (:inherit link))))
-   `(org-date-selected ((t (:inherit highlight :foreground ,current))))
+   `(org-date-selected ((t (:inherit highlight))))
    `(org-document-info ((t (:foreground ,lighter-green))))
    `(org-document-title ((t (:inherit org-document-info :bold t))))
    `(org-done ((t (:foreground ,dark-green))))
@@ -880,9 +880,9 @@
 
    ;; powerline
    `(powerline-active1 ((t (:foreground ,black :background ,darker-green))))
-   `(powerline-active2 ((t (:foreground ,gray :background ,bg))))
+   `(powerline-active2 ((t (:foreground ,gray :background ,fringe))))
    `(powerline-inactive1 ((t (:foreground ,bg :background ,blue-gray))))
-   `(powerline-inactive2 ((t (:foreground ,gray :background ,bg))))
+   `(powerline-inactive2 ((t (:foreground ,gray :background ,fringe))))
 
    ;; rainbow-blocks
    `(rainbow-blocks-depth-1-face ((t (:foreground ,rainbow-1))))
