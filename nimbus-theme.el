@@ -838,7 +838,7 @@
    `(org-agenda-done ((t (:foreground ,dark-green))))
    `(org-agenda-structure ((t (:foreground ,heading))))
    `(org-date ((t (:inherit link))))
-   `(org-date-selected ((t (:inherit highlight))))
+   `(org-date-selected ((t (:inherit highlight :foreground ,current))))
    `(org-document-info ((t (:foreground ,lighter-green))))
    `(org-document-title ((t (:inherit org-document-info :bold t))))
    `(org-done ((t (:foreground ,dark-green))))
