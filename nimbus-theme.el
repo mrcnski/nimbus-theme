@@ -695,8 +695,8 @@
    `(js2-warning ((t (:underline ,orange))))
 
    ;; display-line-numbers
-   `(line-number ((t (:foreground ,line))))
-   `(line-number-current-line ((t (:foreground ,line-current))))
+   `(line-number ((t (:foreground ,line :inherit default))))
+   `(line-number-current-line ((t (:foreground ,line-current :inherit default))))
 
    ;; magit
    `(magit-section-heading ((t (:foreground ,heading))))
