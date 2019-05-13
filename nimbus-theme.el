@@ -124,9 +124,15 @@
        (match          green)
        (search         blue)
 
-       (diff-added     green)
-       (diff-changed   orange)
-       (diff-removed   red)
+       (diff-added      green)
+       (diff-added-bg   green-bg)
+       (diff-changed    orange)
+       (diff-changed-bg purple-bg)
+       (diff-removed    red)
+       (diff-removed-bg red-bg)
+
+       (diff-markers    bg)
+       (diff-markers-bg light-gray)
 
        (rainbow-1      purple)
        (rainbow-2      green)
@@ -326,12 +332,12 @@
    `(debbugs-gnu-tagged ((t (:foreground ,red))))
 
    ;; diff
-   `(diff-added ((t (:background ,green-bg))))
-   `(diff-changed ((t (:background ,purple-bg))))
-   `(diff-removed ((t (:background ,red-bg))))
+   `(diff-added ((t (:background ,diff-added-bg))))
+   `(diff-changed ((t (:background ,diff-changed-bg))))
+   `(diff-removed ((t (:background ,diff-removed-bg))))
    `(diff-context ((t (:foreground ,gray))))
    `(diff-file-header ((t (:foreground ,bg :background ,lighter-gray :bold t))))
-   `(diff-function ((t (:foreground ,bg :background ,light-gray))))
+   `(diff-function ((t (:foreground ,diff-markers :background ,diff-markers-bg))))
    `(diff-header ((t (:inherit diff-function))))
    `(diff-hunk-header ((t (:inherit diff-function))))
    `(diff-index ((t (:inherit diff-function))))
@@ -952,6 +958,15 @@
    `(slime-repl-inputed-output-face ((t (:foreground ,red))))
    `(slime-style-warning-face ((t (:underline (:style wave :color ,bright-yellow)))))
    `(slime-warning-face ((t (:underline (:style wave :color ,orange)))))
+
+   ;; smerge
+   `(smerge-base ((t (:background ,brown))))
+   `(smerge-lower ((t (:background ,diff-added-bg))))
+   `(smerge-markers ((t (:foreground ,diff-markers :background ,diff-markers-bg))))
+   `(smerge-refined-added ((t (:inherit smerge-refined-change :foreground ,diff-added))))
+   `(smerge-refined-changed ((t (:background ,diff-changed-bg))))
+   `(smerge-refined-removed ((t (:inherit smerge-refined-change :foreground ,diff-removed))))
+   `(smerge-upper ((t (:background ,diff-removed-bg))))
 
    ;; spaceline
    `(spaceline-flycheck-info ((t (:inherit success :bold nil))))
