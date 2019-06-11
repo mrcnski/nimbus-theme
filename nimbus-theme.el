@@ -843,6 +843,7 @@
    `(org-agenda-date-weekend ((t (:inherit org-agenda-date :slant italic))))
    `(org-agenda-done ((t (:foreground ,dark-green))))
    `(org-agenda-structure ((t (:foreground ,heading))))
+   `(org-checkbox ((t (:foreground ,dark-tan))))
    `(org-date ((t (:inherit link))))
    `(org-date-selected ((t (:inherit highlight :foreground ,current))))
    `(org-document-info ((t (:foreground ,lighter-green))))
