@@ -151,7 +151,7 @@
    `(default ((t (:foreground ,fg :background ,bg :bold nil))))
 
    `(cursor ((t (:foreground ,black :background ,cursor))))
-   `(fringe ((t (:background ,fringe :bold nil :underline nil :slant normal))))
+   `(fringe ((t (:inherit default :background ,fringe))))
    `(highlight ((t (:background ,teal-bg))))
    `(link ((t (:foreground ,lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
@@ -159,9 +159,9 @@
    `(shadow ((t (:foreground ,light-gray :background ,bg))))
    `(tooltip ((t (:foreground ,bg :background ,fg))))
 
-   `(error ((t (:foreground ,nimbus-err :bold t))))
-   `(success ((t (:foreground ,light-green :bold t))))
-   `(warning ((t (:foreground ,nimbus-warn :bold t))))
+   `(error ((t (:foreground ,nimbus-err :bold t :underline nil :slant normal))))
+   `(success ((t (:foreground ,light-green :bold t :underline nil :slant normal))))
+   `(warning ((t (:foreground ,nimbus-warn :bold t :underline nil :slant normal))))
 
    ;;; Font lock
 
@@ -244,7 +244,7 @@
    ;; avy
    `(avy-background-face ((t (:foreground ,light-gray))))
    `(avy-goto-char-timer-face ((t (:inherit avy-lead-face :background ,green))))
-   `(avy-lead-face ((t (:foreground ,black :bold nil :slant normal :underline nil :background ,search))))
+   `(avy-lead-face ((t (:inherit default :foreground ,black :background ,search))))
    `(avy-lead-face-0 ((t (:inherit avy-lead-face :background ,lazy))))
    `(avy-lead-face-1 ((t (:inherit avy-lead-face :background ,fg))))
    `(avy-lead-face-2 ((t (:inherit avy-lead-face :background ,match))))
@@ -463,9 +463,9 @@
    `(flycheck-info ((t (:underline (:color ,light-green :style wave)))))
    `(flycheck-warning ((t (:underline (:color ,nimbus-warn :style wave)))))
    `(flycheck-error ((t (:underline (:color ,nimbus-err :style wave)))))
-   `(flycheck-fringe-info ((t (:inherit success :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-warning ((t (:inherit warning :bold nil :underline nil :slant normal))))
-   `(flycheck-fringe-error ((t (:inherit error :bold nil :underline nil :slant normal))))
+   `(flycheck-fringe-info ((t (:inherit success :bold nil))))
+   `(flycheck-fringe-warning ((t (:inherit warning :bold nil))))
+   `(flycheck-fringe-error ((t (:inherit error :bold nil))))
    `(flycheck-error-list-info ((t (:foreground ,green))))
    `(flycheck-error-list-checker-name ((t (:foreground ,yellow))))
 
@@ -701,8 +701,8 @@
    `(js2-warning ((t (:underline ,orange))))
 
    ;; display-line-numbers
-   `(line-number ((t (:foreground ,line :inherit default))))
-   `(line-number-current-line ((t (:foreground ,line-current :inherit default))))
+   `(line-number ((t (:inherit default :foreground ,line))))
+   `(line-number-current-line ((t (:inherit default :foreground ,line-current))))
 
    ;; magit
    `(magit-section-heading ((t (:foreground ,heading))))
@@ -719,7 +719,7 @@
    `(magit-diffstat-added ((t (:foreground ,diff-added))))
    `(magit-diffstat-removed ((t (:foreground ,diff-removed))))
 
-   `(magit-diff-hunk-heading ((t (:background ,dark-teal-bg))))
+   `(magit-diff-hunk-heading ((t (:inherit default :background ,dark-teal-bg))))
    `(magit-section-highlight ((t (:background ,selection))))
    `(magit-diff-context-highlight ((t (:background ,gray-bg))))
    `(magit-diff-file-heading-highlight ((t (:background ,selection :slant normal :underline nil))))
