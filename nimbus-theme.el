@@ -439,6 +439,15 @@
    `(elfeed-search-title-face ((t (:foreground ,heading))))
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 
+   ;; epa
+   `(epa-validity-high ((t (:foreground ,light-green :bold t))))
+   `(epa-validity-medium ((t (:foreground ,blue :bold t))))
+   `(epa-validity-low ((t (:foreground ,nimbus-warn :bold t))))
+   `(epa-validity-disabled ((t (:foreground ,nimbus-err :bold t))))
+   `(epa-mark ((t (:inherit dired-mark))))
+   `(epa-field-name ((t (:foreground ,heading))))
+   `(epa-field-body ((t (:foreground ,light-blue))))
+
    ;; erc
    `(erc-current-nick-face ((t (:foreground ,current))))
    `(erc-input-face ((t (:foreground ,white))))
