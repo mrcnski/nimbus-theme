@@ -445,7 +445,7 @@
    `(epa-validity-low ((t (:foreground ,nimbus-warn :bold t))))
    `(epa-validity-disabled ((t (:foreground ,nimbus-err :bold t))))
    `(epa-mark ((t (:inherit dired-mark))))
-   `(epa-field-name ((t (:foreground ,pink))))
+   `(epa-field-name ((t (:foreground ,heading))))
    `(epa-field-body ((t (:foreground ,light-blue))))
 
    ;; erc
