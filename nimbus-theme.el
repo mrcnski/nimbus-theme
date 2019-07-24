@@ -613,9 +613,9 @@
    `(helm-match ((t (:inherit highlight :foreground ,current))))
    `(helm-moccur-buffer ((t (:inherit compilation-info))))
    `(helm-prefarg ((t (:foreground ,green :bold t))))
-   `(helm-selection ((t (:background ,selection))))
+   `(helm-selection ((t (:background ,purple-bg))))
    `(helm-source-header ((t (:background ,darkerer-gray))))
-   `(helm-visible-mark ((t (:background ,purple-bg))))
+   `(helm-visible-mark ((t (:inherit region))))
 
    ;; helm-swoop
    `(helm-swoop-line-number-face ((t (:foreground ,line))))
