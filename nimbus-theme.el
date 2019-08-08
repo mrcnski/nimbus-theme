@@ -324,6 +324,7 @@
 
    ;; deadgrep
    `(deadgrep-meta-face ((t (:foreground ,line))))
+   `(deadgrep-filename-face ((t (:foreground ,file))))
 
    ;; debbugs
    `(debbugs-gnu-done ((t (:foreground ,gray))))
