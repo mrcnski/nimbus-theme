@@ -69,6 +69,7 @@
        (red            "#d65946")
        (dark-red       "#ad3632")
 
+       (lightest-gray  "#a0a0a0")
        (lighter-gray   "#959595")
        (light-gray     "#858585")
        (gray           "#757575")
@@ -275,11 +276,12 @@
    `(comint-highlight-prompt ((t (:foreground ,green))))
 
    ;; company
-   `(company-preview-common ((t (:inherit font-lock-comment-face))))
+   `(company-preview ((t (:background ,selection))))
+   `(company-preview-common ((t (:foreground ,lightest-gray))))
    `(company-scrollbar-bg ((t (:background ,dark-teal-bg))))
    `(company-scrollbar-fg ((t (:background ,teal-bg))))
    `(company-template-field ((t (:inherit highlight))))
-   `(company-tooltip ((t (:foreground ,fg :background ,darker-gray))))
+   `(company-tooltip ((t (:foreground ,fg :background ,light-purple-bg))))
    `(company-tooltip-annotation ((t (:inherit font-lock-type-face))))
    `(company-tooltip-annotation-selection ((t (:inherit font-lock-type-face))))
    `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,current))))
@@ -1109,7 +1111,7 @@
    `(w3m-underline ((t (:foreground ,green :underline t))))
 
    ;; yasnippet
-   `(yas-field-highlight-face ((t (:inherit highlight))))
+   `(yas-field-highlight-face ((t (:background ,selection))))
 
    ) ;; end of custom-theme-set-faces
 
