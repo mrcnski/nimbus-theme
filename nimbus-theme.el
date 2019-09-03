@@ -907,7 +907,7 @@
    `(org-recur ((t (:foreground ,dark-tan))))
 
    ;; org-super-agenda
-   `(org-super-agenda-header ((t (:foreground ,lighter-gray))))
+   `(org-super-agenda-header ((t (:inherit font-lock-comment-face))))
 
    ;; package
    `(package-name ((t (:inherit link))))
