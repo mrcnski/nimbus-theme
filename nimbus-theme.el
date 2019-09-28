@@ -979,6 +979,7 @@
 
    ;; sh
    `(sh-quoted-exec ((t (:foreground ,red))))
+   `(sh-heredoc ((t (:inherit font-lock-doc-face))))
 
    ;; show-paren
    `(show-paren-match ((t (:foreground ,bright-yellow))))
