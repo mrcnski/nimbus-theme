@@ -1110,7 +1110,7 @@
    `(whitespace-empty ((t (:foreground ,gray :background "gray10"))))
    `(whitespace-hspace ((t (:foreground ,gray :background "grey11"))))
    `(whitespace-indentation ((t (:foreground ,gray :background "gray12"))))
-   `(whitespace-line ((t (:inherit error :bold nil))))
+   `(whitespace-line ((t (:underline ,nimbus-err :bold nil))))
    `(whitespace-newline ((t (:foreground ,gray))))
    `(whitespace-space ((t (:foreground ,gray))))
    `(whitespace-space-after-tab ((t (:foreground ,gray :background "gray13"))))

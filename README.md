@@ -44,8 +44,8 @@ Or, if you have [use-package](https://github.com/jwiegley/use-package):
 
 If you encounter any issues with Nimbus (such as text faces being hard to read or not appearing as expected), please try the following:
 
-1. Restart Emacs and make sure Nimbus is the first theme you enable. Switching custom themes midway through an Emacs session may cause artifacts from the previous theme to remain.
-1. Leave a bug report on [GitHub](https://github.com/m-cat/nimbus-theme/issues).
+1. Restart Emacs and make sure Nimbus is the first theme you enable. Switching custom themes during an Emacs session may cause artifacts from the previous theme to remain.
+1. Leave a bug report on [GitHub](https://github.com/m-cat/nimbus-theme/issues). Please try to include screenshots as well as full instructions for reproducing your problem, including setup of the relevant mode.
 
 ## Contributors
 
