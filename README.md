@@ -12,7 +12,10 @@ Screenshot showing `display-line-numbers-mode`, `bm`, `diff-hl`, and `spaceline`
 
 ![Screenshot](screenshot.png)
 
-[Old screenshot](screenshot-old.png)
+### More
+
+- [Screenshot](screenshot-DogLooksGood.png) by [DogLooksGood](https://github.com/DogLooksGood).
+- [Old screenshot](screenshot-old.png)
 
 ## About
 
