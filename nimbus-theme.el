@@ -52,7 +52,7 @@
        (lighter-green  "#8fbc8f")
        (light-green    "#9ccc65")
        (green          "#6aaf50")
-       (dark-green     "#1bd297ac709b")
+       (dark-green     "#1bd197ac709b")
        (darker-green   "#058945")
        (lighter-blue   "#86b5e8")
        (light-blue     "#68a5e9")
