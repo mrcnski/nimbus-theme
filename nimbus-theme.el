@@ -446,7 +446,7 @@
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 
    ;; epa
-   `(epa-validity-high ((t (:foreground ,light-green :bold t))))
+   `(epa-validity-high ((t (:foreground ,nimbus-success :bold t))))
    `(epa-validity-medium ((t (:foreground ,blue :bold t))))
    `(epa-validity-low ((t (:foreground ,nimbus-warn :bold t))))
    `(epa-validity-disabled ((t (:foreground ,nimbus-err :bold t))))
@@ -455,12 +455,18 @@
    `(epa-field-body ((t (:foreground ,light-blue))))
 
    ;; erc
+   `(erc-action-face ((t (:bold t :slant italic))))
    `(erc-current-nick-face ((t (:foreground ,orange))))
+   `(erc-button ((t (:inherit link))))
+   `(erc-direct-msg-face ((t (:foreground ,red))))
+   `(erc-fool-face ((t (:foreground ,hash))))
    `(erc-input-face ((t (:foreground ,current))))
    `(erc-keyword-face ((t (:foreground, light-green :bold t))))
    `(erc-my-nick-face ((t (:foreground ,orange))))
    `(erc-nick-default-face ((t (:foreground ,blue))))
+   `(erc-nick-msg-face ((t (:inherit erc-direct-msg-face :bold t))))
    `(erc-notice-face ((t (:foreground ,green))))
+   `(erc-pal-face ((t (:foreground ,purple :bold t))))
    `(erc-prompt-face ((t (:foreground ,heading))))
    `(erc-timestamp-face ((t (:foreground ,special))))
 
