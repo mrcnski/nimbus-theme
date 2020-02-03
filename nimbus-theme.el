@@ -729,6 +729,9 @@
    `(line-number ((t (:inherit default :foreground ,line))))
    `(line-number-current-line ((t (:inherit default :foreground ,line-current))))
 
+   ;; linum-relative
+   `(linum-relative-current-face ((t (:inherit line-number-current-line :background ,fringe))))
+
    ;; lsp-ui
    ;; This face seems to break once I set it.
    `(lsp-ui-doc-background ((t (:background ,light-purple-bg))))
