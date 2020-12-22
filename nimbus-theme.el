@@ -1023,6 +1023,15 @@
    `(spaceline-read-only ((t (:foreground ,bg :background ,purple))))
    `(spaceline-unmodified ((t (:foreground ,bg :background ,orange))))
 
+   ;; speedbar
+   `(speedbar-button-face ((t (:inherit button))))
+   `(speedbar-directory-face ((t (:inherit dired-directory))))
+   `(speedbar-file-face ((t (:foreground ,file))))
+   `(speedbar-highlight-face ((t (:inherit highlight))))
+   `(speedbar-selected-face ((t (:foreground ,selection))))
+   `(speedbar-separator-face ((t (:foreground ,separator))))
+   `(speedbar-tag-face ((t (:foreground ,tag))))
+
    ;; term
    `(term-color-black ((t (:foreground ,darkest-gray :background ,darkest-gray))))
    `(term-color-blue ((t (:foreground ,blue :background ,blue))))
