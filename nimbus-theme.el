@@ -1085,7 +1085,7 @@
    `(web-mode-css-pseudo-class-face ((t (:foreground ,blue))))
    `(web-mode-css-selector-face ((t (:foreground ,blue))))
    `(web-mode-css-string-face ((t (:foreground ,yellow))))
-   `(web-mode-current-element-highlight-face ((t (:background ,black))))
+   `(web-mode-current-element-highlight-face ((t (:inherit highlight))))
    `(web-mode-doctype-face ((t (:inherit font-lock-doc-face))))
    `(web-mode-error-face ((t (:inherit error))))
    `(web-mode-folded-face ((t (:underline t))))
