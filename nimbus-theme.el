@@ -95,7 +95,7 @@
        (nimbus-warn    "#f57e00")
 
        (bg             "#1a1a1a")
-       (fg             "#bdbdb3")
+       (fg             "#AAB0AB")
 
        ;; Define color variables.
 
