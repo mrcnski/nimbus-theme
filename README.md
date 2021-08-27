@@ -24,7 +24,7 @@ Nimbus was originally a fork of [Ample](https://github.com/jordonbiondo/ample-th
 
 ## Installing
 
-Make sure you have set up [MELPA](http://melpa.milkbox.net/#/getting-started) and run:
+Make sure you have set up [MELPA](http://melpa.org/#/getting-started) and run:
 
 ```
 M-x package-install RET nimbus-theme RET
