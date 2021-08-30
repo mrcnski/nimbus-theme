@@ -187,13 +187,14 @@
 
    `(button ((t (:foreground ,blue :underline t))))
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
+   `(help-key-binding ((t (:foreground ,key))))
    `(isearch ((t (:foreground ,black :background ,search))))
    `(lazy-highlight ((t (:foreground ,black :background ,lazy))))
    `(linum ((t (:inherit fringe :foreground ,line))))
    `(match ((t (:foreground ,black :background ,match))))
    `(popup-tip-face ((t (:background ,fg :foreground ,bg))))
    `(trailing-whitespace ((t (:foreground ,white :underline t))))
-   `(vertical-border ((t (:foreground ,indent))))
+   `(vertical-border ((t (:foreground ,dark-gray))))
 
    ;;; Modes
 
