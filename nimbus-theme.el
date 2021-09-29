@@ -896,6 +896,7 @@
    `(org-done ((t (:foreground ,dark-green))))
    `(org-drawer ((t (:foreground ,special))))
    `(org-ellipsis ((t (:foreground ,light-gray))))
+   `(org-headline-done ((t (:foreground ,light-gray :strike-through t))))
    `(org-hide ((t (:foreground ,bg))))
    `(org-level-1 ((t (:foreground ,rainbow-1))))
    `(org-level-2 ((t (:foreground ,rainbow-2))))
