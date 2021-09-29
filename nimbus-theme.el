@@ -747,13 +747,14 @@
    `(lsp-ui-peek-selection ((t (:background ,selection))))
 
    ;; magit
-   `(magit-section-heading ((t (:foreground ,heading))))
-   `(magit-section-heading-selection ((t (:foreground ,red))))
-   `(magit-hash ((t (:foreground ,blue-gray))))
    `(magit-branch-local ((t (:foreground ,orange))))
    `(magit-branch-remote ((t (:foreground ,yellow))))
-   `(magit-tag ((t (:foreground ,tag))))
    `(magit-filename ((t (:foreground ,file))))
+   `(magit-hash ((t (:foreground ,blue-gray))))
+   `(magit-refname ((t (:foreground ,dark-green))))
+   `(magit-section-heading ((t (:foreground ,heading))))
+   `(magit-section-heading-selection ((t (:foreground ,red))))
+   `(magit-tag ((t (:foreground ,tag))))
 
    `(magit-diff-file-heading ((t (:foreground ,fg))))
    `(magit-diff-added ((t (:foreground ,diff-added))))
