@@ -185,6 +185,7 @@
 
    ;;; Built-in
 
+   `(bookmark-face ((t (:foreground nil :background ,selection))))
    `(button ((t (:foreground ,blue :underline t))))
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
    `(help-key-binding ((t (:foreground ,key))))
@@ -259,7 +260,7 @@
    `(bm-face ((t (:foreground nil :background ,teal-bg))))
    `(bm-fringe-face ((t (:inherit bm-face))))
    `(bm-fringe-persistent-face ((t (:inherit bm-persistent-face))))
-   `(bm-persistent-face ((t (:foreground nil :background ,purple-bg))))
+   `(bm-persistent-face ((t (:inherit bookmark-face))))
 
    ;; calendar
    `(calendar-today ((t (:foreground ,current))))
