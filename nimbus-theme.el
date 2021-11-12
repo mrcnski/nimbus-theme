@@ -949,6 +949,11 @@
    ;; paradox
    `(paradox-mode-line-face ((t (:foreground ,blue-bg :bold t))))
 
+   ;; paren
+   `(paren-face-match ((t (:foreground ,yellow))))
+   `(paren-face-mismatch ((t (:foreground ,nimbus-err))))
+   `(paren-face-no-match ((t (:foreground ,nimbus-warn))))
+
    ;; powerline
    `(powerline-active1 ((t (:foreground ,black :background ,darker-green))))
    `(powerline-active2 ((t (:foreground ,gray :background ,fringe))))
@@ -1015,7 +1020,7 @@
 
    ;; show-paren
    `(show-paren-match ((t (:foreground ,bright-yellow))))
-   `(show-paren-mismatch ((t (:inherit error :bold nil))))
+   `(show-paren-mismatch ((t (:foreground ,nimbus-err))))
 
    ;; slime
    `(sldb-restartable-frame-line-face ((t (:foreground ,green))))
