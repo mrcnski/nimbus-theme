@@ -648,8 +648,10 @@
 
    ;; highlight-indent-guides
    `(highlight-indent-guides-character-face ((t (:foreground ,indent))))
-   `(highlight-indent-guides-odd-face ((t (:background ,darkest-gray))))
-   `(highlight-indent-guides-even-face ((t (:background ,darker-gray))))
+   `(highlight-indent-guides-odd-face ((t (:background ,gray-bg))))
+   `(highlight-indent-guides-even-face ((t (:background ,gray-bg))))
+   `(highlight-indent-guides-top-odd-face ((t (:background ,blue-bg))))
+   `(highlight-indent-guides-top-even-face ((t (:background ,blue-bg))))
 
    ;; highlight-numbers
    `(highlight-numbers-number ((t (:foreground ,number))))
