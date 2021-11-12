@@ -194,7 +194,7 @@
    `(linum ((t (:inherit fringe :foreground ,line))))
    `(match ((t (:foreground ,black :background ,match))))
    `(popup-tip-face ((t (:background ,fg :foreground ,bg))))
-   `(trailing-whitespace ((t (:foreground ,white :underline t))))
+   `(trailing-whitespace ((t (:background ,red-bg))))
    `(vertical-border ((t (:foreground ,dark-gray))))
 
    ;;; Modes
@@ -1153,7 +1153,7 @@
    `(whitespace-empty ((t (:foreground ,gray :background "gray10"))))
    `(whitespace-hspace ((t (:foreground ,gray :background "grey11"))))
    `(whitespace-indentation ((t (:foreground ,gray :background "gray12"))))
-   `(whitespace-line ((t (:underline ,nimbus-err :bold nil))))
+   `(whitespace-line ((t (:background ,red-bg))))
    `(whitespace-newline ((t (:foreground ,gray))))
    `(whitespace-space ((t (:foreground ,gray))))
    `(whitespace-space-after-tab ((t (:foreground ,gray :background "gray13"))))
