@@ -820,6 +820,12 @@
    `(magit-log-date ((t (:foreground ,date :slant normal))))
    `(magit-log-graph ((t (:foreground ,separator))))
 
+   ;; magit-commit-mark
+   ;; `(magit-commit-mark-read-face ((t ())))
+   ;; `(magit-commit-mark-star-face ((t ( ))))
+   `(magit-commit-mark-unread-face ((t (:inherit magit-hash :bold t))))
+   `(magit-commit-mark-urgent-face ((t (:foreground ,red))))
+
    ;; makey
    `(makey-key-mode-button-face ((t (:inherit font-lock-constant-face))))
 
