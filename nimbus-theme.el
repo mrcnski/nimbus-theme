@@ -95,7 +95,7 @@
        (nimbus-warn    "#f57e00")
 
        (bg             "#1a1a1a")
-       (fg             "#AAB0AB")
+       (fg             "#aab0ab")
 
        ;; Define color variables.
 
@@ -661,6 +661,12 @@
 
    ;; highlight-quoted
    `(highlight-quoted-symbol ((t (:foreground ,purple))))
+
+   ;; highlight-symbol
+   `(highlight-symbol-face ((t (:inherit highlight))))
+
+   ;; highlight-thing
+   `(highlight-thing ((t (:inherit highlight))))
 
    ;; hl-line
    `(hl-line ((t (:background ,hl-line))))
