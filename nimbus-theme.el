@@ -122,6 +122,7 @@
        (selection      purple-bg)
        (separator      brown)
        (special        blue-gray)
+       (strike         brown)
        (summary        red)
        (tag            dark-blue)
 
@@ -181,12 +182,13 @@
    `(font-lock-constant-face ((t (:foreground ,purple))))
    `(font-lock-warning-face ((t (:inherit warning))))
    `(font-lock-variable-name-face ((t (:foreground ,yellow))))
-   `(font-lock-doc-face ((t (:inherit font-lock-comment-face :foreground ,lighter-green))))
+   `(font-lock-doc-face ((t (:foreground ,brown))))
 
    ;;; Built-in
 
    `(bookmark-face ((t (:foreground nil :background ,selection))))
    `(button ((t (:foreground ,blue :underline t))))
+   `(escape-glyph ((t (:foreground ,dark-blue))))
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
    `(help-key-binding ((t (:foreground ,key))))
    `(isearch ((t (:foreground ,black :background ,search))))
@@ -827,7 +829,7 @@
    `(magit-log-graph ((t (:foreground ,separator))))
 
    ;; magit-commit-mark
-   ;; `(magit-commit-mark-read-face ((t ())))
+   `(magit-commit-mark-read-face ((t (:foreground ,gray :slant italic))))
    ;; `(magit-commit-mark-star-face ((t ( ))))
    `(magit-commit-mark-unread-face ((t (:inherit magit-hash))))
    `(magit-commit-mark-urgent-face ((t (:foreground ,red))))
@@ -908,7 +910,7 @@
    `(org-done ((t (:foreground ,dark-green))))
    `(org-drawer ((t (:foreground ,special))))
    `(org-ellipsis ((t (:foreground ,light-gray))))
-   `(org-headline-done ((t (:foreground ,light-gray :strike-through t))))
+   `(org-headline-done ((t (:foreground ,light-gray :strike-through ,strike))))
    `(org-hide ((t (:foreground ,bg))))
    `(org-level-1 ((t (:foreground ,rainbow-1))))
    `(org-level-2 ((t (:foreground ,rainbow-2))))
@@ -951,7 +953,7 @@
    `(org-recur ((t (:foreground ,dark-tan))))
 
    ;; org-super-agenda
-   `(org-super-agenda-header ((t (:inherit font-lock-comment-face))))
+   `(org-super-agenda-header ((t (:foreground ,brown))))
 
    ;; package
    `(package-name ((t (:inherit link))))
@@ -1125,7 +1127,7 @@
    `(web-mode-current-element-highlight-face ((t (:inherit highlight))))
    `(web-mode-doctype-face ((t (:inherit font-lock-doc-face))))
    `(web-mode-error-face ((t (:inherit error))))
-   `(web-mode-folded-face ((t (:underline t))))
+   `(web-mode-folded-face ((t (:strike-through ,strike))))
    `(web-mode-function-call-face ((t (:inherit font-lock-function-name-face))))
    `(web-mode-function-name-face ((t (:inherit font-lock-function-name-face))))
    `(web-mode-html-attr-custom-face ((t (:inherit font-lock-comment-face))))
@@ -1134,7 +1136,7 @@
    `(web-mode-html-attr-value-face ((t (:inherit font-lock-string-face))))
    `(web-mode-html-tag-bracket-face ((t (:foreground ,separator))))
    `(web-mode-html-tag-custom-face ((t (:foreground ,special))))
-   `(web-mode-html-tag-face ((t (:foreground ,dark-green))))
+   `(web-mode-html-tag-face ((t (:foreground ,blue))))
    `(web-mode-javascript-comment-face ((t (:inherit font-lock-comment-face))))
    `(web-mode-javascript-string-face ((t (:inherit font-lock-string-face))))
    `(web-mode-json-comment-face ((t (:inherit font-lock-comment-face))))
