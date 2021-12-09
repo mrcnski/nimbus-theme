@@ -5,7 +5,7 @@
 ;; Author:      Marcin Swieczkowski <marcin.swieczkowski@gmail.com>
 ;;              See README.md for full list of contributors.
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
-;; Version:     1.0.0
+;; Version:     1.1.0
 ;; Package-Requires: ((emacs "24.1"))
 ;; URL:         https://github.com/m-cat/nimbus-theme
 ;; Keywords:    faces
