@@ -126,9 +126,9 @@
        (summary        red)
        (tag            dark-blue)
 
-       (lazy           red)
-       (match          green)
-       (search         blue)
+       (lazy           light-blue)
+       (match          light-green)
+       (search         yellow)
 
        (diff-added      green)
        (diff-added-bg   green-bg)
