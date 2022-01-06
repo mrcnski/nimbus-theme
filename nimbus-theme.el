@@ -162,7 +162,7 @@
    `(link ((t (:foreground ,lighter-blue :underline t))))
    `(link-visited ((t (:foreground ,blue-gray :underline t))))
    `(region ((t (:background ,green-bg))))
-   `(shadow ((t (:foreground ,light-gray :background ,bg))))
+   `(shadow ((t (:foreground ,light-gray))))
    `(tooltip ((t (:foreground ,bg :background ,fg))))
 
    `(error ((t (:foreground ,nimbus-err :bold t :underline nil :slant normal))))
@@ -449,6 +449,11 @@
    `(elfeed-search-tag-face ((t (:foreground ,tag))))
    `(elfeed-search-title-face ((t (:foreground ,heading))))
    `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
+
+   ;; embark
+   `(embark-keybinding ((t (:foreground ,key))))
+   `(embark-verbose-indicator-title ((t (:inherit header-line))))
+   `(embark-target ((t (:inherit highlight :foreground ,fg))))
 
    ;; epa
    `(epa-validity-high ((t (:foreground ,nimbus-success :bold t))))
@@ -1099,6 +1104,11 @@
    `(undo-tree-visualizer-register-face ((t (:foreground ,orange))))
    `(undo-tree-visualizer-current-face ((t (:foreground ,current))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
+
+   ;; vertico
+   `(vertico-indexed ((t (:foreground ,line))))
+   `(vertico-quick1 ((t (:inherit default :foreground ,black :background ,search))))
+   `(vertico-quick2 ((t (:inherit vertico-quick1 :background ,lazy))))
 
    ;; volatile-highlights
    `(vh1/default-face ((t (:inherit secondary-selection))))
