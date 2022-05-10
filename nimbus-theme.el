@@ -1030,6 +1030,11 @@
    `(ruler-mode-pad ((t (:foreground ,lighter-green))))
    `(ruler-mode-tab-stop ((t (:foreground ,blue))))
 
+   ;; rustic
+   `(rustic-cargo-outdated ((t (:inherit error))))
+   `(rustic-popup-key ((t (:foreground ,key))))
+   `(rustic-popup-section ((t (:foreground ,heading))))
+
    ;; secondary-selection
    `(secondary-selection ((t (:background ,red-bg))))
 
@@ -1151,7 +1156,7 @@
    `(web-mode-javascript-string-face ((t (:inherit font-lock-string-face))))
    `(web-mode-json-comment-face ((t (:inherit font-lock-comment-face))))
    `(web-mode-json-context-face ((t (:foreground ,purple))))
-   `(web-mode-json-key-face ((t (:foreground ,pink))))
+   `(web-mode-json-key-face ((t (:inherit font-lock-builtin-face))))
    `(web-mode-json-string-face ((t (:inherit font-lock-string-face))))
    `(web-mode-keyword-face ((t (:inherit font-lock-keyword-face))))
    `(web-mode-param-name-face ((t (:inherit font-lock-variable-name-face))))
