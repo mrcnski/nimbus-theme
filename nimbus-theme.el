@@ -439,6 +439,10 @@
    `(ediff-odd-diff-B ((t (:background "#171723"))))
    `(ediff-odd-diff-C ((t (:background "#171723"))))
 
+   ;; eglot
+   `(eglot-highlight-symbol-face ((t (:inherit highlight))))
+   `(eglot-diagnostic-tag-unnecessary-face ((t (:underline (:color ,nimbus-warn :style wave)))))
+
    ;; elfeed
    `(elfeed-log-debug-level-face ((t (:foreground ,blue))))
    `(elfeed-log-error-level-face ((t (:inherit error))))
@@ -750,6 +754,9 @@
 
    ;; linum-relative
    `(linum-relative-current-face ((t (:inherit line-number-current-line :background ,fringe))))
+
+   ;; lsp
+   `(lsp-face-highlight-read ((t (:inherit highlight))))
 
    ;; lsp-ui
    ;; This face seems to break once I set it.
