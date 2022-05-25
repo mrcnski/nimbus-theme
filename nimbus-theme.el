@@ -787,7 +787,8 @@
 
    `(magit-diff-hunk-heading ((t (:inherit default :background ,dark-teal-bg))))
    `(magit-section-highlight ((t (:background ,hl-line))))
-   `(magit-diff-context-highlight ((t (:background ,gray-bg))))
+   `(magit-diff-context ((t (:foreground ,light-gray))))
+   `(magit-diff-context-highlight ((t (:foreground ,light-gray :background ,gray-bg))))
    `(magit-diff-file-heading-highlight ((t (:background ,hl-line :slant normal :underline nil))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,teal-bg))))
    `(magit-diff-added-highlight ((t (:foreground ,diff-added :background ,darkest-gray))))
