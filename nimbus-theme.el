@@ -526,6 +526,7 @@
    ;; git
    `(git-commit-summary ((t (:foreground ,summary))))
    `(git-commit-comment-action ((t (:foreground ,orange))))
+   `(git-commit-comment-file ((t (:foreground ,file))))
    `(git-commit-comment-heading ((t (:foreground ,heading))))
 
    `(git-rebase-comment-heading ((t (:foreground ,heading))))
