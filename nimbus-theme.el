@@ -427,6 +427,7 @@
 
    ;; docker
    `(dockerfile-image-name ((t (:inherit font-lock-type-face))))
+   `(dockerfile-image-alias ((t (:inherit font-lock-constant-face))))
 
    ;; ediff
    `(ediff-current-diff-A ((t (:background "#482828"))))
