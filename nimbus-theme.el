@@ -425,6 +425,9 @@
    `(diredp-read-priv ((t (:foreground ,green))))
    `(diredp-write-priv ((t (:foreground ,light-blue))))
 
+   ;; docker
+   `(dockerfile-image-name ((t (:inherit font-lock-type-face))))
+
    ;; ediff
    `(ediff-current-diff-A ((t (:background "#482828"))))
    `(ediff-current-diff-B ((t (:background "#284828"))))
