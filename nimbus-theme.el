@@ -947,9 +947,9 @@
    `(org-warning ((t (:inherit font-lock-warning-face :foreground ,red))))
 
    ;; org-agenda
-   `(org-agenda-date ((t (:foreground ,date))))
-   `(org-agenda-date-today ((t (:inherit org-agenda-date :bold t))))
-   `(org-agenda-date-weekend ((t (:inherit org-agenda-date :slant italic))))
+   `(org-agenda-date ((t (:foreground ,date :bold t))))
+   `(org-agenda-date-today ((t (:inherit org-agenda-date :box t))))
+   `(org-agenda-date-weekend ((t (:inherit org-agenda-date :underline t))))
    `(org-agenda-done ((t (:inherit org-done))))
    `(org-agenda-structure ((t (:foreground ,heading))))
 
