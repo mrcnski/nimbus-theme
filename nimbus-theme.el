@@ -879,8 +879,8 @@
    `(minibuffer-prompt ((t (:foreground ,bright-yellow :bold nil))))
 
    ;; mode-line
-   `(mode-line ((t (:foreground ,fg :background ,darkerer-gray))))
-   `(mode-line-inactive ((t (:foreground ,light-gray :background ,gray-bg))))
+   `(mode-line ((t (:foreground ,fg :background ,light-purple-bg))))
+   `(mode-line-inactive ((t (:foreground ,lighter-gray :background ,gray-bg))))
 
    ;; multiple-cursors
    `(mc/cursor-face ((t (:foreground ,black :background ,dark-green))))
