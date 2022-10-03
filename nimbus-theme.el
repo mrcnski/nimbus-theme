@@ -253,7 +253,7 @@
    ;; avy
    `(avy-background-face ((t (:foreground ,light-gray))))
    `(avy-goto-char-timer-face ((t (:inherit avy-lead-face :background ,green))))
-   `(avy-lead-face ((t (:inherit default :foreground ,black :background ,search))))
+   `(avy-lead-face ((t (:inherit default :foreground ,black :background ,search :bold t))))
    `(avy-lead-face-0 ((t (:inherit avy-lead-face :background ,lazy))))
    `(avy-lead-face-1 ((t (:inherit avy-lead-face :background ,fg))))
    `(avy-lead-face-2 ((t (:inherit avy-lead-face :background ,match))))
@@ -851,6 +851,9 @@
    ;; `(magit-commit-mark-star-face ((t ( ))))
    `(magit-commit-mark-unread-face ((t (:inherit magit-hash))))
    `(magit-commit-mark-urgent-face ((t (:foreground ,red))))
+
+   ;; make
+   `(makefile-space ((t (:inherit trailing-whitespace))))
 
    ;; makey
    `(makey-key-mode-button-face ((t (:inherit font-lock-constant-face))))
