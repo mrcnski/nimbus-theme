@@ -6,15 +6,9 @@
 
 The best dark theme for Emacs.
 
-## Screenshots
+## Screenshot
 
-Screenshot showing `display-line-numbers-mode`, `bm`, `diff-hl`, and `spaceline`:
-
-![Screenshot](https://siasky.net/vAGndoDhGis5jem6t-Jrer9ihSWKaUiVh85YxwZiIIq9nw)
-
-### More
-
-- [Screenshot](https://siasky.net/_AasLKqgqXl2kJTxWVJ6pLaD6rI837eEItA38VHMDcF-vA) by [DogLooksGood](https://github.com/DogLooksGood).
+![Screenshot](./screenshot.png)
 
 ## About
 
