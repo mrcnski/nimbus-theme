@@ -1,7 +1,7 @@
-;;; nimbus-theme.el --- An awesome dark theme -*- lexical-binding: t; -*-
+;;; nimbus-theme.el --- Nimbus dark theme -*- lexical-binding: t; -*-
 ;;
 ;; Filename:    nimbus-theme.el
-;; Description: An awesome dark theme
+;; Description: Nimbus dark theme
 ;; Author:      Marcin Swieczkowski <marcin.swieczkowski@gmail.com>
 ;;              See README.md for full list of contributors.
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
@@ -15,7 +15,8 @@
 ;;
 ;; About:
 ;;
-;; The best dark theme for Emacs.
+;; Nimbus dark theme for Emacs. Beautiful, slightly retro, yet readable
+;; and easy on the eyes.
 ;;
 ;; See README.md for more info.
 ;;

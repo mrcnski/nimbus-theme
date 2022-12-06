@@ -4,7 +4,7 @@
 [![Issues](https://img.shields.io/github/issues-raw/m-cat/nimbus-theme.svg)](https://github.com/m-cat/nimbus-theme/issues)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
-The best dark theme for Emacs.
+Nimbus dark theme for Emacs.
 
 ## Screenshot
 
@@ -12,7 +12,11 @@ The best dark theme for Emacs.
 
 ## About
 
-Nimbus is a dark theme that I developed for my personal use. It's the only theme I ever use. I regularly add and modify faces and am always looking to support more third-party packages.
+I wanted to make a theme that would bring me joy every day. I wanted something
+beautiful, slightly retro, yet readable and easy on the eyes. I regularly add
+and modify faces and am always looking to support more third-party packages.
+
+[User testimonial!](https://grtcdr.tn/posts/2022-12-05.html)
 
 Nimbus was originally a fork of [Ample](https://github.com/jordonbiondo/ample-theme).
 
@@ -52,9 +56,11 @@ All contributions are welcome. I want to support as many third-party Emacs packa
 - Marcin Swieczkowski [[GitHub](https://github.com/m-cat)] -- The head honcho
 - Jordon Biondo [[GitHub](https://github.com/jordonbiondo)] -- Creator of [Ample Theme](https://github.com/jordonbiondo/ample-theme)
 - Davor Rotim [[GitHub](https://github.com/drot)]
-- Pierre Le Gall [[GitHub](https://github.com/lepieru)]
+- Pierre Le Gall [[GitHub](https://github.com/pierrelegall)]
 - Bruno [[GitHub](https://github.com/arzoriac)]
 - Jorge Araya Navarro [[GitHub](https://github.com/shackra)]
+- Dario Gjorgjevski [[GitHub](https://github.com/d125q)]
+- Aziz Ben Ali [[GitHub](https://github.com/grtcdr)]
 
 ## Related Projects
 
