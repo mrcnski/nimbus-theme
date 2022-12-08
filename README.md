@@ -6,9 +6,9 @@
 
 Nimbus dark theme for Emacs.
 
-## Screenshot
-
 ![Screenshot](./screenshot.png)
+
+> nimbus: (Latin) rainstorm, rain cloud
 
 ## About
 
