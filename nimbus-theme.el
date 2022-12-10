@@ -1240,7 +1240,7 @@
 
 ;;;###autoload
 (defun nimbus-theme()
-  "Apply 'nimbus-theme'."
+  "Apply ‘nimbus-theme’."
   (interactive)
   (load-theme 'nimbus t))
 
