@@ -2,6 +2,7 @@
 
 [![MELPA](https://melpa.org/packages/nimbus-theme-badge.svg)](https://melpa.org/#/nimbus-theme)
 [![Issues](https://img.shields.io/github/issues-raw/m-cat/nimbus-theme.svg)](https://github.com/m-cat/nimbus-theme/issues)
+[![LoC](https://tokei.rs/b1/github/m-cat/nimbus-theme)](https://github.com/m-cat/nimbus-theme)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 Nimbus dark theme for Emacs.
