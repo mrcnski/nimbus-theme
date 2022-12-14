@@ -543,6 +543,9 @@
    `(git-gutter:separator ((t (:foreground ,separator :bold t))))
    `(git-gutter:unchanged ((t (:foreground ,yellow))))
 
+   ;; goggles
+   `(goggles-added ((t (:inherit secondary-selection))))
+
    ;; gnus
    `(gnus-button ((t (:bold t))))
    `(gnus-emphasis-highlight-words ((t (:foreground ,bright-yellow :background ,black))))
