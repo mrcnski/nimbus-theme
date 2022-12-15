@@ -45,7 +45,7 @@
 ;;
 ;;; Code:
 
-(deftheme nimbus "An awesome dark theme.")
+(deftheme nimbus "Beautiful, slightly retro dark theme.")
 
 (let* (
        ;; Define the palette.
@@ -114,7 +114,7 @@
        (heading        purple)
        (hl-line        blue-bg)
        (ignore         blue-gray)
-       (indent         darker-gray)
+       (indent         darkest-gray)
        (key            blue)
        (line           blue-gray)
        (line-current   green)
@@ -668,8 +668,8 @@
 
    ;; highlight-indent-guides
    `(highlight-indent-guides-character-face ((t (:foreground ,indent))))
-   `(highlight-indent-guides-odd-face ((t (:background ,darkest-gray))))
-   `(highlight-indent-guides-even-face ((t (:background ,darkest-gray))))
+   `(highlight-indent-guides-odd-face ((t (:background ,indent))))
+   `(highlight-indent-guides-even-face ((t (:background ,indent))))
    `(highlight-indent-guides-top-odd-face ((t (:background ,teal-bg))))
    `(highlight-indent-guides-top-even-face ((t (:background ,teal-bg))))
 
