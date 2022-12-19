@@ -126,6 +126,7 @@
        (strike         brown)
        (summary        red)
        (tag            dark-blue)
+       (value          green)
 
        (lazy           light-blue)
        (match          light-green)
@@ -616,7 +617,7 @@
 
    ;; guide-key
    `(guide-key/prefix-command-face ((t (:foreground ,heading))))
-   `(guide-key/highlight-command-face ((t (:foreground ,dark-green))))
+   `(guide-key/highlight-command-face ((t (:foreground ,value))))
    `(guide-key/key-face ((t (:foreground ,key))))
 
    ;; helm
@@ -1116,6 +1117,7 @@
    ;; transient
    `(transient-heading ((t (:foreground ,heading))))
    `(transient-key ((t (:foreground ,key))))
+   `(transient-value ((t (:foreground ,value))))
 
    ;; twittering
    `(twittering-timeline-footer-face ((t (:foreground ,heading))))
@@ -1202,7 +1204,7 @@
    `(which-key-special-key-face ((t (:foreground ,special))))
    `(which-key-group-description-face ((t (:foreground ,heading))))
    `(which-key-highlighted-command-face ((t (:inherit which-key-command-description-face :underline t))))
-   `(which-key-command-description-face ((t (:foreground ,dark-green))))
+   `(which-key-command-description-face ((t (:foreground ,value))))
    `(which-key-local-map-description-face ((t (:inherit font-lock-variable-name-face))))
 
    ;; whitespace
