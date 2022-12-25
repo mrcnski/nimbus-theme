@@ -260,6 +260,9 @@
    `(avy-lead-face-1 ((t (:inherit avy-lead-face :background ,fg))))
    `(avy-lead-face-2 ((t (:inherit avy-lead-face :background ,match))))
 
+   ;; benchmark-init
+   `(benchmark-init/header-face ((t (:foreground ,heading))))
+
    ;; bm
    `(bm-face ((t (:foreground unspecified :background ,teal-bg))))
    `(bm-fringe-face ((t (:inherit bm-face))))
@@ -545,7 +548,9 @@
    `(git-gutter:unchanged ((t (:foreground ,yellow))))
 
    ;; goggles
-   `(goggles-added ((t (:inherit secondary-selection))))
+   `(goggles-added ((t (:background ,green-bg))))
+   `(goggles-changed ((t (:background ,purple-bg))))
+   `(goggles-removed ((t (:background ,red-bg))))
 
    ;; gnus
    `(gnus-button ((t (:bold t))))
