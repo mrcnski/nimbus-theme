@@ -56,14 +56,15 @@
        (dark-green     "#1d9a79")
        (darker-green   "#058945")
        (lighter-blue   "#86b5e8")
-       (light-blue     "#68a5e9")
+       (light-blue     "#70a5e1")
        (blue           "#598bc1")
        (dark-blue      "#267E99")
+       (blue-purple    "#7f7dca")
        (light-orange   "#eaaa0c")
-       (orange         "#df9522")
+       (orange         "#db931f")
        (dark-tan       "#7d7c61")
        (bright-yellow  "#fffe0a")
-       (yellow         "#baba36")
+       (yellow         "#b6b635")
        (pink           "#cd9595")
        (purple         "#ab75c3")
        (brown          "#987654")
@@ -103,8 +104,8 @@
        (cursor         nimbus-warn)
        (fringe         "#212121")
 
-       (archive        orange)
-       (code           orange)
+       (archive        blue-purple)
+       (code           blue-purple)
        (current        yellow)
        (date           light-blue)
        (executable     red)
@@ -173,7 +174,7 @@
 
    ;;; Font lock
 
-   `(font-lock-builtin-face ((t (:foreground ,blue))))
+   `(font-lock-builtin-face ((t (:foreground ,blue-purple))))
    `(font-lock-comment-face ((t (:foreground ,light-gray :slant italic))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
    `(font-lock-function-name-face ((t (:foreground ,dark-green))))
@@ -928,12 +929,13 @@
    `(nswbuff-separator-face ((t (:foreground ,separator))))
    `(nswbuff-special-buffers-face ((t (:foreground ,special))))
 
-   ;; org
+   ;; org-mode
    `(org-block-begin-line ((t (:inherit org-meta-line :underline ,indent))))
    `(org-block-end-line ((t (:inherit org-meta-line :overline ,indent))))
    `(org-checkbox ((t (:foreground ,dark-tan :bold t))))
    `(org-checkbox-statistics-done ((t (:foreground ,dark-green))))
    `(org-checkbox-statistics-todo ((t (:foreground ,red))))
+   `(org-code ((t (:foreground ,code))))
    `(org-date ((t (:inherit link))))
    `(org-date-selected ((t (:inherit highlight :foreground ,current))))
    `(org-document-info ((t (:foreground ,lighter-green))))
