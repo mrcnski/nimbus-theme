@@ -120,7 +120,9 @@
        (line           blue-gray)
        (line-current   green)
        (name           dark-green)
-       (number         orange)
+       (number         purple)
+       (operator       orange)
+       (property       blue-purple)
        (selection      purple-bg)
        (separator      brown)
        (special        blue-gray)
@@ -485,7 +487,7 @@
    `(erc-direct-msg-face ((t (:foreground ,red))))
    `(erc-fool-face ((t (:foreground ,hash))))
    `(erc-input-face ((t (:foreground ,current))))
-   `(erc-keyword-face ((t (:foreground, light-green :bold t))))
+   `(erc-keyword-face ((t (:foreground ,match :bold t))))
    `(erc-my-nick-face ((t (:foreground ,orange))))
    `(erc-nick-default-face ((t (:foreground ,blue))))
    `(erc-nick-msg-face ((t (:inherit erc-direct-msg-face :bold t))))
@@ -684,7 +686,7 @@
    `(highlight-numbers-number ((t (:foreground ,number))))
 
    ;; highlight-operators
-   `(highlight-operators-face ((t (:foreground ,orange))))
+   `(highlight-operators-face ((t (:foreground ,operator))))
 
    ;; highlight-quoted
    `(highlight-quoted-symbol ((t (:foreground ,purple))))
@@ -1164,7 +1166,7 @@
    `(web-mode-css-comment-face ((t (:inherit font-lock-comment-face))))
    `(web-mode-css-function-face ((t (:foreground ,blue))))
    `(web-mode-css-priority-face ((t (:foreground ,blue))))
-   `(web-mode-css-property-name-face ((t (:inherit font-lock-variable-name-face))))
+   `(web-mode-css-property-name-face ((t (:foreground ,property))))
    `(web-mode-css-pseudo-class-face ((t (:foreground ,blue))))
    `(web-mode-css-selector-face ((t (:foreground ,blue))))
    `(web-mode-css-string-face ((t (:foreground ,yellow))))
