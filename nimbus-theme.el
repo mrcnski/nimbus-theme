@@ -1128,6 +1128,13 @@
    `(transient-key ((t (:foreground ,key))))
    `(transient-value ((t (:foreground ,value))))
 
+   ;; tree-sitter
+   `(tree-sitter-hl-face:constant.builtin ((t (:foreground ,number))))
+   `(tree-sitter-hl-face:function.call ((t (:foreground ,dark-green))))
+   `(tree-sitter-hl-face:number ((t (:foreground ,number))))
+   `(tree-sitter-hl-face:operator ((t (:foreground ,operator))))
+   `(tree-sitter-hl-face:property ((t (:foreground ,property))))
+
    ;; twittering
    `(twittering-timeline-footer-face ((t (:foreground ,heading))))
    `(twittering-timeline-header-face ((t (:foreground ,heading))))
