@@ -1,8 +1,8 @@
 # Nimbus
 
 [![MELPA](https://melpa.org/packages/nimbus-theme-badge.svg)](https://melpa.org/#/nimbus-theme)
-[![Issues](https://img.shields.io/github/issues-raw/m-cat/nimbus-theme.svg)](https://github.com/m-cat/nimbus-theme/issues)
-[![LoC](https://tokei.rs/b1/github/m-cat/nimbus-theme)](https://github.com/m-cat/nimbus-theme)
+[![Issues](https://img.shields.io/github/issues-raw/mrcnski/nimbus-theme.svg)](https://github.com/mrcnski/nimbus-theme/issues)
+[![LoC](https://tokei.rs/b1/github/mrcnski/nimbus-theme)](https://github.com/mrcnski/nimbus-theme)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 Nimbus dark theme for Emacs.
@@ -46,7 +46,7 @@ Or, if you have [use-package](https://github.com/jwiegley/use-package):
 If you encounter any issues with Nimbus (such as text faces being hard to read or not appearing as expected), please try the following:
 
 1. Restart Emacs and make sure Nimbus is the first theme you enable. Switching custom themes during an Emacs session may cause artifacts from the previous theme to remain.
-1. Leave a bug report on [GitHub](https://github.com/m-cat/nimbus-theme/issues). Please try to include screenshots as well as full instructions for reproducing your problem, including setup of the relevant mode.
+1. Leave a bug report on [GitHub](https://github.com/mrcnski/nimbus-theme/issues). Please try to include screenshots as well as full instructions for reproducing your problem, including setup of the relevant mode.
 
 ## Contributing
 
@@ -54,7 +54,7 @@ All contributions are welcome. I want to support as many third-party Emacs packa
 
 ### Contributors
 
-- Marcin Swieczkowski [[GitHub](https://github.com/m-cat)] -- The head honcho
+- Marcin Swieczkowski [[GitHub](https://github.com/mrcnski)] -- The head honcho
 - Jordon Biondo [[GitHub](https://github.com/jordonbiondo)] -- Creator of [Ample Theme](https://github.com/jordonbiondo/ample-theme)
 - Davor Rotim [[GitHub](https://github.com/drot)]
 - Pierre Le Gall [[GitHub](https://github.com/pierrelegall)]
@@ -65,5 +65,5 @@ All contributions are welcome. I want to support as many third-party Emacs packa
 
 ## Related Projects
 
-- [Nimbus for VSCode](https://github.com/m-cat/nimbus-theme-vscode)
-- [Nimbus-Pygments](https://github.com/m-cat/nimbus-pygments) (for static site generators)
+- [Nimbus for VSCode](https://github.com/mrcnski/nimbus-theme-vscode)
+- [Nimbus-Pygments](https://github.com/mrcnski/nimbus-pygments) (for static site generators)
