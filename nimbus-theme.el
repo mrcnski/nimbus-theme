@@ -703,6 +703,9 @@
    ;; hl-todo
    `(hl-todo ((t (:foreground ,pink :bold nil :slant italic))))
 
+   ;; idle-highlight-mode
+   `(idle-highlight ((t (:inherit highlight))))
+
    ;; ido
    `(flx-highlight-face ((t (:foreground ,light-blue :underline nil :bold t))))
    `(ido-only-match ((t (:foreground ,match))))
