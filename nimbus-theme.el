@@ -1135,7 +1135,8 @@
    `(tree-sitter-hl-face:constant.builtin ((t (:foreground ,number))))
    `(tree-sitter-hl-face:function.call ((t (:foreground ,dark-green))))
    `(tree-sitter-hl-face:number ((t (:foreground ,number))))
-   `(tree-sitter-hl-face:operator ((t (:foreground ,operator))))
+   ;; `(tree-sitter-hl-face:operator ((t (:foreground ,operator))))
+   `(tree-sitter-hl-face:operator ((t (:foreground ,fg))))
    `(tree-sitter-hl-face:property ((t (:foreground ,property))))
 
    ;; twittering
