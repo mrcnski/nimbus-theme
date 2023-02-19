@@ -214,6 +214,26 @@
    `(aw-background-face ((t (:foreground ,dark-gray))))
    `(aw-leading-char-face ((t (:foreground ,black :background ,dark-green))))
 
+   ;; ansi
+   `(ansi-color-black ((t (:foreground ,bg :background ,bg))))
+   `(ansi-color-blue ((t (:foreground ,blue :background ,blue))))
+   `(ansi-color-cyan ((t (:foreground ,lighter-blue :background ,lighter-blue))))
+   `(ansi-color-green ((t (:foreground ,green :background ,green))))
+   `(ansi-color-magenta ((t (:foreground ,purple :background ,purple))))
+   `(ansi-color-red ((t (:foreground ,red :background ,red))))
+   `(ansi-color-white ((t (:foreground ,fg :background ,fg))))
+   `(ansi-color-yellow ((t (:foreground ,yellow :background ,yellow))))
+
+   ; TODO: Same as non-bright counterparts for now, due to lack of faces.
+   `(ansi-color-bright-black ((t (:foreground ,bg :background ,bg))))
+   `(ansi-color-bright-blue ((t (:foreground ,blue :background ,blue))))
+   `(ansi-color-bright-cyan ((t (:foreground ,lighter-blue :background ,lighter-blue))))
+   `(ansi-color-bright-green ((t (:foreground ,green :background ,green))))
+   `(ansi-color-bright-magenta ((t (:foreground ,purple :background ,purple))))
+   `(ansi-color-bright-red ((t (:foreground ,red :background ,red))))
+   `(ansi-color-bright-white ((t (:foreground ,fg :background ,fg))))
+   `(ansi-color-bright-yellow ((t (:foreground ,yellow :background ,yellow))))
+
    ;; anzu
    `(anzu-match-1 ((t (:inherit isearch))))
    `(anzu-match-2 ((t (:inherit lazy-highlight))))
@@ -1253,6 +1273,7 @@
 
    ) ;; end of custom-theme-set-faces
 
+  ;; NOTE: Obsolete.
   (custom-theme-set-variables
    'nimbus
    `(ansi-color-names-vector
