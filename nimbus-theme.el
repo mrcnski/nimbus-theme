@@ -105,6 +105,7 @@
        (fringe         "#212121")
 
        (archive        blue-purple)
+       (checkbox       blue)
        (code           blue-purple)
        (current        yellow)
        (date           light-blue)
@@ -899,6 +900,7 @@
    `(Man-underline ((t (:foreground ,yellow))))
 
    ;; markdown
+   `(markdown-gfm-checkbox-face ((t (:foreground ,checkbox))))
    `(markdown-code-face ((t (:foreground ,code))))
    `(markdown-header-face ((t (:foreground ,heading))))
 
@@ -957,7 +959,7 @@
    ;; org-mode
    `(org-block-begin-line ((t (:inherit org-meta-line :underline ,indent))))
    `(org-block-end-line ((t (:inherit org-meta-line :overline ,indent))))
-   `(org-checkbox ((t (:foreground ,dark-tan :bold t))))
+   `(org-checkbox ((t (:foreground ,checkbox t))))
    `(org-checkbox-statistics-done ((t (:foreground ,dark-green))))
    `(org-checkbox-statistics-todo ((t (:foreground ,red))))
    `(org-code ((t (:foreground ,code))))
