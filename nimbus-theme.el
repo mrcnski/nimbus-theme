@@ -474,7 +474,7 @@
 
    ;; eglot
    `(eglot-highlight-symbol-face ((t (:inherit highlight))))
-   `(eglot-diagnostic-tag-unnecessary-face ((t (:underline (:color ,nimbus-warn :style wave)))))
+   `(eglot-diagnostic-tag-unnecessary-face ((t (:underline (:color ,blue-gray :style wave)))))
 
    ;; elfeed
    `(elfeed-log-debug-level-face ((t (:foreground ,blue))))
@@ -523,6 +523,8 @@
    `(eshell-ls-executable ((t (:foreground ,executable))))
    `(eshell-ls-product ((t (:foreground ,orange))))
    `(eshell-prompt ((t (:foreground ,heading))))
+
+   `(eshell-syntax-highlighting-option-face ((t (:foreground ,blue-purple))))
 
    ;; evil-search-highlight-persist
    `(evil-search-highlight-persist-highlight-face ((t (:inherit match))))
