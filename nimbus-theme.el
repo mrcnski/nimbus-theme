@@ -695,6 +695,10 @@
    `(helm-swoop-target-line-face ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face ((t (:inherit helm-swoop-target-line-face :foreground ,white))))
 
+   ;; highlight-changes
+   `(highlight-changes ((t (:underline (:color ,nimbus-success)))))
+   `(highlight-changes-delete ((t (:foreground ,nimbus-err :underline t))))
+
    ;; highlight-indentation
    `(highlight-indentation-current-column-face ((t (:background ,gray))))
    `(highlight-indentation-face ((t (:background ,indent))))
