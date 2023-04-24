@@ -525,6 +525,7 @@
    `(eshell-ls-symlink ((t (:inherit dired-symlink))))
    `(eshell-prompt ((t (:foreground ,heading))))
 
+   ;; eshell-syntax-highlighting
    `(eshell-syntax-highlighting-option-face ((t (:foreground ,blue-purple))))
 
    ;; evil-search-highlight-persist
@@ -964,6 +965,7 @@
    `(nswbuff-special-buffers-face ((t (:foreground ,special))))
 
    ;; org-mode
+   `(org-block ((t (:foreground ,fg))))
    `(org-block-begin-line ((t (:inherit org-meta-line :underline ,indent))))
    `(org-block-end-line ((t (:inherit org-meta-line :overline ,indent))))
    `(org-checkbox ((t (:foreground ,checkbox t))))
