@@ -2,8 +2,7 @@
 ;;
 ;; Filename:    nimbus-theme.el
 ;; Description: Nimbus dark theme
-;; Author:      Marcin Swieczkowski <marcin.swieczkowski@gmail.com>
-;;              See README.md for full list of contributors.
+;; Author:      Marcin Swieczkowski <marcin@realemail.net>
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
 ;; Version:     1.3.0
 ;; Package-Requires: ((emacs "24.1"))
