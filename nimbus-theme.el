@@ -978,6 +978,7 @@
    `(org-done ((t (:foreground ,dark-green))))
    `(org-drawer ((t (:foreground ,special))))
    `(org-ellipsis ((t (:foreground ,light-gray))))
+   `(org-footnote ((t (:inherit link))))
    `(org-headline-done ((t (:foreground ,light-gray :strike-through ,strike))))
    `(org-hide ((t (:foreground ,bg))))
    `(org-level-1 ((t (:foreground ,rainbow-1))))
@@ -1157,8 +1158,13 @@
    `(term-default-fg-color ((t (:inherit fg))))
 
    ;; transient
+   `(transient-disabled-suffix ((t (:background ,red-bg))))
+   `(transient-enabled-suffix ((t (:background ,green-bg))))
    `(transient-heading ((t (:foreground ,heading))))
    `(transient-key ((t (:foreground ,key))))
+   `(transient-key-exit ((t (:foreground ,key))))
+   `(transient-key-return ((t (:foreground ,red))))
+   `(transient-key-stay ((t (:foreground ,orange))))
    `(transient-value ((t (:foreground ,value))))
 
    ;; tree-sitter
