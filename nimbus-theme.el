@@ -127,6 +127,7 @@
        (separator      brown)
        (special        blue-gray)
        (strike         brown)
+       (switch         orange)
        (summary        red)
        (tag            dark-blue)
        (value          green)
@@ -900,7 +901,10 @@
    `(makefile-space ((t (:inherit trailing-whitespace))))
 
    ;; makey
-   `(makey-key-mode-button-face ((t (:inherit font-lock-constant-face))))
+   `(makey-key-mode-args-face ((t (:foreground ,value))))
+   `(makey-key-mode-button-face ((t (:foreground ,key))))
+   `(makey-key-mode-header-face ((t (:foreground ,heading))))
+   `(makey-key-mode-switch-face ((t (:foreground ,switch))))
 
    ;; Man
    `(Man-overstrike ((t (:foreground ,blue))))
@@ -1164,7 +1168,7 @@
    `(transient-key ((t (:foreground ,key))))
    `(transient-key-exit ((t (:foreground ,key))))
    `(transient-key-return ((t (:foreground ,red))))
-   `(transient-key-stay ((t (:foreground ,orange))))
+   `(transient-key-stay ((t (:foreground ,switch))))
    `(transient-value ((t (:foreground ,value))))
 
    ;; tree-sitter
