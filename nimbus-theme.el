@@ -108,6 +108,7 @@
        (code           blue-purple)
        (current        yellow)
        (date           light-blue)
+       (directory      dark-green)
        (executable     red)
        (file           blue)
        (file-suffix    light-gray)
@@ -333,6 +334,12 @@
    `(compilation-mode-line-run ((t (:inherit compilation-warning))))
    `(compilation-mode-line-fail ((t (:inherit compilation-error))))
 
+   `(consult-file ((t (:foreground ,file))))
+   `(consult-imenu-prefix ((t (:inherit font-lock-type-face))))
+   `(consult-key ((t (:foreground ,key))))
+   `(consult-line-number ((t (:foreground ,line))))
+   `(consult-projectile-projects ((t (:foreground ,directory))))
+
    ;; custom
    `(custom-button ((t (:inherit button :underline nil :box t))))
    `(custom-button-mouse ((t (:inherit highlight :box t))))
@@ -395,6 +402,7 @@
    `(diff-hl-delete ((t (:inherit fringe :foreground ,diff-removed))))
 
    ;; dired
+   `(dired-directory ((t (:foreground ,directory))))
    `(dired-header ((t (:foreground ,heading))))
    `(dired-flagged ((t (:foreground ,dark-red))))
    `(dired-symlink ((t (:foreground ,yellow :slant italic))))
@@ -406,7 +414,7 @@
    `(diredfl-deletion-file-name ((t (:inherit dired-flagged))))
    `(diredfl-deletion ((t (:inherit dired-mark))))
    `(diredfl-dir-heading ((t (:inherit dired-header))))
-   `(diredfl-dir-name ((t (:inherit dired-directory))))
+   `(diredfl-dir-name ((t (:foreground ,directory))))
    `(diredfl-executable-tag ((t (:foreground ,executable))))
    `(diredfl-flag-mark ((t (:inherit dired-flagged))))
    `(diredfl-flag-mark-line ((t (:background ,selection))))
@@ -432,7 +440,7 @@
    `(diredp-deletion ((t (:inherit dired-mark))))
    `(diredp-deletion-file-name ((t (:inherit dired-flagged))))
    `(diredp-dir-heading ((t (:inherit dired-header))))
-   `(diredp-dir-name ((t (:inherit dired-directory))))
+   `(diredp-dir-name ((t (:foreground ,directory))))
    `(diredp-executable-tag ((t (:foreground ,executable))))
    `(diredp-file-name ((t (:foreground ,file))))
    `(diredp-flag-mark ((t (:inherit dired-flagged))))
@@ -519,7 +527,7 @@
 
    ;; eshell
    `(eshell-ls-backup ((t (:foreground ,ignore))))
-   `(eshell-ls-directory ((t (:inherit dired-directory))))
+   `(eshell-ls-directory ((t (:foreground ,directory))))
    `(eshell-ls-executable ((t (:foreground ,executable))))
    `(eshell-ls-product ((t (:foreground ,orange))))
    `(eshell-ls-symlink ((t (:inherit dired-symlink))))
@@ -662,13 +670,13 @@
    `(helm-bookmark-man ((t (:foreground ,orange))))
    `(helm-bookmark-w3m ((t (:foreground ,yellow))))
    `(helm-buffer-archive ((t (:foreground ,archive))))
-   `(helm-buffer-directory ((t (:inherit dired-directory))))
+   `(helm-buffer-directory ((t (:foreground ,directory))))
    `(helm-buffer-file ((t (:foreground ,file))))
    `(helm-buffer-process ((t (:foreground ,green))))
    `(helm-buffer-size ((t (:foreground ,number))))
    `(helm-candidate-number ((t (:foreground ,dark-green))))
-   `(helm-ff-directory ((t (:inherit dired-directory))))
-   `(helm-ff-dotted-directory ((t (:inherit dired-directory))))
+   `(helm-ff-directory ((t (:foreground ,directory))))
+   `(helm-ff-dotted-directory ((t (:foreground ,directory))))
    `(helm-ff-dotted-symlink-directory ((t (:inherit helm-ff-dotted-directory :slant italic))))
    `(helm-ff-executable ((t (:foreground ,executable))))
    `(helm-ff-file ((t (:foreground ,file))))
@@ -1142,7 +1150,7 @@
 
    ;; speedbar
    `(speedbar-button-face ((t (:inherit button))))
-   `(speedbar-directory-face ((t (:inherit dired-directory))))
+   `(speedbar-directory-face ((t (:foreground ,directory))))
    `(speedbar-file-face ((t (:foreground ,file))))
    `(speedbar-highlight-face ((t (:inherit highlight))))
    `(speedbar-selected-face ((t (:foreground ,selection))))
@@ -1193,6 +1201,7 @@
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
 
    ;; vertico
+   `(vertico-group-title ((t (:foreground ,heading))))
    `(vertico-indexed ((t (:foreground ,line))))
    `(vertico-quick1 ((t (:inherit default :foreground ,black :background ,search))))
    `(vertico-quick2 ((t (:inherit vertico-quick1 :background ,lazy))))
