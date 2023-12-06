@@ -128,7 +128,6 @@
        (separator      brown)
        (special        blue-gray)
        (strike         brown)
-       (switch         orange)
        (summary        red)
        (tag            dark-blue)
        (value          green)
@@ -335,7 +334,7 @@
    `(compilation-mode-line-fail ((t (:inherit compilation-error))))
 
    `(consult-file ((t (:foreground ,file))))
-   `(consult-imenu-prefix ((t (:inherit font-lock-type-face))))
+   `(consult-imenu-prefix ((t (:foreground ,line))))
    `(consult-key ((t (:foreground ,key))))
    `(consult-line-number ((t (:foreground ,line))))
    `(consult-projectile-projects ((t (:foreground ,directory))))
@@ -414,7 +413,7 @@
    `(diredfl-deletion-file-name ((t (:inherit dired-flagged))))
    `(diredfl-deletion ((t (:inherit dired-mark))))
    `(diredfl-dir-heading ((t (:inherit dired-header))))
-   `(diredfl-dir-name ((t (:foreground ,directory))))
+   `(diredfl-dir-name ((t (:inherit dired-directory))))
    `(diredfl-executable-tag ((t (:foreground ,executable))))
    `(diredfl-flag-mark ((t (:inherit dired-flagged))))
    `(diredfl-flag-mark-line ((t (:background ,selection))))
@@ -440,7 +439,7 @@
    `(diredp-deletion ((t (:inherit dired-mark))))
    `(diredp-deletion-file-name ((t (:inherit dired-flagged))))
    `(diredp-dir-heading ((t (:inherit dired-header))))
-   `(diredp-dir-name ((t (:foreground ,directory))))
+   `(diredp-dir-name ((t (:inherit dired-directory))))
    `(diredp-executable-tag ((t (:foreground ,executable))))
    `(diredp-file-name ((t (:foreground ,file))))
    `(diredp-flag-mark ((t (:inherit dired-flagged))))
@@ -527,13 +526,14 @@
 
    ;; eshell
    `(eshell-ls-backup ((t (:foreground ,ignore))))
-   `(eshell-ls-directory ((t (:foreground ,directory))))
+   `(eshell-ls-directory ((t (:inherit dired-directory))))
    `(eshell-ls-executable ((t (:foreground ,executable))))
    `(eshell-ls-product ((t (:foreground ,orange))))
    `(eshell-ls-symlink ((t (:inherit dired-symlink))))
    `(eshell-prompt ((t (:foreground ,heading))))
 
    ;; eshell-syntax-highlighting
+   `(eshell-syntax-highlighting-alias-face ((t (:inherit dired-symlink :bold t))))
    `(eshell-syntax-highlighting-option-face ((t (:foreground ,blue-purple))))
 
    ;; evil-search-highlight-persist
@@ -670,13 +670,13 @@
    `(helm-bookmark-man ((t (:foreground ,orange))))
    `(helm-bookmark-w3m ((t (:foreground ,yellow))))
    `(helm-buffer-archive ((t (:foreground ,archive))))
-   `(helm-buffer-directory ((t (:foreground ,directory))))
+   `(helm-buffer-directory ((t (:inherit dired-directory))))
    `(helm-buffer-file ((t (:foreground ,file))))
    `(helm-buffer-process ((t (:foreground ,green))))
    `(helm-buffer-size ((t (:foreground ,number))))
    `(helm-candidate-number ((t (:foreground ,dark-green))))
-   `(helm-ff-directory ((t (:foreground ,directory))))
-   `(helm-ff-dotted-directory ((t (:foreground ,directory))))
+   `(helm-ff-directory ((t (:inherit dired-directory))))
+   `(helm-ff-dotted-directory ((t (:inherit dired-directory))))
    `(helm-ff-dotted-symlink-directory ((t (:inherit helm-ff-dotted-directory :slant italic))))
    `(helm-ff-executable ((t (:foreground ,executable))))
    `(helm-ff-file ((t (:foreground ,file))))
@@ -912,7 +912,7 @@
    `(makey-key-mode-args-face ((t (:foreground ,value))))
    `(makey-key-mode-button-face ((t (:foreground ,key))))
    `(makey-key-mode-header-face ((t (:foreground ,heading))))
-   `(makey-key-mode-switch-face ((t (:foreground ,switch))))
+   `(makey-key-mode-switch-face ((t (:foreground ,orange))))
 
    ;; Man
    `(Man-overstrike ((t (:foreground ,blue))))
@@ -1150,7 +1150,7 @@
 
    ;; speedbar
    `(speedbar-button-face ((t (:inherit button))))
-   `(speedbar-directory-face ((t (:foreground ,directory))))
+   `(speedbar-directory-face ((t (:inherit dired-directory))))
    `(speedbar-file-face ((t (:foreground ,file))))
    `(speedbar-highlight-face ((t (:inherit highlight))))
    `(speedbar-selected-face ((t (:foreground ,selection))))
@@ -1170,13 +1170,14 @@
    `(term-default-fg-color ((t (:inherit fg))))
 
    ;; transient
+   `(transient-argument ((t (:foreground ,yellow :bold t))))
    `(transient-disabled-suffix ((t (:background ,red-bg))))
    `(transient-enabled-suffix ((t (:background ,green-bg))))
    `(transient-heading ((t (:foreground ,heading))))
    `(transient-key ((t (:foreground ,key))))
    `(transient-key-exit ((t (:foreground ,key))))
    `(transient-key-return ((t (:foreground ,red))))
-   `(transient-key-stay ((t (:foreground ,switch))))
+   `(transient-key-stay ((t (:foreground ,orange))))
    `(transient-value ((t (:foreground ,value))))
 
    ;; tree-sitter
