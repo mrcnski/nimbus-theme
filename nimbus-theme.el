@@ -704,6 +704,9 @@
    `(helm-swoop-target-line-face ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face ((t (:inherit helm-swoop-target-line-face :foreground ,white))))
 
+   ;; helpful
+   `(helpful-heading ((t (:inherit header-line :bold t :extend t))))
+
    ;; highlight-changes
    `(highlight-changes ((t (:underline (:color ,nimbus-success)))))
    `(highlight-changes-delete ((t (:foreground ,nimbus-err :underline t))))
@@ -937,6 +940,9 @@
 
    ;; minibuffer
    `(minibuffer-prompt ((t (:foreground ,bright-yellow :bold nil))))
+
+   ;; mmv
+   `(mmv-face ((t (:underline ,white))))
 
    ;; mode-line
    `(mode-line ((t (:foreground ,fg :background ,light-purple-bg))))
