@@ -704,6 +704,9 @@
    `(helm-swoop-target-line-face ((t (:inherit highlight))))
    `(helm-swoop-target-line-block-face ((t (:inherit helm-swoop-target-line-face :foreground ,white))))
 
+   ;; help
+   `(help-argument-name ((t (:inherit font-lock-variable-name-face))))
+
    ;; helpful
    `(helpful-heading ((t (:inherit header-line :bold t :extend t))))
 
