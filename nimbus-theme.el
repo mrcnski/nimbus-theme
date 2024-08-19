@@ -1045,6 +1045,16 @@
    ;; org-super-agenda
    `(org-super-agenda-header ((t (:foreground ,brown))))
 
+   ;; outline-mode
+   `(outline-1 ((t (:inherit org-level-1))))
+   `(outline-2 ((t (:inherit org-level-2))))
+   `(outline-3 ((t (:inherit org-level-3))))
+   `(outline-4 ((t (:inherit org-level-4))))
+   `(outline-5 ((t (:inherit org-level-5))))
+   `(outline-6 ((t (:inherit org-level-6))))
+   `(outline-7 ((t (:inherit org-level-7))))
+   `(outline-8 ((t (:inherit org-level-8))))
+
    ;; package
    `(package-name ((t (:inherit link))))
    `(package-status-available ((t (:foreground ,green))))
