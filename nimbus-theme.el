@@ -1220,6 +1220,9 @@
    `(undo-tree-visualizer-current-face ((t (:foreground ,current))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
 
+   ;; vline
+   `(vline ((t (:background ,hl-line))))
+
    ;; vertico
    `(vertico-group-title ((t (:foreground ,heading))))
    `(vertico-indexed ((t (:foreground ,line))))
