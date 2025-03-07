@@ -741,7 +741,7 @@
    `(highlight-thing ((t (:inherit highlight))))
 
    ;; hl-line
-   `(hl-line ((t (:background ,hl-line))))
+   `(hl-line ((t (:background ,hl-line :extend t))))
 
    ;; hl-todo
    `(hl-todo ((t (:foreground ,pink :bold nil :slant italic))))
@@ -1222,6 +1222,7 @@
 
    ;; vline
    `(vline ((t (:background ,hl-line))))
+   `(vline-visual ((t (:background ,teal-bg))))
 
    ;; vertico
    `(vertico-group-title ((t (:foreground ,heading))))
