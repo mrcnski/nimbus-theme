@@ -65,5 +65,4 @@ All contributions are welcome. I want to support as many third-party Emacs packa
 
 ## Related Projects
 
-- [Nimbus for VSCode](https://github.com/mrcnski/nimbus-theme-vscode)
 - [Nimbus-Pygments](https://github.com/mrcnski/nimbus-pygments) (for static site generators)
