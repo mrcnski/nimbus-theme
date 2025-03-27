@@ -100,7 +100,7 @@
 
        ;; Define color variables.
 
-       (cursor         nimbus-warn)
+       (cursor         bright-yellow)
        (fringe         "#212121")
 
        (archive        blue-purple)
