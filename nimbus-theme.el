@@ -1196,6 +1196,7 @@
    `(transient-key ((t (:foreground ,key))))
    `(transient-key-exit ((t (:foreground ,key))))
    `(transient-key-return ((t (:foreground ,red))))
+   `(transient-key-stack ((t (:foreground ,blue-purple))))
    `(transient-key-stay ((t (:foreground ,orange))))
    `(transient-value ((t (:foreground ,value))))
 
