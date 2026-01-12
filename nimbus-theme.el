@@ -744,7 +744,7 @@
    `(hl-line ((t (:background ,hl-line :extend t))))
 
    ;; hl-todo
-   `(hl-todo ((t (:foreground ,pink :bold nil :slant italic))))
+   `(hl-todo ((t (:foreground ,light-orange :bold nil :slant italic))))
 
    ;; idle-highlight-mode
    `(idle-highlight ((t (:inherit highlight))))
