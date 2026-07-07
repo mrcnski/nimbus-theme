@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 206" width="200" height="206" role="img" aria-label="nimbus mascot: a rain cloud raining syntax-colored code onto a mini Emacs window, on a light sky-blue rounded background">
+  <title>nimbus — cloud raining code</title>
+
+  <!-- sky badge background -->
+  <rect x="6" y="4" width="188" height="198" rx="28" fill="#d9e8f5"/>
+
+  <!-- nimbus cloud -->
+  <g>
+    <circle cx="62" cy="52" r="22" fill="#aab0ab"/>
+    <circle cx="94" cy="40" r="28" fill="#aab0ab"/>
+    <circle cx="128" cy="52" r="23" fill="#aab0ab"/>
+    <rect x="44" y="44" width="112" height="34" rx="17" fill="#aab0ab"/>
+    <rect x="44" y="66" width="112" height="12" rx="6" fill="#858585" opacity="0.45"/>
+    <circle cx="76" cy="52" r="4" fill="#ffffff" opacity="0.4"/>
+    <circle cx="112" cy="48" r="5" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- rain = falling code tokens -->
+  <g stroke-width="5" stroke-linecap="round">
+    <line x1="64" y1="88" x2="60" y2="100" stroke="#6aaf50"/>
+    <line x1="88" y1="88" x2="84" y2="100" stroke="#70a5e1"/>
+    <line x1="112" y1="88" x2="108" y2="100" stroke="#eaaa0c"/>
+    <line x1="136" y1="88" x2="132" y2="100" stroke="#ab75c3"/>
+    <line x1="76" y1="106" x2="72" y2="118" stroke="#eaaa0c"/>
+    <line x1="100" y1="106" x2="96" y2="118" stroke="#6aaf50"/>
+    <line x1="124" y1="106" x2="120" y2="118" stroke="#70a5e1"/>
+  </g>
+
+  <!-- mini Emacs window -->
+  <g>
+    <rect x="40" y="128" width="120" height="62" rx="8" fill="#1a1a1a"/>
+    <rect x="41" y="129" width="118" height="15" rx="7" fill="#353535"/>
+    <rect x="41" y="138" width="118" height="6" fill="#353535"/>
+    <circle cx="50" cy="136" r="3" fill="#d65946"/>
+    <rect x="50" y="150" width="28" height="5" rx="2.5" fill="#ab75c3"/>
+    <rect x="84" y="150" width="44" height="5" rx="2.5" fill="#aab0ab"/>
+    <rect x="50" y="161" width="20" height="5" rx="2.5" fill="#6aaf50"/>
+    <rect x="76" y="161" width="36" height="5" rx="2.5" fill="#70a5e1"/>
+    <rect x="50" y="172" width="40" height="5" rx="2.5" fill="#eaaa0c"/>
+    <rect x="96" y="170" width="6" height="9" fill="#9ccc65"/>
+    <rect x="41" y="178" width="118" height="11" rx="7" fill="#608079"/>
+    <rect x="41" y="178" width="118" height="5" fill="#608079"/>
+  </g>
+</svg>

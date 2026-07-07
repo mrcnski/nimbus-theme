@@ -1,15 +1,18 @@
+<div align="center">
+  <img src="mascot.svg" alt="nimbus mascot — a rain cloud raining syntax-colored code onto a mini Emacs window" width="180"/>
+
 # Nimbus
+
+*Nimbus dark theme for Emacs.*
+
+*nimbus: (Latin) rainstorm, rain cloud*
 
 [![MELPA](https://melpa.org/packages/nimbus-theme-badge.svg)](https://melpa.org/#/nimbus-theme)
 [![Issues](https://img.shields.io/github/issues-raw/mrcnski/nimbus-theme.svg)](https://github.com/mrcnski/nimbus-theme/issues)
-[![LoC](https://tokei.rs/b1/github/mrcnski/nimbus-theme)](https://github.com/mrcnski/nimbus-theme)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
-
-Nimbus dark theme for Emacs.
+</div>
 
 ![Screenshot](./screenshot.png)
-
-> nimbus: (Latin) rainstorm, rain cloud
 
 ## About
 
