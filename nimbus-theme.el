@@ -5,7 +5,7 @@
 ;; Author:      Marcin Swieczkowski <marcin@realemail.net>
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
 ;; Version:     1.3.0
-;; Package-Requires: ((emacs "24.1"))
+;; Package-Requires: ((emacs "27.1"))
 ;; URL:         https://github.com/mrcnski/nimbus-theme
 ;; Keywords:    faces
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -988,7 +988,7 @@
    `(org-block ((t (:foreground ,fg))))
    `(org-block-begin-line ((t (:inherit org-meta-line :underline ,indent))))
    `(org-block-end-line ((t (:inherit org-meta-line :overline ,indent))))
-   `(org-checkbox ((t (:foreground ,checkbox t))))
+   `(org-checkbox ((t (:foreground ,checkbox))))
    `(org-checkbox-statistics-done ((t (:foreground ,dark-green))))
    `(org-checkbox-statistics-todo ((t (:foreground ,red))))
    `(org-code ((t (:foreground ,code))))
@@ -1185,8 +1185,7 @@
    `(term-color-red ((t (:foreground ,red :background ,red))))
    `(term-color-white ((t (:foreground ,fg :background ,fg))))
    `(term-color-yellow ((t (:foreground ,yellow :background ,yellow))))
-   `(term-default-bg-color ((t (:inherit bg))))
-   `(term-default-fg-color ((t (:inherit fg))))
+   `(term ((t (:foreground ,fg :background ,bg))))
 
    ;; transient
    `(transient-argument ((t (:foreground ,yellow :bold t))))
