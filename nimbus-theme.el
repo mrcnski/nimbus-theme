@@ -1220,6 +1220,10 @@
    `(undo-tree-visualizer-current-face ((t (:foreground ,current))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,purple))))
 
+   ;; visible-mark
+   `(visible-mark-active ((t (:underline ,white))))
+   `(visible-mark-inactive ((t (:underline ,white))))
+
    ;; vline
    `(vline ((t (:background ,hl-line))))
    `(vline-visual ((t (:background ,teal-bg))))
