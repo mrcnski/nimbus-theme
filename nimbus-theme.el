@@ -1222,7 +1222,6 @@
 
    ;; visible-mark
    `(visible-mark-active ((t (:underline ,white))))
-   `(visible-mark-inactive ((t (:underline ,white))))
 
    ;; vline
    `(vline ((t (:background ,hl-line))))
