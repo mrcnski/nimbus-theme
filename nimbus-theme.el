@@ -4,7 +4,7 @@
 ;; Description: Nimbus dark theme
 ;; Author:      Marcin Swieczkowski <marcin@realemail.net>
 ;; Created:     Thu Mar 2 22:19:19 CET 2017
-;; Version:     1.4.0
+;; Version:     1.5.0
 ;; Package-Requires: ((emacs "27.1"))
 ;; URL:         https://github.com/mrcnski/nimbus-theme
 ;; Keywords:    faces
@@ -14,7 +14,7 @@
 ;;
 ;; About:
 ;;
-;; Nimbus dark theme for Emacs. Beautiful, slightly retro, yet readable
+;; Nimbus dark theme for Emacs.  Beautiful, slightly retro, yet readable
 ;; and easy on the eyes.
 ;;
 ;; See README.md for more info.
