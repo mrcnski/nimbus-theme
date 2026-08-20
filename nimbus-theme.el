@@ -195,7 +195,10 @@
    `(bookmark-face ((t (:foreground unspecified :background ,selection))))
    `(button ((t (:foreground ,blue :underline t))))
    `(escape-glyph ((t (:foreground ,dark-blue))))
+   ;; TODO: differentiate these somehow?
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
+   `(tab-line ((t (:inherit unspecified :height unspecified
+                   :background ,light-purple-bg :foreground ,fg))))
    `(help-key-binding ((t (:foreground ,key))))
    `(isearch ((t (:foreground ,black :background ,search))))
    `(lazy-highlight ((t (:foreground ,black :background ,lazy))))
