@@ -1295,7 +1295,10 @@
    `(web-mode-whitespace-face ((t (:background ,purple))))
 
    ;; which-func
-   ;; `(which-func ((t ())))
+   ;;
+   ;; lighter green than font-lock-function-name-face, which would be hard to
+   ;; read against the mode-line.
+   `(which-func ((t (:foreground ,lighter-green))))
 
    ;; which-key
    `(which-key-key-face ((t (:foreground ,key))))
