@@ -87,9 +87,12 @@
        (dark-teal-bg    "#112b2b")
        (gray-bg         "#2b2b2b")
        (blue-bg         "#112b47")
-       (light-purple-bg "#2b2b47")
        (purple-bg       "#2b1147")
        (red-bg          "#47112b")
+
+       (light-blue-bg   "#193448")
+       (light-purple-bg "#2b2b47")
+       (light-red-bg    "#472b39")
 
        (nimbus-err     "#ff0000")
        (nimbus-success light-green)
@@ -195,10 +198,9 @@
    `(bookmark-face ((t (:foreground unspecified :background ,selection))))
    `(button ((t (:foreground ,blue :underline t))))
    `(escape-glyph ((t (:foreground ,dark-blue))))
-   ;; TODO: differentiate these somehow?
    `(header-line ((t (:background ,light-purple-bg :foreground ,fg))))
    `(tab-line ((t (:inherit unspecified :height unspecified
-                   :background ,light-purple-bg :foreground ,fg))))
+                   :background ,light-red-bg :foreground ,fg))))
    `(help-key-binding ((t (:foreground ,key))))
    `(isearch ((t (:foreground ,black :background ,search))))
    `(lazy-highlight ((t (:foreground ,black :background ,lazy))))
@@ -951,7 +953,7 @@
    `(mmv-face ((t (:underline ,white))))
 
    ;; mode-line
-   `(mode-line ((t (:foreground ,fg :background ,light-purple-bg))))
+   `(mode-line ((t (:foreground ,fg :background ,light-blue-bg))))
    `(mode-line-inactive ((t (:foreground ,lighter-gray :background ,gray-bg))))
 
    ;; multiple-cursors
