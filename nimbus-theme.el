@@ -90,7 +90,7 @@
        (purple-bg       "#2b1147")
        (red-bg          "#47112b")
 
-       (light-blue-bg   "#193448")
+       (light-blue-bg   "#223b50")
        (light-purple-bg "#2b2b47")
        (light-red-bg    "#472b39")
 
