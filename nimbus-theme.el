@@ -54,7 +54,7 @@
        (green          "#6aaf50")
        (dark-green     "#1d9a79")
        (darker-green   "#058945")
-       (lighter-blue   "#86b5e8")
+       (lighter-blue   "#8ab4df")
        (light-blue     "#70a5e1")
        (blue           "#598bc1")
        (dark-blue      "#267E99")
