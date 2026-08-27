@@ -91,8 +91,8 @@
        (red-bg          "#47112b")
 
        (light-blue-bg   "#223b50")
-       (light-purple-bg "#2b2b47")
-       (light-red-bg    "#472b39")
+       (light-purple-bg "#2d2d4b")
+       (light-red-bg    "#4A282F")
 
        (nimbus-err     "#ff0000")
        (nimbus-success light-green)
