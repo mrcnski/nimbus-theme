@@ -133,6 +133,7 @@
        (strike         brown)
        (summary        red)
        (tag            dark-blue)
+       (table          lighter-blue)
        (value          green)
 
        (lazy           light-blue)
@@ -933,6 +934,14 @@
    `(markdown-gfm-checkbox-face ((t (:foreground ,checkbox))))
    `(markdown-code-face ((t (:foreground ,code))))
    `(markdown-header-face ((t (:foreground ,heading))))
+   `(markdown-header-face-1 ((t (:foreground ,rainbow-1))))
+   `(markdown-header-face-2 ((t (:foreground ,rainbow-2))))
+   `(markdown-header-face-3 ((t (:foreground ,rainbow-3))))
+   `(markdown-header-face-4 ((t (:foreground ,rainbow-4))))
+   `(markdown-header-face-5 ((t (:foreground ,rainbow-5))))
+   `(markdown-header-face-6 ((t (:foreground ,rainbow-6))))
+   `(markdown-language-keyword-face ((t (:foreground ,lighter-green))))
+   `(markdown-table-face ((t (:foreground ,table))))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
@@ -1020,7 +1029,7 @@
    `(org-scheduled-previously ((t (:foreground ,orange))))
    `(org-scheduled-today ((t (:foreground ,yellow))))
    `(org-special-keyword ((t (:inherit org-drawer))))
-   `(org-table ((t (:foreground ,lighter-blue))))
+   `(org-table ((t (:foreground ,table))))
    `(org-tag ((t (:foreground ,tag))))
    `(org-time-grid ((t (:foreground ,blue-gray))))
    `(org-todo ((t (:foreground ,dark-red))))
