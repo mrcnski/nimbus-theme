@@ -221,6 +221,13 @@
    `(aw-background-face ((t (:foreground ,dark-gray))))
    `(aw-leading-char-face ((t (:foreground ,black :background ,dark-green))))
 
+   ;; agent-shell
+   `(agent-shell-error ((t (:foreground ,red))))
+   `(agent-shell-markdown-inline-code ((t (:foreground ,code))))
+   `(agent-shell-markdown-source-block-language ((t (:foreground ,lighter-green))))
+   `(agent-shell-section-heading ((t (:foreground ,light-blue))))
+   `(agent-shell-success ((t (:foreground ,green))))
+
    ;; ansi
    `(ansi-color-black ((t (:foreground ,bg :background ,bg))))
    `(ansi-color-blue ((t (:foreground ,blue :background ,blue))))
@@ -314,7 +321,7 @@
    `(cargo-process--warning-face ((t (:foreground ,orange))))
 
    ;; comint
-   `(comint-highlight-prompt ((t (:foreground ,green))))
+   `(comint-highlight-prompt ((t (:foreground ,heading))))
 
    ;; company
    `(company-preview ((t (:background ,selection))))
