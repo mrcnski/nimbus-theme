@@ -225,6 +225,8 @@
    `(agent-shell-error ((t (:foreground ,red))))
    `(agent-shell-markdown-inline-code ((t (:foreground ,code))))
    `(agent-shell-markdown-source-block-language ((t (:foreground ,lighter-green))))
+   `(agent-shell-markdown-table-border ((t (:foreground ,table))))
+   `(agent-shell-markdown-table-zebra ((t (:foreground unspecified :background ,dark-teal-bg))))
    `(agent-shell-section-heading ((t (:foreground ,light-blue))))
    `(agent-shell-success ((t (:foreground ,green))))
 
