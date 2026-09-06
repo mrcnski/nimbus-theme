@@ -951,6 +951,7 @@
    `(markdown-header-face-6 ((t (:foreground ,rainbow-6))))
    `(markdown-language-keyword-face ((t (:foreground ,lighter-green))))
    `(markdown-table-face ((t (:foreground ,table))))
+   `(markdown-url-face ((t (:inherit link))))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
