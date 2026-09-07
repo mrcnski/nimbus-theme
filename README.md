@@ -41,7 +41,9 @@ Use `M-x customize-themes` to activate it, or put the following in your Emacs co
 Or, if you have [use-package](https://github.com/jwiegley/use-package):
 
 ```elisp
-(use-package nimbus-theme)
+(use-package nimbus-theme
+  :config
+  (nimbus-theme)
 ```
 
 ### Troubleshooting
