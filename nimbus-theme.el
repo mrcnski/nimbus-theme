@@ -57,7 +57,7 @@
        (lighter-blue   "#8ab4df")
        (light-blue     "#70a5e1")
        (blue           "#598bc1")
-       (dark-blue      "#267E99")
+       (dark-blue      "#4073cc")
        (blue-purple    "#7f7dca")
        (light-orange   "#eaaa0c")
        (orange         "#db931f")
